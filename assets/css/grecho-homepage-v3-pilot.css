@@ -607,13 +607,15 @@
   grid-template-rows: auto;
   align-items: start;
   column-gap: 22px;
-  row-gap: 0;
-  min-height: calc(var(--grecho-v3-application-grid-height, 0px) + 46px);
+  row-gap: 22px;
+  min-height: 0;
   padding-bottom: 46px;
 }
 
 .grecho-v3-application-grid.is-measured-columns {
   grid-auto-rows: auto;
+  row-gap: 0;
+  min-height: calc(var(--grecho-v3-application-grid-height, 0px) + 46px);
 }
 
 .grecho-v3-application-card__media {
@@ -642,27 +644,27 @@
   box-shadow: none;
 }
 
-.grecho-v3-application-card--1,
-.grecho-v3-application-card--4 {
+.grecho-v3-application-grid.is-measured-columns .grecho-v3-application-card--1,
+.grecho-v3-application-grid.is-measured-columns .grecho-v3-application-card--4 {
   grid-column: 1;
   grid-row: 1;
 }
 
-.grecho-v3-application-card--2,
-.grecho-v3-application-card--5 {
+.grecho-v3-application-grid.is-measured-columns .grecho-v3-application-card--2,
+.grecho-v3-application-grid.is-measured-columns .grecho-v3-application-card--5 {
   grid-column: 2;
   grid-row: 1;
 }
 
-.grecho-v3-application-card--3,
-.grecho-v3-application-card--6 {
+.grecho-v3-application-grid.is-measured-columns .grecho-v3-application-card--3,
+.grecho-v3-application-grid.is-measured-columns .grecho-v3-application-card--6 {
   grid-column: 3;
   grid-row: 1;
 }
 
-.grecho-v3-application-card--4,
-.grecho-v3-application-card--5,
-.grecho-v3-application-card--6 {
+.grecho-v3-application-grid.is-measured-columns .grecho-v3-application-card--4,
+.grecho-v3-application-grid.is-measured-columns .grecho-v3-application-card--5,
+.grecho-v3-application-grid.is-measured-columns .grecho-v3-application-card--6 {
   z-index: 2;
   transform: translateY(calc(var(--grecho-v3-application-stack-offset, 0px) + var(--grecho-v3-application-stack-delta, 0px)));
 }
@@ -696,21 +698,21 @@
 }
 
 @media (min-width: 851px) and (hover: hover) and (pointer: fine) {
-  .grecho-v3-application-grid[data-application-active="1"] .grecho-v3-application-card--1 .grecho-v3-application-card__media,
-  .grecho-v3-application-grid[data-application-active="2"] .grecho-v3-application-card--2 .grecho-v3-application-card__media,
-  .grecho-v3-application-grid[data-application-active="3"] .grecho-v3-application-card--3 .grecho-v3-application-card__media,
-  .grecho-v3-application-grid[data-application-active="4"] .grecho-v3-application-card--4 .grecho-v3-application-card__media,
-  .grecho-v3-application-grid[data-application-active="5"] .grecho-v3-application-card--5 .grecho-v3-application-card__media,
-  .grecho-v3-application-grid[data-application-active="6"] .grecho-v3-application-card--6 .grecho-v3-application-card__media {
+  .grecho-v3-application-grid.is-measured-columns[data-application-active="1"] .grecho-v3-application-card--1 .grecho-v3-application-card__media,
+  .grecho-v3-application-grid.is-measured-columns[data-application-active="2"] .grecho-v3-application-card--2 .grecho-v3-application-card__media,
+  .grecho-v3-application-grid.is-measured-columns[data-application-active="3"] .grecho-v3-application-card--3 .grecho-v3-application-card__media,
+  .grecho-v3-application-grid.is-measured-columns[data-application-active="4"] .grecho-v3-application-card--4 .grecho-v3-application-card__media,
+  .grecho-v3-application-grid.is-measured-columns[data-application-active="5"] .grecho-v3-application-card--5 .grecho-v3-application-card__media,
+  .grecho-v3-application-grid.is-measured-columns[data-application-active="6"] .grecho-v3-application-card--6 .grecho-v3-application-card__media {
     height: var(--grecho-v3-application-image-expanded);
   }
 
-  .grecho-v3-application-grid[data-application-active="1"] .grecho-v3-application-card--4 .grecho-v3-application-card__media,
-  .grecho-v3-application-grid[data-application-active="4"] .grecho-v3-application-card--1 .grecho-v3-application-card__media,
-  .grecho-v3-application-grid[data-application-active="2"] .grecho-v3-application-card--5 .grecho-v3-application-card__media,
-  .grecho-v3-application-grid[data-application-active="5"] .grecho-v3-application-card--2 .grecho-v3-application-card__media,
-  .grecho-v3-application-grid[data-application-active="3"] .grecho-v3-application-card--6 .grecho-v3-application-card__media,
-  .grecho-v3-application-grid[data-application-active="6"] .grecho-v3-application-card--3 .grecho-v3-application-card__media {
+  .grecho-v3-application-grid.is-measured-columns[data-application-active="1"] .grecho-v3-application-card--4 .grecho-v3-application-card__media,
+  .grecho-v3-application-grid.is-measured-columns[data-application-active="4"] .grecho-v3-application-card--1 .grecho-v3-application-card__media,
+  .grecho-v3-application-grid.is-measured-columns[data-application-active="2"] .grecho-v3-application-card--5 .grecho-v3-application-card__media,
+  .grecho-v3-application-grid.is-measured-columns[data-application-active="5"] .grecho-v3-application-card--2 .grecho-v3-application-card__media,
+  .grecho-v3-application-grid.is-measured-columns[data-application-active="3"] .grecho-v3-application-card--6 .grecho-v3-application-card__media,
+  .grecho-v3-application-grid.is-measured-columns[data-application-active="6"] .grecho-v3-application-card--3 .grecho-v3-application-card__media {
     height: var(--grecho-v3-application-image-compressed);
   }
 

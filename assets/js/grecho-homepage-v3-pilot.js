@@ -16,13 +16,12 @@
   var narrowViewport = window.matchMedia('(max-width: 767px)');
   var heroInView = true;
   var heroUserPaused = false;
-  var heroUserRequestedPlay = false;
 
   function updateHeroControl() {
     if (!heroToggle || !heroVideo) {
       return;
     }
-    var unavailable = narrowViewport.matches;
+    var unavailable = narrowViewport.matches || reduceMotion.matches;
     var isPaused = heroVideo.paused;
     heroToggle.hidden = unavailable;
     heroToggle.setAttribute('aria-pressed', String(!isPaused));
@@ -56,7 +55,7 @@
     }
 
     var source = heroVideo.querySelector('source[data-src]');
-    var videoAllowed = !narrowViewport.matches && (!reduceMotion.matches || heroUserRequestedPlay);
+    var videoAllowed = !narrowViewport.matches && !reduceMotion.matches;
     var shouldPlay = videoAllowed && heroInView && !document.hidden && !heroUserPaused;
 
     if (shouldPlay && ensureHeroSource()) {
@@ -90,7 +89,6 @@
     heroToggle.addEventListener('click', function () {
       if (heroVideo.paused) {
         heroUserPaused = false;
-        heroUserRequestedPlay = true;
       } else {
         heroUserPaused = true;
       }
@@ -110,12 +108,7 @@
   document.addEventListener('visibilitychange', syncHeroMedia);
   syncHeroMedia();
   if (typeof reduceMotion.addEventListener === 'function') {
-    reduceMotion.addEventListener('change', function () {
-      if (reduceMotion.matches) {
-        heroUserRequestedPlay = false;
-      }
-      syncHeroMedia();
-    });
+    reduceMotion.addEventListener('change', syncHeroMedia);
     narrowViewport.addEventListener('change', syncHeroMedia);
   }
   window.addEventListener('resize', syncHeroMedia, { passive: true });

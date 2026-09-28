@@ -8,6 +8,9 @@
 - Repository: `huangwenliang2111-ship-it/grecho-homepage-v3-review`
 - Intended visibility: public review preview
 - GitHub Pages source: `main` / repository root
+- Public review URL: `https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/`
+- Public QA target commit: `141bf2434acf48fdaeb90b63724012a7e9bee8e3`
+- Public QA result: `PASS` (desktop 1440/1366/1280/1100; mobile 430/390/360; keyboard, touch, reduced motion and network safety)
 - Indexing protection: HTML `noindex,nofollow,noarchive` plus `robots.txt` disallow-all guidance
 - Public publication safety scan: PASS (2026-09-28)
 - Production interactions: 0

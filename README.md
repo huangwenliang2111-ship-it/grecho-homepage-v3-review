@@ -1,12 +1,10 @@
-# GRECHO Homepage V3 - Public Review Preview
+# GRECHO Homepage V3 — Internal Review Preview
 
-Static, non-production review build exported from the approved Phase 1C-R2A local candidate. It contains no WordPress runtime, forms, credentials, analytics or production deployment logic.
+Static, non-production review build exported from the Phase 1C-R3 local candidate. It contains no WordPress runtime, forms, credentials, analytics or production deployment logic.
 
-All navigation, search, language switching, download and conversion actions are intentionally non-operational. This repository is an authorized public review surface and is not Production.
+Navigation menus and local UI interactions are available for review. Business destinations, search, language switching, downloads and conversion actions are intentionally non-operational. This repository is public for company review.
 
-Search indexing is discouraged through an HTML `noindex,nofollow,noarchive` directive and `robots.txt`.
-
-Source authority commit: `d4dff23c72f68caea97eba5b6f48bcfc4e515971`
+Source authority commit: `a7f8e7bd96997dca7df89c89661dd393fabce91a`
 
 Review state:
 

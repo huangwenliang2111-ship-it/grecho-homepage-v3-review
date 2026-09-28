@@ -9,8 +9,46 @@
   root.classList.add('grecho-v3--enhanced');
 
   var heroVideo = root.querySelector('[data-grecho-v3-hero-video]');
+  var heroToggle = root.querySelector('[data-grecho-v3-hero-toggle]');
+  var heroToggleLabel = root.querySelector('[data-grecho-v3-hero-toggle-label]');
+  var heroToggleIcon = heroToggle ? heroToggle.querySelector('.grecho-v3-hero__media-toggle-icon') : null;
   var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   var narrowViewport = window.matchMedia('(max-width: 767px)');
+  var heroInView = true;
+  var heroUserPaused = false;
+  var heroUserRequestedPlay = false;
+
+  function updateHeroControl() {
+    if (!heroToggle || !heroVideo) {
+      return;
+    }
+    var unavailable = narrowViewport.matches;
+    var isPaused = heroVideo.paused;
+    heroToggle.hidden = unavailable;
+    heroToggle.setAttribute('aria-pressed', String(!isPaused));
+    heroToggle.setAttribute('aria-label', isPaused ? 'Play background video' : 'Pause background video');
+    if (heroToggleLabel) {
+      heroToggleLabel.textContent = isPaused ? 'Play background video' : 'Pause background video';
+    }
+    if (heroToggleIcon) {
+      heroToggleIcon.textContent = isPaused ? '▶' : 'Ⅱ';
+    }
+  }
+
+  function ensureHeroSource() {
+    if (!heroVideo) {
+      return false;
+    }
+    var source = heroVideo.querySelector('source[data-src]');
+    if (!source) {
+      return false;
+    }
+    if (!source.getAttribute('src')) {
+      source.setAttribute('src', source.getAttribute('data-src'));
+      heroVideo.load();
+    }
+    return true;
+  }
 
   function syncHeroMedia() {
     if (!heroVideo) {
@@ -18,114 +56,152 @@
     }
 
     var source = heroVideo.querySelector('source[data-src]');
-    var shouldUseVideo = !reduceMotion.matches && !narrowViewport.matches;
+    var videoAllowed = !narrowViewport.matches && (!reduceMotion.matches || heroUserRequestedPlay);
+    var shouldPlay = videoAllowed && heroInView && !document.hidden && !heroUserPaused;
 
-    if (shouldUseVideo && source && !source.getAttribute('src')) {
-      source.setAttribute('src', source.getAttribute('data-src'));
-      heroVideo.load();
+    if (shouldPlay && ensureHeroSource()) {
+      heroVideo.classList.remove('is-poster-only');
       var playAttempt = heroVideo.play();
       if (playAttempt && typeof playAttempt.catch === 'function') {
         playAttempt.catch(function () {
           heroVideo.classList.add('is-poster-only');
+          updateHeroControl();
         });
       }
-      return;
-    }
-
-    if (!shouldUseVideo) {
+    } else {
       heroVideo.pause();
-      heroVideo.classList.add('is-poster-only');
-      if (source && source.getAttribute('src')) {
-        source.removeAttribute('src');
-        heroVideo.load();
+      if (!videoAllowed) {
+        heroVideo.classList.add('is-poster-only');
+        if (source && source.getAttribute('src')) {
+          source.removeAttribute('src');
+          heroVideo.load();
+        }
       }
     }
+    updateHeroControl();
   }
 
+  if (heroVideo) {
+    heroVideo.addEventListener('play', updateHeroControl);
+    heroVideo.addEventListener('pause', updateHeroControl);
+    heroVideo.addEventListener('ended', updateHeroControl);
+  }
+  if (heroToggle && heroVideo) {
+    heroToggle.addEventListener('click', function () {
+      if (heroVideo.paused) {
+        heroUserPaused = false;
+        heroUserRequestedPlay = true;
+      } else {
+        heroUserPaused = true;
+      }
+      syncHeroMedia();
+    });
+  }
+
+  var heroSection = heroVideo ? heroVideo.closest('.grecho-v3-hero') : null;
+  if (heroSection && typeof IntersectionObserver === 'function') {
+    var heroObserver = new IntersectionObserver(function (entries) {
+      heroInView = entries[0] ? entries[0].isIntersecting : true;
+      syncHeroMedia();
+    }, { threshold: 0.08 });
+    heroObserver.observe(heroSection);
+  }
+
+  document.addEventListener('visibilitychange', syncHeroMedia);
   syncHeroMedia();
   if (typeof reduceMotion.addEventListener === 'function') {
-    reduceMotion.addEventListener('change', syncHeroMedia);
+    reduceMotion.addEventListener('change', function () {
+      if (reduceMotion.matches) {
+        heroUserRequestedPlay = false;
+      }
+      syncHeroMedia();
+    });
     narrowViewport.addEventListener('change', syncHeroMedia);
   }
   window.addEventListener('resize', syncHeroMedia, { passive: true });
-  if (typeof ResizeObserver === 'function') {
-    var viewportObserver = new ResizeObserver(syncHeroMedia);
-    viewportObserver.observe(document.documentElement);
-  }
 
   var applicationGrid = root.querySelector('.grecho-v3-application-grid');
   var applicationWideViewport = window.matchMedia('(min-width: 851px)');
-  var applicationInteractionViewport = window.matchMedia('(min-width: 851px) and (hover: hover) and (pointer: fine)');
-  var applicationLayoutFrame = 0;
-  var applicationLayoutSignature = '';
+  var applicationPointerViewport = window.matchMedia('(min-width: 851px) and (hover: hover) and (pointer: fine)');
+  var applicationMeasureFrame = 0;
+  var applicationGeometryFrame = 0;
+  var applicationGeometryEnd = 0;
   var applicationPointerOrder = '';
   var applicationFocusOrder = '';
 
   function resetApplicationLayout(cards) {
     applicationGrid.classList.remove('is-measured-columns');
+    applicationGrid.style.removeProperty('--grecho-v3-application-grid-height');
     cards.forEach(function (card) {
-      card.style.removeProperty('grid-column');
-      card.style.removeProperty('grid-row');
+      card.style.removeProperty('--grecho-v3-application-stack-offset');
     });
-    applicationLayoutSignature = '';
+    applicationGrid.setAttribute('data-application-layout-state', 'normal-flow');
   }
 
-  function layoutApplications() {
-    applicationLayoutFrame = 0;
+  function measureApplicationStacks() {
+    applicationMeasureFrame = 0;
     if (!applicationGrid) {
       return;
     }
-
     var cards = Array.prototype.slice.call(applicationGrid.querySelectorAll('.grecho-v3-application-card'));
-    if (!applicationWideViewport.matches) {
+    if (!applicationWideViewport.matches || cards.length !== 6) {
       resetApplicationLayout(cards);
-      applicationGrid.setAttribute('data-application-layout-state', 'normal-flow');
       return;
     }
 
-    var rowHeight = 4;
-    var gapRows = 6;
-    var columnStarts = [1, 1, 1];
-    var spans = cards.map(function (card) {
-      return Math.max(1, Math.ceil(card.getBoundingClientRect().height / rowHeight));
-    });
-    var signature = Math.round(applicationGrid.getBoundingClientRect().width) + ':' + spans.join(',');
-    if (signature === applicationLayoutSignature && applicationGrid.classList.contains('is-measured-columns')) {
-      return;
-    }
-    applicationLayoutSignature = signature;
+    var styles = window.getComputedStyle(applicationGrid);
+    var stackGap = parseFloat(styles.columnGap) || 22;
+    var maxStackHeight = 0;
 
+    for (var column = 0; column < 3; column += 1) {
+      var topCard = cards[column];
+      var bottomCard = cards[column + 3];
+      var topHeight = topCard.getBoundingClientRect().height;
+      var bottomHeight = bottomCard.getBoundingClientRect().height;
+      var offset = topHeight + stackGap;
+      bottomCard.style.setProperty('--grecho-v3-application-stack-offset', offset + 'px');
+      maxStackHeight = Math.max(maxStackHeight, offset + bottomHeight);
+    }
+
+    applicationGrid.style.setProperty('--grecho-v3-application-grid-height', maxStackHeight + 'px');
     applicationGrid.classList.add('is-measured-columns');
-    cards.forEach(function (card, index) {
-      var column = (index % 3) + 1;
-      var start = columnStarts[column - 1];
-      var span = spans[index];
-      card.style.gridColumn = String(column);
-      card.style.gridRow = String(start) + ' / span ' + String(span);
-      columnStarts[column - 1] = start + span + gapRows;
-    });
-    applicationGrid.setAttribute('data-application-layout-state', 'paired-columns');
+    applicationGrid.setAttribute('data-application-layout-state', 'synchronized-paired-columns');
   }
 
-  function scheduleApplicationLayout() {
-    if (!applicationGrid || applicationLayoutFrame) {
+  function runApplicationGeometrySync() {
+    applicationGeometryEnd = window.performance.now() + 420;
+    if (applicationGeometryFrame) {
       return;
     }
-    applicationLayoutFrame = window.requestAnimationFrame(layoutApplications);
+    function syncFrame(now) {
+      measureApplicationStacks();
+      if (now < applicationGeometryEnd) {
+        applicationGeometryFrame = window.requestAnimationFrame(syncFrame);
+      } else {
+        applicationGeometryFrame = 0;
+      }
+    }
+    applicationGeometryFrame = window.requestAnimationFrame(syncFrame);
+  }
+
+  function scheduleApplicationMeasure() {
+    if (!applicationGrid || applicationMeasureFrame) {
+      return;
+    }
+    applicationMeasureFrame = window.requestAnimationFrame(measureApplicationStacks);
   }
 
   if (applicationGrid) {
     var applicationCards = Array.prototype.slice.call(applicationGrid.querySelectorAll('.grecho-v3-application-card'));
 
     function syncApplicationActiveState() {
-      var activeOrder = applicationInteractionViewport.matches ? (applicationFocusOrder || applicationPointerOrder) : '';
-      if (activeOrder) {
+      var activeOrder = applicationFocusOrder || (applicationPointerViewport.matches ? applicationPointerOrder : '');
+      if (applicationWideViewport.matches && activeOrder) {
         applicationGrid.setAttribute('data-application-active', activeOrder);
       } else {
         applicationGrid.removeAttribute('data-application-active');
       }
-      applicationLayoutSignature = '';
-      scheduleApplicationLayout();
+      runApplicationGeometrySync();
     }
 
     applicationGrid.setAttribute('data-application-default-state', 'balanced');
@@ -157,27 +233,21 @@
       });
     });
 
-    scheduleApplicationLayout();
+    scheduleApplicationMeasure();
     applicationGrid.querySelectorAll('img').forEach(function (image) {
       if (!image.complete) {
-        image.addEventListener('load', scheduleApplicationLayout, { once: true });
-        image.addEventListener('error', scheduleApplicationLayout, { once: true });
+        image.addEventListener('load', scheduleApplicationMeasure, { once: true });
+        image.addEventListener('error', scheduleApplicationMeasure, { once: true });
       }
     });
     if (document.fonts && document.fonts.ready) {
-      document.fonts.ready.then(scheduleApplicationLayout);
+      document.fonts.ready.then(scheduleApplicationMeasure);
     }
     if (typeof applicationWideViewport.addEventListener === 'function') {
-      applicationWideViewport.addEventListener('change', scheduleApplicationLayout);
-      applicationInteractionViewport.addEventListener('change', syncApplicationActiveState);
+      applicationWideViewport.addEventListener('change', scheduleApplicationMeasure);
+      applicationPointerViewport.addEventListener('change', syncApplicationActiveState);
     }
-    window.addEventListener('resize', scheduleApplicationLayout, { passive: true });
-    if (typeof ResizeObserver === 'function') {
-      var applicationResizeObserver = new ResizeObserver(scheduleApplicationLayout);
-      applicationCards.forEach(function (card) {
-        applicationResizeObserver.observe(card);
-      });
-    }
+    window.addEventListener('resize', scheduleApplicationMeasure, { passive: true });
   }
 
   root.querySelectorAll('[data-grecho-v3-faq]').forEach(function (faq) {

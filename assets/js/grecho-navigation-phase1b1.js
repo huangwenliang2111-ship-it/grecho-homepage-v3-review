@@ -23,6 +23,9 @@
   var lastDesktopTrigger = null;
   var lastMobileTrigger = null;
   var hoverCloseTimer = null;
+  var desktopOpenOrigin = '';
+  var homepageRoot = header.closest('.grecho-v3');
+  var stickyHeaderOffset = '';
   var stickyStart = header.getBoundingClientRect().top + window.scrollY;
 
   function updateSafetyOffset() {
@@ -46,6 +49,8 @@
 
   function closeDesktop(options) {
     var settings = options || {};
+    window.clearTimeout(hoverCloseTimer);
+    hoverCloseTimer = null;
     desktopTriggers.forEach(function (trigger) {
       trigger.setAttribute('aria-expanded', 'false');
     });
@@ -53,12 +58,13 @@
       panel.hidden = true;
     });
     header.classList.remove('is-desktop-menu-open');
+    desktopOpenOrigin = '';
     if (settings.restoreFocus && lastDesktopTrigger) {
       lastDesktopTrigger.focus();
     }
   }
 
-  function openDesktop(trigger, focusFirst) {
+  function openDesktop(trigger, focusFirst, origin) {
     var name = trigger.getAttribute('data-nav-trigger');
     var panel = getDesktopPanel(name);
     if (!panel) {
@@ -71,6 +77,7 @@
     trigger.setAttribute('aria-expanded', 'true');
     panel.hidden = false;
     header.classList.add('is-desktop-menu-open');
+    desktopOpenOrigin = origin;
     lastDesktopTrigger = trigger;
     if (focusFirst) {
       var first = visibleFocusable(panel)[0];
@@ -80,12 +87,18 @@
     }
   }
 
-  function toggleDesktop(trigger) {
+  function toggleDesktop(trigger, origin) {
     if (trigger.getAttribute('aria-expanded') === 'true') {
+      if (origin === 'click' && desktopOpenOrigin === 'hover') {
+        window.clearTimeout(hoverCloseTimer);
+        hoverCloseTimer = null;
+        desktopOpenOrigin = 'click';
+        return;
+      }
       closeDesktop({ restoreFocus: true });
       return;
     }
-    openDesktop(trigger, false);
+    openDesktop(trigger, false, origin);
   }
 
   function closeLanguage(options) {
@@ -229,37 +242,54 @@
 
   function updateStickyState() {
     header.classList.toggle('is-stuck', window.scrollY > stickyStart + 1);
+    if (homepageRoot) {
+      var headerBottom = header.getBoundingClientRect().bottom;
+      if (Number.isFinite(headerBottom)) {
+        var nextOffset = Math.max(0, Math.ceil(headerBottom)) + 16 + 'px';
+        if (nextOffset !== stickyHeaderOffset) {
+          homepageRoot.style.setProperty('--grecho-v3-sticky-header-offset', nextOffset);
+          stickyHeaderOffset = nextOffset;
+        }
+        homepageRoot.classList.add('has-sticky-header-offset');
+      }
+    }
   }
 
   desktopTriggers.forEach(function (trigger) {
     trigger.addEventListener('click', function () {
-      toggleDesktop(trigger);
+      toggleDesktop(trigger, 'click');
     });
     trigger.addEventListener('mouseenter', function () {
       if (window.matchMedia('(min-width: 1100px) and (hover: hover)').matches) {
         window.clearTimeout(hoverCloseTimer);
-        openDesktop(trigger, false);
+        hoverCloseTimer = null;
+        if (trigger.getAttribute('aria-expanded') !== 'true') {
+          openDesktop(trigger, false, 'hover');
+        }
       }
     });
     trigger.addEventListener('keydown', function (event) {
       if (event.key === 'Enter' || event.key === ' ') {
         event.preventDefault();
-        toggleDesktop(trigger);
+        toggleDesktop(trigger, 'keyboard');
       } else if (event.key === 'ArrowDown') {
         event.preventDefault();
-        openDesktop(trigger, true);
+        openDesktop(trigger, true, 'keyboard');
       }
     });
   });
 
   header.addEventListener('mouseenter', function () {
     window.clearTimeout(hoverCloseTimer);
+    hoverCloseTimer = null;
   });
 
   header.addEventListener('mouseleave', function () {
-    if (window.matchMedia('(min-width: 1100px) and (hover: hover)').matches) {
+    if (desktopOpenOrigin === 'hover' && window.matchMedia('(min-width: 1100px) and (hover: hover)').matches) {
       hoverCloseTimer = window.setTimeout(function () {
-        closeDesktop();
+        if (desktopOpenOrigin === 'hover') {
+          closeDesktop();
+        }
       }, 180);
     }
   });

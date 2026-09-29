@@ -683,6 +683,10 @@
   box-shadow: 0 16px 30px rgba(30, 73, 112, 0.14);
 }
 
+.grecho-v3-application-card:focus-within .grecho-v3-application-card__body {
+  border-color: var(--grecho-v3-brand);
+}
+
 .grecho-v3-application-card h3 {
   font-size: 19px;
 }
@@ -811,7 +815,7 @@
 }
 
 .grecho-v3-resource-card small {
-  color: #5680a0;
+  color: #476c89;
   font-size: 10px;
   font-weight: 800;
   letter-spacing: 0.1em;
@@ -831,8 +835,12 @@
 }
 
 .grecho-v3-faq-intro {
+  position: static;
+}
+
+.grecho-v3.has-sticky-header-offset .grecho-v3-faq-intro {
   position: sticky;
-  top: 24px;
+  top: var(--grecho-v3-sticky-header-offset);
 }
 
 .grecho-v3-faq-intro h2 {
@@ -1040,6 +1048,10 @@
   margin-bottom: 0;
   color: #536777;
   font-size: 12px;
+}
+
+.grecho-v3-support-card--accent li {
+  color: #4c6070;
 }
 
 .grecho-v3-support-card li {
@@ -1253,6 +1265,10 @@
   }
 
   .grecho-v3-faq-intro {
+    position: static;
+  }
+
+  .grecho-v3.has-sticky-header-offset .grecho-v3-faq-intro {
     position: static;
   }
 

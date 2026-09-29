@@ -120,7 +120,6 @@
   var applicationGeometryFrame = 0;
   var applicationGeometryEnd = 0;
   var applicationPointerOrder = '';
-  var applicationFocusOrder = '';
 
   function resetApplicationLayout(cards) {
     applicationGrid.classList.remove('is-measured-columns');
@@ -188,7 +187,8 @@
     var applicationCards = Array.prototype.slice.call(applicationGrid.querySelectorAll('.grecho-v3-application-card'));
 
     function syncApplicationActiveState() {
-      var activeOrder = applicationFocusOrder || (applicationPointerViewport.matches ? applicationPointerOrder : '');
+      // Focus adds visual emphasis without changing the pointer-controlled geometry.
+      var activeOrder = applicationPointerViewport.matches ? applicationPointerOrder : '';
       if (applicationWideViewport.matches && activeOrder) {
         applicationGrid.setAttribute('data-application-active', activeOrder);
       } else {
@@ -213,17 +213,6 @@
           }
         });
       }
-      card.addEventListener('focusin', function () {
-        applicationFocusOrder = order;
-        syncApplicationActiveState();
-      });
-      card.addEventListener('focusout', function () {
-        window.setTimeout(function () {
-          var focusedCard = document.activeElement && document.activeElement.closest ? document.activeElement.closest('.grecho-v3-application-card') : null;
-          applicationFocusOrder = focusedCard ? focusedCard.getAttribute('data-application-order') || '' : '';
-          syncApplicationActiveState();
-        }, 0);
-      });
     });
 
     scheduleApplicationMeasure();

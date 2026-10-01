@@ -6,7 +6,7 @@
 .grecho-solutions-hero h1{max-width:540px;margin-bottom:20px;color:var(--grecho-v3-text);font-size:clamp(38px,3.6vw,50px);font-weight:750;letter-spacing:-.035em;line-height:1.08}
 .grecho-solutions-hero p{margin-bottom:22px;color:#33475d;font-size:16px;line-height:1.55}
 .grecho-solutions-hero__image{width:100%;height:auto}
-.grecho-solutions-picker{padding-bottom:64px}
+.grecho-solutions-picker{padding-bottom:64px;scroll-margin-top:calc(96px + var(--grecho-local-safety-offset, 0px))}
 .grecho-solutions-picker .grecho-v3-section-head{max-width:900px}
 .grecho-solutions-picker .grecho-v3-solution-card h3{color:var(--grecho-v3-brand-deep)}
 .grecho-solutions-picker .grecho-v3-solution-card__body{min-height:155px}

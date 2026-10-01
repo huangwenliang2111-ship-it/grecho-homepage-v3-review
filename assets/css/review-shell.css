@@ -1,0 +1,13 @@
+/* Review harness only. Frozen business page styles are unchanged. */
+.grecho-v3{padding-top:0}
+.grecho-v3-authority-bar{min-height:30px}
+.grecho-v3-authority-bar .grecho-v3-container{padding-block:5px}
+.grecho-v3-authority-bar strong{white-space:nowrap}
+.review-bar .grecho-v3-container{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 14px}
+.review-bar nav{display:flex;align-items:center;gap:18px}
+.review-bar a{display:inline-flex;align-items:center;min-height:30px;text-decoration:underline;text-underline-offset:3px}
+.review-bar a[aria-current=page]{font-weight:800;color:#f8c44f}
+.preview-action-notice{position:fixed;z-index:2147483646;left:50%;bottom:24px;transform:translateX(-50%);width:max-content;max-width:calc(100vw - 32px);padding:11px 16px;border-radius:8px;background:#17223b;color:#fff;font:650 13px/1.4 Inter,Arial,sans-serif;box-shadow:0 5px 20px rgba(0,0,0,.3);text-align:center}
+.preview-action-notice[hidden]{display:none}
+[data-preview-disabled=true]{cursor:not-allowed}
+@media(max-width:600px){.review-bar .grecho-v3-container{justify-content:center;font-size:10px;gap:2px 10px}.review-bar nav{gap:16px}.review-bar a{min-height:44px}.review-bar span{width:100%;text-align:center;font-size:10px}}

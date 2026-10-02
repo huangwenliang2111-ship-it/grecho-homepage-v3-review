@@ -29,3 +29,7 @@ body{margin:0}
 .review-directory__panel{position:fixed;top:46px;left:16px;right:16px;width:auto;max-width:920px;margin-inline:auto;transform:none}
 @media(max-width:900px){.review-directory__panel{top:88px}}
 @media(max-width:600px){.review-directory__panel{top:78px}}
+
+/* The open mobile drawer must sit above preview chrome, including its Close button.
+   This state-only stacking fix leaves the accepted header and page composition intact. */
+.grecho-v3-nav.is-mobile-menu-open{z-index:1002}

@@ -182,7 +182,6 @@
 .grecho-existing .campaign-hero__nowrap{white-space:normal}
 /* Existing policy prose retains its content, with a readable measure. */
 .grecho-existing .grecho-policy-v1,.grecho-existing .grecho-privacy-policy,.grecho-existing .grecho-cookie-policy{max-width:1120px;margin:auto}
-.grecho-existing section[id],.grecho-existing h2[id],.grecho-existing [id=request-form]{scroll-margin-top:145px}
 .grecho-existing .grecho-v1-review-cta-card{padding:32px;display:flex;gap:30px;justify-content:space-between;align-items:center;background:#fff;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-lg)}
 .grecho-existing .grecho-v1-review-cta-card h2{font-size:30px}
 .grecho-existing .grecho-v1-review-cta-card .gc-actions{flex-shrink:0}
@@ -250,7 +249,7 @@
 .grecho-existing .campaign-hero__copy{width:51%}
 .grecho-existing .campaign-support-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr));gap:22px}
 .grecho-existing .campaign-support-item{padding:24px;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-lg);background:#fff}
-.grecho-existing .gc-anchor-alias{display:block;position:relative;scroll-margin-top:145px;width:0;height:0}
+.grecho-existing .gc-anchor-alias{display:block;position:relative;width:0;height:0}
 @media(max-width:900px){.grecho-existing .gpl-selector-shell{grid-template-columns:210px minmax(0,1fr);gap:20px}.grecho-existing [class$="-two-col"]{grid-template-columns:1fr}.grecho-existing .campaign-hero__media{position:static;width:calc(100% - 48px);max-width:none;height:280px;margin:0 auto 28px}.grecho-existing .campaign-hero__copy{width:100%}.grecho-existing [class$="-capability-strip"]>.gc-container{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.grecho-existing .gpl-selector-shell{grid-template-columns:1fr}.grecho-existing [class$="-capability-strip"]>.gc-container{grid-template-columns:1fr}.grecho-existing .gab-resource-band{display:block;padding:24px}.grecho-existing .campaign-hero__media{width:calc(100% - 32px);height:220px}.grecho-existing .grecho-v1-dark-cta{padding:25px}}
 .grecho-existing [class*="-capability-strip"]>.gc-container{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
@@ -286,3 +285,36 @@
 .grecho-existing .grecho-v1-dark-cta>a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 18px;margin:12px 12px 0 0;border:1px solid rgba(255,255,255,.92);border-radius:var(--grecho-v3-radius-sm);background:rgba(255,255,255,.96);color:#17334b;font-size:13px;font-weight:800;line-height:1.2;text-align:center;box-shadow:0 6px 16px rgba(8,62,101,.15)}
 .grecho-existing .grecho-v1-dark-cta>a:hover{background:var(--grecho-v3-white);color:#0f2f49}
 @media(max-width:600px){.grecho-existing .grecho-v1-dark-cta>a{width:100%;margin-right:0}}
+
+/* Incremental review 2026-10-02: imported content only; frozen design pages excluded.
+   Match every preserved fragment ID, including H3/reference targets. The shared
+   navigation already supplies its live bottom+16px offset; 145px is the no-JS floor. */
+.grecho-existing [id]{scroll-margin-top:max(145px,var(--grecho-v3-sticky-header-offset,145px))}
+/* Auxiliary modules have their own density, independent of main section spacing. */
+.grecho-existing .gc-section:is(.gac-v1-capability-strip,.gab-cap-strip){padding-block:28px}
+.grecho-existing .gac-v1-capability-strip .gac-v1-capability-card,
+.grecho-existing .gab-cap-strip .gc-card{padding:16px 18px;box-shadow:none}
+.grecho-existing .gc-section:is(.grecho-v1-review-cta-strip,.gac-v1-review-cta,.gia-final-cta,.gpl-final-cta,.gfaq-final,.gcases-final,.ginsights-final-cta-global,.campaign-closing){padding-block:52px}
+/* Keep the complete breadcrumb labels in inline reading order with natural wrapping. */
+.grecho-existing .gptv1-breadcrumb-strip.gc-section{padding-block:16px;border-bottom:1px solid var(--grecho-v3-border);background:#fff}
+.grecho-existing .gptv1-breadcrumb{display:block;font-size:13px;line-height:1.65;color:var(--grecho-v3-muted)}
+.grecho-existing .gptv1-breadcrumb a{display:inline;color:var(--grecho-v3-brand)}
+.grecho-existing .gptv1-breadcrumb-separator{display:inline-block;padding-inline:.55em;color:var(--grecho-v3-muted)}
+.grecho-existing .gptv1-breadcrumb-current{display:inline;white-space:normal;overflow-wrap:anywhere;color:var(--grecho-v3-text)}
+.grecho-existing .gpl-fallback-note,.grecho-existing .ginsights-filter-note{font-size:13px;line-height:1.55;margin:0 0 18px}
+.grecho-existing [data-products-selector] button:disabled,
+.grecho-existing [data-products-selector] input:disabled{cursor:default;opacity:.62}
+.grecho-existing [data-selector-ready] .gpl-fallback-note{display:none}
+.grecho-existing .gc-table-wrap{min-width:0;width:100%;overscroll-behavior-x:contain}
+@media(max-width:960px){
+ .grecho-existing .gc-section:is(.gac-v1-capability-strip,.gab-cap-strip){padding-block:24px}
+ .grecho-existing .gc-section:is(.grecho-v1-review-cta-strip,.gac-v1-review-cta,.gia-final-cta,.gpl-final-cta,.gfaq-final,.gcases-final,.ginsights-final-cta-global,.campaign-closing){padding-block:40px}
+}
+@media(max-width:600px){
+ .grecho-existing .gptv1-breadcrumb-strip.gc-section{padding-block:12px}
+ .grecho-existing .gc-section:is(.gac-v1-capability-strip,.gab-cap-strip){padding-block:20px}
+ .grecho-existing .gac-v1-capability-strip>.gc-container{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .grecho-existing .gac-v1-capability-strip .gac-v1-capability-card,
+ .grecho-existing .gab-cap-strip .gc-card{padding:14px;font-size:14px;line-height:1.45}
+ .grecho-existing .gc-section:is(.grecho-v1-review-cta-strip,.gac-v1-review-cta,.gia-final-cta,.gpl-final-cta,.gfaq-final,.gcases-final,.ginsights-final-cta-global,.campaign-closing){padding-block:32px}
+}

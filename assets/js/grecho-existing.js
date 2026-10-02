@@ -174,6 +174,12 @@
         syncFilterOpenState();
         updateSeriesButtons();
         applyFilters();
+        // All cards are readable in the source HTML. Enable controls only after
+        // enhancement and its initial filter have finished successfully.
+        inputs.concat(seriesButtons, clearButtons).forEach(function (control) {
+            control.disabled = false;
+        });
+        root.setAttribute('data-selector-ready', 'true');
     }
 
     function boot() {
@@ -196,7 +202,19 @@
  main.querySelectorAll('[data-gfaq-filter]').forEach(button=>button.addEventListener('click',()=>{faqTopic=button.dataset.gfaqFilter;main.querySelectorAll('[data-gfaq-filter]').forEach(b=>{b.classList.toggle('is-active',b===button);b.setAttribute('aria-pressed',String(b===button));});filterFaq();}));
  if(faqSearch){faqSearch.addEventListener('input',filterFaq);filterFaq();}
  main.querySelectorAll('[data-gcases-filter]').forEach(button=>button.addEventListener('click',()=>{const value=button.dataset.gcasesFilter;main.querySelectorAll('[data-gcases-filter]').forEach(b=>{b.classList.toggle('is-active',b===button);b.setAttribute('aria-pressed',String(b===button));});main.querySelectorAll('[data-gcases-group]').forEach(card=>card.hidden=value!=='all'&&!card.dataset.gcasesGroup.split(/\s+/).includes(value));}));
- main.querySelectorAll('.ginsights-filter [data-filter]').forEach(button=>button.addEventListener('click',()=>{const value=button.dataset.filter;main.querySelectorAll('.ginsights-filter [data-filter]').forEach(b=>{b.classList.toggle('is-active',b===button);b.setAttribute('aria-pressed',String(b===button));});main.querySelectorAll('.ginsights-article-card[data-topic]').forEach(card=>card.hidden=value!=='all'&&!card.dataset.topic.split(/\s+/).includes(value));}));
+ // Featured filters deliberately do not affect the independent Latest list.
+ const featured=main.querySelector('#featured-insights');
+ if(featured){
+  const buttons=Array.from(featured.querySelectorAll('.ginsights-filter [data-filter]'));
+  const cards=Array.from(featured.querySelectorAll('.ginsights-article-card[data-topic]'));
+  const result=featured.querySelector('[data-insights-result-count]');
+  function filterInsights(button){const value=button.dataset.filter;let count=0;buttons.forEach(b=>{b.classList.toggle('is-active',b===button);b.setAttribute('aria-pressed',String(b===button));});cards.forEach(card=>{card.hidden=value!=='all'&&!card.dataset.topic.split(/\s+/).includes(value);if(!card.hidden)count++;});if(result)result.textContent=count+' featured '+(count===1?'article':'articles')+' shown';}
+  buttons.forEach(button=>button.addEventListener('click',()=>filterInsights(button)));
+  const initialTopic=new URLSearchParams(location.search).get('topic');
+  const initialButton=buttons.find(button=>button.dataset.filter===initialTopic)||buttons[0];
+  if(initialButton)filterInsights(initialButton);
+ }
+
  // Query context can be inspected visually. It remains entirely local and cannot be submitted.
  if(main.classList.contains('gc-contact-page')){const query=new URLSearchParams(location.search);for(const key of ['request','source','solution','product_direction','product_family','sales_code','product_model','tds_id','route_id','cta_source','cta_location','source_page_type']){const field=main.querySelector('[name="'+key+'"]');if(field&&query.has(key))field.value=query.get(key);}
  const notice=main.querySelector('[data-gcv2-context-notice]');const summary=main.querySelector('[data-gcv2-context-summary]');const parts=['request','product','solution','route_id','tds_id'].filter(key=>query.has(key)&&query.get(key).trim()).map(key=>key+'='+query.get(key).slice(0,120));if(notice&&summary){summary.textContent=parts.join(' · ');notice.hidden=!parts.length;}

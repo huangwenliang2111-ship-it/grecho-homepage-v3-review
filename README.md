@@ -1,36 +1,38 @@
-# GRECHO 英文全站视觉预览 · 当前版本
+# GRECHO 英文静态预览 · 七个视觉样板待审核
 
-当前范围：75 条英文路线，336 个运行文件。保留上一版全部 69 页，新增 Latest Insights 对应的 6 篇已有英文文章。
+本轮只重排 6 类、7 个样板页面。预览仍保留 75 条英文路线、340 个运行文件；其余 68 页整份 HTML 与修改前逐字节相同。首页、Solutions 美工稿和 High-Hiding 美工稿产品页未改。
 
-- 预览：[GRECHO English Preview](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/)
-- 页面运行版本：[abf430688f8216f249809ccffd1d1dafbd59d36a](https://github.com/huangwenliang2111-ship-it/grecho-homepage-v3-review/commit/abf430688f8216f249809ccffd1d1dafbd59d36a)
-- [现行 75 页清单](CURRENT_PAGE_LIST.csv)
-- [现行运行文件与版本校验清单](CURRENT_PREVIEW_MANIFEST.json)
-- [现行浏览器检查结果与限制](CURRENT_BROWSER_QA.json)
+- 当前运行版本：[9a7604197bbd70b4621d4ae072c97dd3d84b9584](https://github.com/huangwenliang2111-ship-it/grecho-homepage-v3-review/commit/9a7604197bbd70b4621d4ae072c97dd3d84b9584)
+- [现行运行文件清单](CURRENT_PREVIEW_MANIFEST.json)
+- [本轮浏览器检查与限制](CURRENT_BROWSER_QA.json)
+- [全部 75 页路线清单](CURRENT_PAGE_LIST.csv)
 
-## 本轮增量
+## 本轮七个样板
 
-- 所有沿用原文页面的实际锚点统一避开固定 Header，覆盖 H2、H3 和其他 ID；不改变原文、标题级别或原有锚点
-- 16 个通用产品页面的完整面包屑路径紧凑排布，长名称自然换行
-- 能力条和补充 CTA 使用独立的辅助模块间距；首页与两份美工稿页面不改版
-- Latest 六篇加入完整原英文文章；Featured 的筛选只作用于 13 篇精选文章，并显示数量
-- Products 基础 HTML 显示全部 23 张卡；脚本就绪后启用原有 Featured=6、All=23 和系列筛选；不恢复已删除的 Product Selector 介绍栏目
-- 仅在手机菜单打开时提高抽屉层级，避免预览状态条遮住关闭按钮；关闭后原布局不变
+1. [Products 产品汇总](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/products/)：舒适双列、独立图片区、标题与行动优先；保留 23 张卡、8 系列、Featured 6 / All 23、筛选及原有详情展开
+2. [High-Airflow / High-Whiteness 通用产品](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/products/high-airflow-high-whiteness-acoustic-facing/)：Hero 聚焦名称、说明、原产品图和 CTA；身份、参数、资料状态完整移到下方
+3. [Acoustic Hub](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/solutions/acoustic-ceiling-wall-facers/)：用途与行动在前，场景图与正文方向、材料、资料分层
+4. [Resources](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/resource-center/)：资料任务和六类入口前移，15 张模糊预览作辅助，申请流程放回对应段落
+5. [Class A / A2-s1,d0 技术文章](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/class-a-a2-s1-d0-noncombustible-facer-evidence/)：编辑型单栏长标题、分隔 metadata、清楚的目录和三列表格
+6. [Typical Value 技术文章](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/facer-technical-data-typical-values-specification-limits/)：同类编辑布局，五列表格桌面完整显示、窄屏在容器内横滑
+7. [Privacy Policy](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/privacy-policy/)：窄目录、宽正文、18 章连续阅读；窄屏目录可折叠
 
-## 验证边界
+样板内的 DESIGN REVIEW 增加美工稿产品快捷入口并使用清楚产品名称。其他 68 页的评审条也保持原样，本轮没有全站评审导航更新。
 
-75 页离线结构及静态安全检查通过；42 篇文章的 553 个目录链接（含 168 个 H3）均对应唯一目标。新六篇正文、标题级别和原有 ID 已与官方英文抓取核对。首页、设计稿页面和既有文章正文保持。
+## 已检查与未检查
 
-320px / 390px 必须看现行浏览器检查文件的实际结果。已有的离线数据、500px 桌面窄窗或源码断言不能替代实际托管网址在 320px / 390px 的验收；也不代表触屏、200% 缩放或全浏览器兼容性通过。
+实际 GitHub Pages 已检查 1180×757 与 500×757 的桌面浏览器视口，覆盖七页首屏构图、正文节奏与代表性下方模块。Products 实际筛选数量正确；两篇文章及 Privacy 共 47 个目录链接点击后显示目标并收起窄屏目录；菜单关闭和 Escape 恢复焦点与滚动；表格真实容器内横滑不带动整页。
 
-实际托管网址已在 500×758 和 1180×758 的桌面浏览器视口检查全部 75 页，整页横向溢出为 0；每档实际点击 553 个目录链接，标题遮挡为 0。Products、Insights、目录、菜单及表格内部横滑的已测项通过。菜单关闭按钮遮挡问题已修复并在最终运行版本复测。
+最终细调已复测：五列表格桌面不再截断末列、Resources 的 01/02/03 不换行、深蓝 Hero 的主 CTA 层级清楚、通用产品正文标签与间距清楚、窄屏产品结果数量更紧凑。
 
-完整页面及锚点巡检对应 451017e69c06860b61002586eb7dcf4ee9053d3b；最终 abf430688f8216f249809ccffd1d1dafbd59d36a 只增加菜单打开状态的层级修复，关闭、Escape、遮罩、重开、焦点及滚动恢复已另行复测。500px 是桌面窄窗，不能记为手机实测。320/390px、真实禁用 JavaScript 重载、触屏与 200% 缩放仍未测试；其中 23 张产品卡的无脚本基础 HTML 已单独验证。
+320px / 390px 仍为 NOT RUN。500px 是桌面窄窗，不能当作手机实测；真实禁用 JavaScript 重载、触屏、200% 缩放和跨浏览器检查也未运行。无脚本 23 张卡基础 HTML 已单独验证。
 
-## 静态预览边界
+七页原文、标题、ID、链接、图片和表格数据均保留。其他 68 页和既有公共资源逐字节保持；原有目录避让、紧凑面包屑、Latest 6、菜单关闭、表格横滑和筛选功能继续保留。
 
-未连接正式 WordPress、真实表单、邮件、受保护文档下载、Search、语言切换或统计系统。技术参数、3 个待确认 FAQ 答案与资料权限状态不猜填。所有运行素材为本地文件。
+这是样板交付，等待用户视觉审核后才可扩展；不代表全站视觉通过。
 
-## 历史记录
+## 静态预览边界与历史
 
-PREVIEW_BUILD_INFO.md 和 GITHUB_PREVIEW_ASSET_MANIFEST.tsv 均为 2026-09-29 首页导出历史，不代表当前 75 页；旧 TSV 原样保留，不作为现行文件清单使用。历史首页说明存于 historical/README-homepage-before-v4.md。当前版本以本页链接的 CURRENT_* 文件为准。
+未连接正式 WordPress、真实表单、邮件、受保护文档下载、Search、WPML 或统计。没有新增全站动画，也不猜填技术参数、FAQ 答案或资料权限。
+
+CURRENT_BROWSER_QA.json 内保留 previous_functional_baseline 作为之前运行版本的历史功能证据。旧 PREVIEW_BUILD_INFO.md、GITHUB_PREVIEW_ASSET_MANIFEST.tsv 和 historical/README-homepage-before-v4.md 继续原样保留；它们不是本轮样板清单。

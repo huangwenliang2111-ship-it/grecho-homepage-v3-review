@@ -1,11 +1,26 @@
 {
-  "version": "English visual preview v4 incremental, 2026-10-02",
-  "runtime_commit": "abf430688f8216f249809ccffd1d1dafbd59d36a",
+  "version": "Seven visual samples, 2026-10-02",
+  "runtime_commit": "9a7604197bbd70b4621d4ae072c97dd3d84b9584",
   "preview_url": "https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/",
   "base": "/grecho-homepage-v3-review/",
-  "runtime_bundle_sha256": "836d5f5c1798a83010df4f7d3cda5dd56a84fce9a7dd3589fe6e83b7c6615903",
   "pages": 75,
-  "runtime_file_count": 336,
+  "runtime_file_count": 340,
+  "layout_change_count": 7,
+  "changed_layout_routes": [
+    "/products/",
+    "/products/high-airflow-high-whiteness-acoustic-facing/",
+    "/solutions/acoustic-ceiling-wall-facers/",
+    "/resource-center/",
+    "/class-a-a2-s1-d0-noncombustible-facer-evidence/",
+    "/facer-technical-data-typical-values-specification-limits/",
+    "/privacy-policy/"
+  ],
+  "other68_entire_html_identical_to": "ad2b3a85ad89a8fc75e0e3b2ba9d3b8347dde705",
+  "files_manifest_sha256": "33bf134bc852b197608faf25025683ab70244b8f6bf7dfa85a86ff06897bef62",
+  "files_manifest_sha256_method": "SHA-256 of UTF-8 JSON files array with sorted object keys, separators comma and colon",
+  "candidate_fingerprint": "7106bfe5c83c3195edf908ea43a44249eb2501df775e45e0306249c465730cb6",
+  "visual_status": "SEVEN_SAMPLES_READY_FOR_USER_REVIEW; NOT_FULL_SITE_VISUAL_APPROVAL",
+  "review_navigation_scope": "Designer product quick entry and full product labels are updated only inside the seven selected sample pages. The other 68 entire HTML files remain unchanged.",
   "files": [
     {
       "path": ".nojekyll",
@@ -91,6 +106,21 @@
       "path": "assets/css/review-shell.css",
       "bytes": 3675,
       "sha256": "513aac8881e0235935147de2079b0e9e4b21988bd61c4c9d87c82d7cd8ee9467"
+    },
+    {
+      "path": "assets/css/sample-editorial.css",
+      "bytes": 18985,
+      "sha256": "64b0fff4529ce33fdedd84dbe3dd53e1ca9aae2416daa342a87e8123217d6312"
+    },
+    {
+      "path": "assets/css/sample-products.css",
+      "bytes": 19403,
+      "sha256": "4dbb4112fbd2b10b0fb716038837f1044f3d9cfc90e692d2acb595f956ad2318"
+    },
+    {
+      "path": "assets/css/sample-task-pages.css",
+      "bytes": 32178,
+      "sha256": "f87ce02f0917632e2072c0f2fa182b10321ea5bf008c2b196f99f963e0c458fa"
     },
     {
       "path": "assets/fonts/Inter-VariableFont_slnt,wght.woff2",
@@ -1338,6 +1368,11 @@
       "sha256": "b145b6f3dfff69c36e9781072bb31b237f1846f0b5346794147e07d80d0cfe5a"
     },
     {
+      "path": "assets/js/sample-editorial.js",
+      "bytes": 922,
+      "sha256": "c7e5dea05670ddf809780286582a4a34a6291e9a488128c96e9ceae9dd1ca51c"
+    },
+    {
       "path": "assets/media/hero-poster.webp",
       "bytes": 6908,
       "sha256": "2202da5d3c1ebb7f70f3363b66aab1a870bf80d4293a3354e589d0185e78141e"
@@ -1354,8 +1389,8 @@
     },
     {
       "path": "class-a-a2-s1-d0-noncombustible-facer-evidence/index.html",
-      "bytes": 76678,
-      "sha256": "747c2c63a4d93f913ef96bcfe7b4f646c88c696d1e7ce314176ceb66866315c7"
+      "bytes": 79295,
+      "sha256": "277bac26432e5d2fe2c644b0b92f45a2f32f385a5685e1959b7f9efdbdd4347b"
     },
     {
       "path": "compare-board-trials-facer-process-variables/index.html",
@@ -1409,8 +1444,8 @@
     },
     {
       "path": "facer-technical-data-typical-values-specification-limits/index.html",
-      "bytes": 70102,
-      "sha256": "87d88d8e08c7c46bb3e7b4e715ed486a84beb6d2d815116a6082faec50d4c234"
+      "bytes": 72361,
+      "sha256": "0ba0ec05fcd4cb5902c0b02cf532e9001e9058402324cacb4f0ba2f405da7455"
     },
     {
       "path": "facer-test-report-finished-board-performance/index.html",
@@ -1514,8 +1549,8 @@
     },
     {
       "path": "privacy-policy/index.html",
-      "bytes": 83253,
-      "sha256": "6915983bdcc85cf9f8747b72403423012caa5ffce9c27da67bb76f435e2a75a5"
+      "bytes": 83924,
+      "sha256": "0d47b4cd5a5cf0a0ad155fd0bdee43b38cf2c9901a9a91a70e66134afee9bcd7"
     },
     {
       "path": "products/bitumen-heavyweight-composite-facer-pir-pur-xps-polyiso/index.html",
@@ -1564,8 +1599,8 @@
     },
     {
       "path": "products/high-airflow-high-whiteness-acoustic-facing/index.html",
-      "bytes": 81146,
-      "sha256": "6465f4f4277084d7f9244902a810ba8333a3637acc70b0b935f334837fe88b05"
+      "bytes": 81261,
+      "sha256": "d01f092c4c79f27655355ceee41ca93d9a39594a9098f95987e801189cad63fc"
     },
     {
       "path": "products/high-definition-wood-look-decorative-glass-facing/index.html",
@@ -1579,8 +1614,8 @@
     },
     {
       "path": "products/index.html",
-      "bytes": 220380,
-      "sha256": "b902eeacf1ba3268bf42cba2054d84508033dd59f724e638f2da1f5969e013c0"
+      "bytes": 220186,
+      "sha256": "5fc319564fef9fc221d1fcc7f844418244a2e8becbd827c780b66708d37c9aa0"
     },
     {
       "path": "products/reinforced-composite-facer-pir-pur-xps-polyiso/index.html",
@@ -1614,8 +1649,8 @@
     },
     {
       "path": "resource-center/index.html",
-      "bytes": 98242,
-      "sha256": "0bed8f6e851e650fc354e684c301b4229ec9e479216044d78feb0b2f8e27260f"
+      "bytes": 98591,
+      "sha256": "920f35d01686169f5a32e38cf53b4e9ea7ddc0c30c23509a81b1eacf4f443d09"
     },
     {
       "path": "robots.txt",
@@ -1634,8 +1669,8 @@
     },
     {
       "path": "solutions/acoustic-ceiling-wall-facers/index.html",
-      "bytes": 83769,
-      "sha256": "c0ee1d6909bd700dc74169392338fa2f830eb7aa4efce85fdc49e7451da54b47"
+      "bytes": 84160,
+      "sha256": "c14f2916528c1b00596ccf5ce537a5a201fcd5c89c56a8536fd9ccd6d881b8a8"
     },
     {
       "path": "solutions/gypsum-board-facers/index.html",
@@ -1687,6 +1722,5 @@
       "bytes": 72049,
       "sha256": "4411a30976e84257d694c45f1e44d3c08183ecea791acc04e9cccbf2278edbe2"
     }
-  ],
-  "scope": "Preserves all 69 previous routes and adds six original English Latest Insights articles; static visual review only."
+  ]
 }

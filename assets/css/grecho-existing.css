@@ -266,3 +266,18 @@
 .grecho-existing .gc-section-head{margin-bottom:38px}
 @media(max-width:960px){.grecho-existing .gc-section:not(.gc-hero){padding-block:68px}}
 @media(max-width:600px){.grecho-existing .gc-container{width:min(100% - 28px,540px)}.grecho-existing .gc-section:not(.gc-hero){padding-block:64px}.grecho-existing .gc-section-head{margin-bottom:28px}.grecho-existing .gc-section-head h2{font-size:32px}.grecho-existing .grecho-v1-hero>.grecho-v1-hero-media,.grecho-existing .campaign-hero__media,.grecho-existing .is-resource-side-panel>.grecho-v1-hero-media{width:calc(100% - 28px)}}
+/* Keep shared typography/card/container values on the frozen V3 component contract. */
+.grecho-existing h1,.grecho-existing h2,.grecho-existing h3,.grecho-existing .grecho-v1-card-base-title{font-weight:700}
+.grecho-existing .gc-card{border-radius:var(--grecho-v3-radius-md)}
+.grecho-existing .gc-card[class*="-panel"],.grecho-existing .gc-card[class*="-box"]{border-radius:var(--grecho-v3-radius-lg)}
+.grecho-existing .gc-section-head{max-width:760px}
+@media(max-width:850px){.grecho-existing .gc-container{width:min(100% - 36px,720px)}.grecho-existing .gc-container .gc-container{width:100%}}
+@media(max-width:600px){.grecho-existing .gc-container{width:min(100% - 28px,540px)}.grecho-existing .gc-section-head h2{font-size:clamp(31px,9.2vw,39px)}.grecho-existing .gc-section-head h2 br{display:none}}
+/* Source plugin loading state is replaced by a visibly disabled static form. */
+.grecho-existing [data-preview-form]{display:block!important}
+.grecho-existing [data-preview-form] fieldset{border:0;padding:0;margin:0;min-inline-size:0}
+.grecho-existing .ff_screen_reader_title{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.grecho-existing .gcv2-context-notice{margin-bottom:20px;border:1px solid var(--grecho-v3-border);border-radius:var(--grecho-v3-radius-sm);background:var(--grecho-v3-tint);padding:12px 14px;font-size:13px;line-height:1.5;overflow-wrap:anywhere;color:var(--grecho-v3-brand-deep)}
+/* Preserve readable technical column labels; narrow screens scroll the table only. */
+.grecho-existing .gc-table-wrap th,.grecho-existing .gc-table-wrap td{word-break:normal;overflow-wrap:normal}
+.grecho-existing .gc-table-wrap:has(tr>:nth-child(4)) table{min-width:680px}

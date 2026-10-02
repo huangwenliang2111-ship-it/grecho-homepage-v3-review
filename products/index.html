@@ -195,31 +195,7 @@
         </section>
         
             <div class="gpl-main" aria-label="GRECHO Products Landing">
-                <section class="gpl-section gpl-selector-intro gc-section" id="product-selector-intro">
-                    <div class="grecho-v1-container gc-container">
-                                <div class="grecho-v1-section-heading is-left gpl-section-heading gc-section-head">
-                            <div class="grecho-v1-eyebrow gc-eyebrow">Product Selector</div>
-            
-                            <h2>Start from application, then narrow by route</h2>
-            
-                            <p>Products are grouped as application-matched facer directions. Use filters to shortlist likely routes, then request TDS or samples for selected tested models and buyer-side validation.</p>
-                    </div>
-                                <div class="gpl-intro-grid gc-grid">
-                                                                                            <div class="gpl-intro-card gc-card">
-                                    <span>23</span>                                    <strong>product directions</strong>
-                                    <p>From veils and acoustic facers to reinforced foil-composite facers.</p>
-                                </div>
-                                                                                            <div class="gpl-intro-card gc-card">
-                                    <span>8</span>                                    <strong>managed product families</strong>
-                                    <p>Series-level navigation keeps the page focused without becoming a SKU dump.</p>
-                                </div>
-                                                                                            <div class="gpl-intro-card is-document-access gc-card">
-                                                                        <strong>technical documentation</strong>
-                                    <p>TDS, SDS and applicable test or compliance information are matched to the selected route, model and application.</p>
-                                </div>
-                                                    </div>
-                    </div>
-                </section>
+                
 
                 <section class="gpl-section gpl-series-nav-section gc-section" aria-labelledby="products-series-title">
                     <div class="grecho-v1-container gc-container">
@@ -232,8 +208,8 @@
                             <button class="gpl-clear-button gc-control" type="button" data-clear-filters>Clear filters</button>
                         </div>
 
-                        <div class="gpl-series-nav" role="list" aria-label="Product series quick navigation">
-                            <button class="gpl-series-button is-active is-featured" type="button" data-series-filter="featured" data-series-label="Featured Routes" aria-pressed="true" role="listitem">
+                        <div class="gpl-series-nav" role="group" aria-label="Product series quick navigation">
+                            <button class="gpl-series-button is-active is-featured" type="button" data-series-filter="featured" data-series-label="Featured Routes" aria-pressed="true">
                                                                 <span class="gpl-family-visual gpl-family-media is-featured " data-image-slot="family" aria-hidden="true">
                                                                     </span>
                                 <span class="gpl-series-button-copy">
@@ -242,7 +218,7 @@
                                 </span>
                                 <strong>6</strong>
                             </button>
-                            <button class="gpl-series-button" type="button" data-series-filter="all" data-series-label="All Products" aria-pressed="false" role="listitem">
+                            <button class="gpl-series-button" type="button" data-series-filter="all" data-series-label="All Products" aria-pressed="false">
                                                                 <span class="gpl-family-visual gpl-family-media is-all " data-image-slot="family" aria-hidden="true">
                                                                     </span>
                                 <span class="gpl-series-button-copy">
@@ -251,7 +227,7 @@
                                 </span>
                                 <strong>23</strong>
                             </button>
-                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-v" data-series-label="Glass Veil &amp; Tissue" aria-pressed="false" role="listitem">
+                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-v" data-series-label="Glass Veil &amp; Tissue" aria-pressed="false">
                                     <span class="gpl-family-visual gpl-family-media is-gc-v has-image" data-image-slot="family">
                                                                                     <img decoding="async" class="gpl-family-visual-image" src="/grecho-homepage-v3-review/assets/images/existing/61fdd570a77c-grecho-p001-glass-veil-product-card-20260910.webp" alt="Product sample showing the surface texture of Glass Veil." loading="lazy">
                                                                             </span>
@@ -261,7 +237,7 @@
                                     </span>
                                     <strong>4</strong>
                                 </button>
-                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-ac" data-series-label="Acoustic Ceiling Facers" aria-pressed="false" role="listitem">
+                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-ac" data-series-label="Acoustic Ceiling Facers" aria-pressed="false">
                                     <span class="gpl-family-visual gpl-family-media is-gc-ac has-image" data-image-slot="family">
                                                                                     <img decoding="async" class="gpl-family-visual-image" src="/grecho-homepage-v3-review/assets/images/existing/f6023a0de5d1-grecho-p006-high-airflow-high-whiteness-fire-performance-acoustic-facing-primary-20260910.webp" alt="Product image showing the surface texture of High-Airflow, High-Whiteness Fire-Performance Acoustic Facing." loading="lazy">
                                                                             </span>
@@ -271,7 +247,7 @@
                                     </span>
                                     <strong>8</strong>
                                 </button>
-                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-gy" data-series-label="Gypsum Board Facers" aria-pressed="false" role="listitem">
+                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-gy" data-series-label="Gypsum Board Facers" aria-pressed="false">
                                     <span class="gpl-family-visual gpl-family-media is-gc-gy has-image" data-image-slot="family">
                                                                                     <img decoding="async" class="gpl-family-visual-image" src="/grecho-homepage-v3-review/assets/images/existing/ac24e5b39ebb-grecho-p011-glass-facing-route-for-gypsum-board-applications-primary-20260910.webp" alt="Product image showing the surface texture of Glass Facing Route for Gypsum Board Applications." loading="lazy">
                                                                             </span>
@@ -281,7 +257,7 @@
                                     </span>
                                     <strong>1</strong>
                                 </button>
-                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-in" data-series-label="Mineral Wool Insulation Facers" aria-pressed="false" role="listitem">
+                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-in" data-series-label="Mineral Wool Insulation Facers" aria-pressed="false">
                                     <span class="gpl-family-visual gpl-family-media is-gc-in has-image" data-image-slot="family">
                                                                                     <img decoding="async" class="gpl-family-visual-image" src="/grecho-homepage-v3-review/assets/images/existing/65d6b05d6ef0-grecho-p013-fluorine-free-thermal-insulation-facing-primary-20260910.webp" alt="Product image showing the surface texture of Fluorine-Free Thermal Insulation Facing." loading="lazy">
                                                                             </span>
@@ -291,7 +267,7 @@
                                     </span>
                                     <strong>2</strong>
                                 </button>
-                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-pir" data-series-label="PIR/PUR Foam Board Facers" aria-pressed="false" role="listitem">
+                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-pir" data-series-label="PIR/PUR Foam Board Facers" aria-pressed="false">
                                     <span class="gpl-family-visual gpl-family-media is-gc-pir has-image" data-image-slot="family">
                                                                                     <img decoding="async" class="gpl-family-visual-image" src="/grecho-homepage-v3-review/assets/images/existing/3265f597b3d9-grecho-p014-ultra-low-airflow-glass-facer-for-pir-pur-foam-boards-primary-20260910.webp" alt="Product image showing the surface texture of Ultra-Low Airflow Glass Facer for PIR/PUR Foam Boards." loading="lazy">
                                                                             </span>
@@ -301,7 +277,7 @@
                                     </span>
                                     <strong>3</strong>
                                 </button>
-                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-fb" data-series-label="Fiberglass Fabric" aria-pressed="false" role="listitem">
+                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-fb" data-series-label="Fiberglass Fabric" aria-pressed="false">
                                     <span class="gpl-family-visual gpl-family-media is-gc-fb has-image" data-image-slot="family">
                                                                                     <img decoding="async" class="gpl-family-visual-image" src="/grecho-homepage-v3-review/assets/images/existing/b1405495c516-grecho-p016-fiberglass-fabric-product-card-20260910.webp" alt="Product sample showing the surface texture of Fiberglass Fabric." loading="lazy">
                                                                             </span>
@@ -311,7 +287,7 @@
                                     </span>
                                     <strong>1</strong>
                                 </button>
-                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-fb-sl" data-series-label="Silicone Coated Glass Fabric" aria-pressed="false" role="listitem">
+                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-fb-sl" data-series-label="Silicone Coated Glass Fabric" aria-pressed="false">
                                     <span class="gpl-family-visual gpl-family-media is-gc-fb-sl has-image" data-image-slot="family">
                                                                                     <img decoding="async" class="gpl-family-visual-image" src="/grecho-homepage-v3-review/assets/images/existing/494fe75f2302-grecho-p017-silicone-coated-glass-fabric-product-card-20260821.webp" alt="Product sample showing the surface texture of Silicone Coated Glass Fabric." loading="lazy">
                                                                             </span>
@@ -321,7 +297,7 @@
                                     </span>
                                     <strong>1</strong>
                                 </button>
-                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-al" data-series-label="Foil-Composite Facers" aria-pressed="false" role="listitem">
+                                                                                            <button class="gpl-series-button" type="button" data-series-filter="gc-al" data-series-label="Foil-Composite Facers" aria-pressed="false">
                                     <span class="gpl-family-visual gpl-family-media is-gc-al has-image" data-image-slot="family">
                                                                                     <img decoding="async" class="gpl-family-visual-image" src="/grecho-homepage-v3-review/assets/images/existing/8122492a1339-s12-foil-and-foil-composite-insulation-facers-primary-square-v1.webp" alt="Foil and Foil-Composite Insulation Facers material surface shown in a studio product view." loading="lazy">
                                                                             </span>

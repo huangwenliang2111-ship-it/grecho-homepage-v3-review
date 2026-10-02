@@ -1,0 +1,170 @@
+{
+  "status": "passed within tested coverage; requested 320/390 px and actual JavaScript-disabled browser checks remain unrun",
+  "site": "https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/",
+  "runtimeCommit": "abf430688f8216f249809ccffd1d1dafbd59d36a",
+  "runtimeBundleSha256": "836d5f5c1798a83010df4f7d3cda5dd56a84fce9a7dd3589fe6e83b7c6615903",
+  "fullSweepCommit": "451017e69c06860b61002586eb7dcf4ee9053d3b",
+  "finalChange": "Only assets/css/review-shell.css changed after full sweep: open mobile navigation stacking.",
+  "deployment": {
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/huangwenliang2111-ship-it/grecho-homepage-v3-review/actions/runs/37004584798"
+  },
+  "viewportChecks": [
+    {
+      "width": 500,
+      "height": 758,
+      "clientWidth": 485,
+      "scale": 1,
+      "pages": 75,
+      "wholePageHorizontalOverflowFailures": 0,
+      "articlePages": 42,
+      "tocClicks": 553,
+      "h3Clicks": 168,
+      "minHeadingClearancePx": 73.5,
+      "maxHeadingClearancePx": 74.484375,
+      "maxHeadingBottomPx": 237.46875,
+      "outOfViewHeadings": 0
+    },
+    {
+      "width": 1180,
+      "height": 758,
+      "clientWidth": 1165,
+      "scale": 1,
+      "pages": 75,
+      "wholePageHorizontalOverflowFailures": 0,
+      "articlePages": 42,
+      "tocClicks": 553,
+      "h3Clicks": 168,
+      "minHeadingClearancePx": 65.5,
+      "maxHeadingClearancePx": 66.484375,
+      "maxHeadingBottomPx": 216.25,
+      "outOfViewHeadings": 0
+    }
+  ],
+  "breadcrumbs": {
+    "count": 16,
+    "fullOriginalNamesPreserved": true,
+    "fontSizePx": 13,
+    "wrap": "normal",
+    "narrowStripHeightRangePx": [
+      46.4375,
+      67.875
+    ],
+    "desktopStripHeightRangePx": [
+      54.4375,
+      54.4375
+    ]
+  },
+  "auxiliarySpacing": {
+    "narrowCapabilityPaddingPx": 20,
+    "desktopCapabilityPaddingPx": 28,
+    "narrowClosingCtaPaddingPx": 32,
+    "desktopClosingCtaPaddingPx": 52
+  },
+  "products": {
+    "totalStaticCards": 23,
+    "liveAllVisible": 23,
+    "liveSeriesCounts": {
+      "featured": 6,
+      "all": 23,
+      "gc-v": 4,
+      "gc-ac": 8,
+      "gc-gy": 1,
+      "gc-in": 2,
+      "gc-pir": 3,
+      "gc-fb": 1,
+      "gc-fb-sl": 1,
+      "gc-al": 3
+    },
+    "compoundEmptyResult": 0,
+    "resetCheckedInputs": 0,
+    "resetVisible": 6,
+    "resetSeries": "featured",
+    "removedSelectorIntroStillAbsent": true,
+    "familyNavigationPreserved": true
+  },
+  "insights": {
+    "featuredTotal": 13,
+    "latestTotal": 6,
+    "liveFilterCounts": {
+      "all": 13,
+      "acoustic": 3,
+      "mineral-wool": 1,
+      "gypsum": 3,
+      "pir-pur-etics": 3,
+      "documents": 3
+    },
+    "latestVisibleForEveryFilter": 6,
+    "latestLinksActuallyClicked": 6,
+    "fullLocalBodiesVerified": true,
+    "newArticleBodyCharacterRange": [
+      9445,
+      14303
+    ]
+  },
+  "tables": {
+    "articleTables": 65,
+    "articlePages": 42,
+    "narrowWidth": 500,
+    "allWideTablesInOverflowAutoWrappers": true,
+    "wholePageOverflowFailures": 0,
+    "representativeActualHorizontalScroll": {
+      "containerScrollLeftPx": 225,
+      "windowScrollX": 0,
+      "documentClientWidth": 485,
+      "documentScrollWidth": 485
+    }
+  },
+  "menus": {
+    "desktopGroups": 5,
+    "desktopOpenAndEscapePassed": true,
+    "directoryLinks": 75,
+    "directoryOpenClosePassed": true,
+    "narrowAccordionGroups": 5,
+    "narrowAccordionsPassed": true,
+    "originalNarrowDefect": "Review bar covered the drawer Close control; normal click did not close it.",
+    "fixedByCommit": "abf430688f8216f249809ccffd1d1dafbd59d36a",
+    "fixedCloseCenterHitsOwnButton": true,
+    "normalClosePassed": true,
+    "reopenEscapePassed": true,
+    "reopenBackdropPassed": true,
+    "focusReturnedToTriggerForAllThree": true,
+    "bodyOverflowRestoredForAllThree": true,
+    "actualPageScrollAfterDismissal": {
+      "before": 2138,
+      "after": 2896
+    },
+    "homeMenuRetestPassed": true
+  },
+  "staticVerification": {
+    "pages": 75,
+    "articlePages": 42,
+    "tocTargets": 553,
+    "h3Targets": 168,
+    "existingArticleBodyCopyAndIdsPreserved": true,
+    "newSixBodiesExactToCapturedPublicOriginals": true,
+    "homeMainUnchanged": true,
+    "internalLinksResolve": true,
+    "productCardsInitiallyUnhidden": 23,
+    "nonRuntimeFilesPreserved": true
+  },
+  "limitations": [
+    {
+      "test": "320px and 390px viewport rendering",
+      "status": "NOT RUN",
+      "reason": "The available native browser viewport had a measured minimum width of 500 CSS px; 320/390 px viewport emulation was unavailable. These widths were not tested."
+    },
+    {
+      "test": "Actual JavaScript-disabled browser reload",
+      "status": "NOT RUN",
+      "reason": "The browser session did not support completing a JavaScript-disabled reload. The original Allow (default) setting was unchanged. Static HTML fallback and deterministic script-state checks passed separately."
+    },
+    {
+      "test": "Touch-device and 200% zoom testing",
+      "status": "NOT RUN",
+      "reason": "Not covered by the available actual-browser pass."
+    }
+  ],
+  "method": "Actual hosted GitHub Pages in a desktop browser. 500 px is a native narrow desktop viewport, not a touch-device or 320/390 px emulation."
+}

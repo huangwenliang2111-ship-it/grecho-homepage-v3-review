@@ -1,3 +1,9 @@
+# Historical record: homepage export, 2026-09-29
+
+This preserved record describes an earlier homepage-only export. It does not describe the current 75-page preview. Use [current README](README.md), [current page list](CURRENT_PAGE_LIST.csv), [current runtime manifest](CURRENT_PREVIEW_MANIFEST.json), and [current browser results](CURRENT_BROWSER_QA.json). The GITHUB_PREVIEW_ASSET_MANIFEST.tsv mentioned below is retained unchanged as historical evidence.
+
+---
+
 # Preview Build Information
 
 - Export date: 2026-09-29 (Asia/Shanghai)

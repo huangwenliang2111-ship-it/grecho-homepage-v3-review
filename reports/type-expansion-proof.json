@@ -1,0 +1,1537 @@
+{
+  "baseline_main_commit": "f0d0969a8a8becbaa240fe6f6f57d6b78ecf6fe6",
+  "baseline_runtime_commit": "706fb6aff5b3dffef41ed5cd73641ccc7bdf8115",
+  "baseline_all340_runtime_hashes_verified": true,
+  "body_changed_count": 59,
+  "unchanged_html_count": 16,
+  "modified_pages": [
+    {
+      "route": "/acoustic-facer-adhesive-layer-panel-sound-absorption-review/",
+      "title": "The Acoustic Facer Has Not Changed. Why Did the Panel Result Change? | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-acoustic-facer-adhesive-layer-panel-sound-absorption-review.html",
+      "before_html_sha256": "219fcbf0fc533255866c63b05bd5b5f9cd45024e78e8746bb7d2fdc147847e9b",
+      "after_html_sha256": "d9b80c46c11f3e26e3dc2f80c7747ff0da7e4cb5bcad52de1f139d5a54787da6",
+      "before_main_sha256": "c28d2d2a3708bead719f0c7bf26ca93b9bfedd9683daa072fd8e1766168f51bc",
+      "after_main_sha256": "24a707fbd196d9000c288ee615e49c7060ec64414a49b1c5dd6be2d3140f2bf5",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/acoustic-facer-airflow-panel-absorption-evidence/",
+      "title": "Why Can a More Open Acoustic Facer Still Require Full-Panel Sound-Absorption Testing? | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-acoustic-facer-airflow-panel-absorption-evidence.html",
+      "before_html_sha256": "ed82abefc120a93bcc6017913b2e42a2dfe2d2cc2727e50dbb89702f3f119698",
+      "after_html_sha256": "8d2ae54b80ffab7ddf145c90b5f3d4908a275732c35a2bbe5517e5a33585d3c0",
+      "before_main_sha256": "d4cb2cb4b2e7063de2de31970574a65632a2539772e8d1f44b2d8a0aa328dc4e",
+      "after_main_sha256": "e548f215d692bb7ce491fcf24ca966f8b78b3d734dba77d1adde7953a9ec2dd8",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/acoustic-facer-cleaning-trial-protocol-record/",
+      "title": "What Should a Cleaning Trial Record Before Calling an Acoustic Facer Cleanable? | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-acoustic-facer-cleaning-trial-protocol-record.html",
+      "before_html_sha256": "f214187c61dd292185c990357500dd7f22518acbffc1517bbee7bf27b8b946bf",
+      "after_html_sha256": "d355504f122661f13a5dfd7fd76eda4a613fab34daefcfd205020ed3d6bb3453",
+      "before_main_sha256": "60775cc8e2d42193e5bf6f2a149d7c271c362b51810b38731766571848145c02",
+      "after_main_sha256": "f77058d50e622b79d07f5561a3f400962e89e0068058cd5638edff934dc97f79",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/acoustic-facer-cleaning-trial-surface-bond-review/",
+      "title": "The Mark Is Gone. Has the Acoustic Facer Passed the Cleaning Trial? | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-acoustic-facer-cleaning-trial-surface-bond-review.html",
+      "before_html_sha256": "0f13da8b459edce3a67f2453d8fcead695725bd8cd13f88e85ebf2c6d9959ac5",
+      "after_html_sha256": "9eba2bc06230f640fbc658e1e71877c14da662748c5251910a36b34a87824a77",
+      "before_main_sha256": "f41e36beb2b17d7b4dac23f26700eae4c214b37a573b2c551130261417b0d9c9",
+      "after_main_sha256": "db5670aca528c6565b8b60222d5c15c96c2b0a8f400f2fd845a42a2a63e599fc",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/acoustic-facer-dark-spots-bleed-through-review/",
+      "title": "Dark Spots on Acoustic Facers: Checks Before Calling Them Adhesive Bleed-Through | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-acoustic-facer-dark-spots-bleed-through-review.html",
+      "before_html_sha256": "2ed7f76c19fac7e9b8be551fbed60d0aa18779f8495fad3dd629ede935c9c457",
+      "after_html_sha256": "a9887a22209160e2f7dea4ed053d9f46f35f6b07a9e464ba729e22ab5215bc32",
+      "before_main_sha256": "3a75d760cf95767ed738bc7a7dc654dba363d78ba5e3c405f8c5fefe022c59f5",
+      "after_main_sha256": "9f685adfd8c6516e84e0f87f973095fe603856df69af334f5ac924e52b9cf72b",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/acoustic-facer-lamination-cooling-cure-evaluation/",
+      "title": "Acoustic Facer Lamination: Initial Bond Strength, Cooling and Cure | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-acoustic-facer-lamination-cooling-cure-evaluation.html",
+      "before_html_sha256": "3c491eb30525db1dde18dba37dfc1876d9a8bca68ad9e31e8e011930b140f1d8",
+      "after_html_sha256": "2c7ad52f5b256bc0bf658330166555f97d72222befa04c064cffc885dc6377d3",
+      "before_main_sha256": "c305452c8b6da29e9c4d1fbaa1bbc1c82adbf519c71c6e8a3340265ab053db4b",
+      "after_main_sha256": "48b31126ce9fc344e4a4f1a97bd7a9148c8dd604ea571c6f73c49370d98361c0",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/airflow-surface-hiding-fire-documents-acoustic-facer/",
+      "title": "Airflow, Surface Hiding and Fire-Document Scope in Acoustic Facer Selection | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-airflow-surface-hiding-fire-documents-acoustic-facer.html",
+      "before_html_sha256": "bf3b4629dab0a7516ef1dec3278631f662f31c9ad4649038243ef199a1717203",
+      "after_html_sha256": "60050767310251fabe342d693d900f2f0c8d8ce4307985eddfabc19a815a9473",
+      "before_main_sha256": "01cd70ee9d8caa75b8e782ed2ed1781ab0f10be1622a4fd4508f57affbf0fb2a",
+      "after_main_sha256": "f495fd18430e971843bb44500a5f09ed855cde4fdb4f0242cc50ff8a4a0a2693",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/compare-board-trials-facer-process-variables/",
+      "title": "What Should Be Frozen Before Two Board Trials Are Compared? | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-compare-board-trials-facer-process-variables.html",
+      "before_html_sha256": "ab8577407c4c1e83f35d63df203ffe19847836989f413317157b4ed90bb5e786",
+      "after_html_sha256": "13528dc1c22b247a13657dab9ed8567f3162a84d1f5a916480f796141d56e0ad",
+      "before_main_sha256": "5c337b3fbb5db4556e2833c07d56ffd65996f6b00070863e8249204935aeceec",
+      "after_main_sha256": "d8ca808040fb16f02a53ee848fdff8703b8dc37555561ea4d1de111c2144246a",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 3,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/compare-glass-veil-air-permeability-methods-pressure-units/",
+      "title": "Comparing Glass-Veil Air-Permeability Data Across Methods, Pressure and Units | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-compare-glass-veil-air-permeability-methods-pressure-units.html",
+      "before_html_sha256": "e1f59a005534d523b7daac384f83b17676953f54f424554407015cdc8fa17115",
+      "after_html_sha256": "068b581bb2440b234df86d730249993eaac32ff9aeb1c19bdea1260ef5d157b1",
+      "before_main_sha256": "7d207849e9339aecd5b56976e40bb1ecd8aa7b336b3700830c636b0d0a9bc7ef",
+      "after_main_sha256": "e743a4286762c525cb7c62dd674ff8b92fae25e8a90e69590eeaf3a539b224ec",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/compare-iso-fire-epd-reach-pfas-documents-fiberglass-facers/",
+      "title": "How to Compare ISO, Fire, EPD, REACH and PFAS Documents Without Overgeneralizing Results | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-compare-iso-fire-epd-reach-pfas-documents-fiberglass-facers.html",
+      "before_html_sha256": "63cb48e597fb77d184f34a655fa9a0f0205f94f92a4d1db1023d60be49e316c3",
+      "after_html_sha256": "09cb510d02f5c2aefbe71d904414da3896452973f6125d1bcf8cd9901adca8c2",
+      "before_main_sha256": "1c280521d36b33abba05c43409a7bb6051364d5fb5bdeab11062cb41cd5e6078",
+      "after_main_sha256": "af909ae8919dfba29f04331bc09f0a7732d9db022f4033eadeeaa192e88bb3c4",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/cookie-policy/",
+      "title": "Cookie Policy | GRECHO Preview",
+      "type": "Policy",
+      "template": "existing-cookie-policy.html",
+      "before_html_sha256": "373597e2269c2a9d85ac0fa9ebb616eb46a20500944338d48a9ab861b412b168",
+      "after_html_sha256": "2bd71d57e7e07ce5946376a06b58b2b482148898772e8c6bfedd2b8a8de90368",
+      "before_main_sha256": "6b24f0194830fce545efd258cb36f0c1babdaefde5559b34171971d15df7c5f6",
+      "after_main_sha256": "52c311d47069120df6c7b704340c17c4d69026099b6ca196d57112e14bb98460",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/diagnose-facer-foam-bonding-failures-pir-pur-board-trials/",
+      "title": "How to Diagnose Facer-to-Foam Bonding Failures in PIR/PUR Board Trials | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-diagnose-facer-foam-bonding-failures-pir-pur-board-trials.html",
+      "before_html_sha256": "06d38ded42a3cc02ee8a2122c76317a15dd4bb48e8287b764def31375811b535",
+      "after_html_sha256": "2f1a4644ef56c8739e344c1dc98d63cb3cb96c90c57e3e4346bb7527946cc8e3",
+      "before_main_sha256": "a7db67febcac7af04baf1aa44a7c39c96495109a4c7659aab63dfb05897aec8d",
+      "after_main_sha256": "efda02dbf0c6e706c2c516e7ee2e21458628156b5bd4bf32b523e63a3820020b",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/facer-basis-weight-gsm-vs-thickness/",
+      "title": "Facer Basis Weight vs Thickness: What gsm Does—and Does Not—Tell You | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-facer-basis-weight-gsm-vs-thickness.html",
+      "before_html_sha256": "2f2a6af5867541cebf125cb8967e947a7c356979d49528a59acc8088b534feb9",
+      "after_html_sha256": "a527bac4785940de296a69d8cbb9638e9c8a2c598b5e92521456a6efe53019d3",
+      "before_main_sha256": "1e999d74fcc0fcb69ea5cb6a7a1f7da03838a3224b043c3c765d5cf9589f651a",
+      "after_main_sha256": "7c9c8a86d812f0a6c8230c58b0162cb1a77368db60fa892f2dd586d85a72057d",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/facer-lot-roll-traceability-board-trials/",
+      "title": "Maintaining Facer Lot and Roll Traceability Through Board Trials | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-facer-lot-roll-traceability-board-trials.html",
+      "before_html_sha256": "fbbd1d34b9f0379747fa3c7e41ed9d6a3febd38a738fd14af4333e5f139966b6",
+      "after_html_sha256": "4df5d71fe20ca766b2b9270dcf2b3f9ee2d6f09e1f0f8a2e110ab6fe4e9b51d0",
+      "before_main_sha256": "d04beae6adacd1959beffa3edad9e97296a63c25c776ebab38dd69d7282f8bf4",
+      "after_main_sha256": "2f9491d5c8c5ef2c17169d64d804b8f859ead228b193eb73ee2aaf52bdd1e829",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/facer-roll-wrinkles-edge-damage-converting-review/",
+      "title": "Facer-Roll Wrinkles and Edge Damage: A Converting Review Before Lamination | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-facer-roll-wrinkles-edge-damage-converting-review.html",
+      "before_html_sha256": "68d2b787a387d2e989e0902b0f9acaa2a30fff894932307d8911f2d94a3a686f",
+      "after_html_sha256": "086c0b6b7a9a748e704835a1ea535bc3c2f5fc728d4e5775584173bab8606afc",
+      "before_main_sha256": "f2dbfb6702734011c598a92f13014c1b3db1ac37c0a34ed97425ae1afd231d0d",
+      "after_main_sha256": "3f37c6d19b8bd82df1f3c3a2a3730f1ea85791fa9da89587f591c75fe7ed0e97",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/facer-test-report-finished-board-performance/",
+      "title": "Why a Facer Test Report Does Not Automatically Prove Finished-Board Performance | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-facer-test-report-finished-board-performance.html",
+      "before_html_sha256": "ed51f8e15898926b4941b49aa80d0cc3972a6ffbd8c994c282d643366299fe7a",
+      "after_html_sha256": "487cb94a5d9d5c86e6b28d7b8d9f7e8f681baf1c746774a4a5900032590b20d4",
+      "before_main_sha256": "08c339ef68e973b16448c04c860711f80de36a936eff768ffd3d11d8d7bde741",
+      "after_main_sha256": "6d40d11a149096ea92957a7e966c08d8416963edcca16dd0d491c72b3d61dded",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/fiberglass-facer-material-identity-before-qualification/",
+      "title": "Same GSM, Same Color, Same Facer? How to Check Material Identity Before Qualification | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-fiberglass-facer-material-identity-before-qualification.html",
+      "before_html_sha256": "a7b6df1e91b35b2d958c2819e41b622ca6399b3bb6f8a416e5dda9ec44a4b5f0",
+      "after_html_sha256": "cf72fdcf494142dff6dbebbfe051f91cf520d5c32ad36dd2fd9323c0a31c4320",
+      "before_main_sha256": "1224c15351b41bdf44929f0319074cc5c880e7fcb1bc76eea716c29c61076f11",
+      "after_main_sha256": "69f9aa0d4e2874e76ebfc307bda6c536efcb82839aeae2d93ec19e5f4eeb8836",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 3,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/fiberglass-facer-review-for-acoustic-ceiling-panels/",
+      "title": "Glass-Fibre Facer Review for Acoustic Ceiling Panels | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-fiberglass-facer-review-for-acoustic-ceiling-panels.html",
+      "before_html_sha256": "6148dbc414189ef6908f7a9a1ec4dddb2ecbc7b66095a80ade66c61394c0f2ec",
+      "after_html_sha256": "547f627de25a22b119c254da743601e24dae32c4f10093f780613e1cef2ca821",
+      "before_main_sha256": "fc6e64670b717e537f2e46000350896ff325d76f7ec5af2331d8ad5e3e8cd375",
+      "after_main_sha256": "9290849c9223c0414d07982528077227039b6ea146d33000d1d067e77bce9ad0",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/fluorine-free-thermal-insulation-facers-pfas-evidence-boundaries/",
+      "title": "PFAS-Related Evidence for Thermal Insulation Facers | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-fluorine-free-thermal-insulation-facers-pfas-evidence-boundaries.html",
+      "before_html_sha256": "33583cf3771b06a12457114eb5e546864579eaa2715fdbf3da1c6e48a82c1d1b",
+      "after_html_sha256": "a578515a83418d42d2e2917e5376b2e15ef2fc9432f86e7387fce61469863019",
+      "before_main_sha256": "39ddc2a091e8cffd4eb898ab151aa5f57d0ac0903030ea85b29aebb5feeb3b57",
+      "after_main_sha256": "836212db8cf29c1b7d48fd9aff2df9426d912f70632168046df822da977c4211",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/foil-composite-insulation-facers-reflective-surface-directions/",
+      "title": "Foil and Foil-Composite Insulation Facers: When to Consider Reflective Surface Directions | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-foil-composite-insulation-facers-reflective-surface-directions.html",
+      "before_html_sha256": "b8a89925bd6e6baef26505196165b410cd15e34ba5318c074e346105038e37a8",
+      "after_html_sha256": "919f73dc2c0527c0e2f9352e6cddae52101d93e5ceeacf5f11303a042cf1d71d",
+      "before_main_sha256": "2dc85bd91acdd6ebf9deede648460e37052e2c1f81b88c72ebb51297ab66e5c0",
+      "after_main_sha256": "f7a0b830412140bb2755a69eed859833a2cb716909f8f78a86434d62fa829e5a",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/glass-facing-route-gypsum-board-applications-sample-review/",
+      "title": "Glass Facing Route for Gypsum Board Applications: What to Review Before Sampling | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-glass-facing-route-gypsum-board-applications-sample-review.html",
+      "before_html_sha256": "883e795b8ac3358dee27665eb045c54c1d906344fce3381c03091d01dde46b61",
+      "after_html_sha256": "8ad32ca4ec6b1b298ce930c003b31ec3639a04e8babba342dd461da4deefc567",
+      "before_main_sha256": "f28b76ddc632394cebfb8cc2982f573af82c55b4bd2d40844a1e915d69bfd960",
+      "after_main_sha256": "6b2a43cdfa91e254f3d916bf7aefe1717597ce15c3d5efd17653e16fb81209a7",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/glass-fibre-facer-tensile-data-md-cd-test-conditions/",
+      "title": "Reading Glass-Fibre Facer Tensile Data: MD, CD and Test Conditions | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-glass-fibre-facer-tensile-data-md-cd-test-conditions.html",
+      "before_html_sha256": "387d60c083f38bff13a18fc7a60452e8f9e84b1d40c63a796376a5e7e74f00df",
+      "after_html_sha256": "d29ea2150fe6a9d0bd86758d34cb1a6aedb0cd81e917b6fb169d3111fb257968",
+      "before_main_sha256": "69adc72f9c1e1eb1b04bef3f38bc97fbd5813ddf978478f208bc625fa9741c2b",
+      "after_main_sha256": "0ba1e3e8cbd5e38c79d73b9d1a28f40c68f0b79cee3a59dd0a516ca8349a0e16",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/gypsum-board-facer-surface-finish-documentation-questions/",
+      "title": "Surface Finish and Documentation Questions for Gypsum Board Facer Review | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-gypsum-board-facer-surface-finish-documentation-questions.html",
+      "before_html_sha256": "1cb0446224449a3d986c570b9536f55b921dfd9e91a8556cea1d38e13ea97b20",
+      "after_html_sha256": "b6ac775ea6862309b032ac9950977ae8b416d150c427634ffb6555bd8603a16b",
+      "before_main_sha256": "a8ad63d57562eacdb914fe20870c4d7bec66b9f9a237b40aefbf9e097f90f38d",
+      "after_main_sha256": "4c22aa7e5b56bedd4f7db593dc941e16d5411f65f67a1e986311a7b86c6087f2",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/gypsum-board-facer-surface-total-water-absorption/",
+      "title": "Gypsum Board Facer Changes: Surface vs Total Water Absorption | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-gypsum-board-facer-surface-total-water-absorption.html",
+      "before_html_sha256": "c60c9a2f6c25c11888d9f2fb7d14aec5fe4ebdb26670cad7541a69a5ae66c793",
+      "after_html_sha256": "9c4ad117a41ec8924ed4387176faa0d831b7723470c348a8f86fdfa3ff99bba0",
+      "before_main_sha256": "775cb4c1ad6c30ec6ae7a62775eeb3754881d30346e47ef4b9310ed19dd2a81e",
+      "after_main_sha256": "2ac7f82fc282e513a21aee99c0d09fe3d2a95b55d4c2ccb739bffd6d3d145b21",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/incoming-facer-roll-inspection-board-line/",
+      "title": "Incoming Facer-Roll Inspection Before Release to a Board Line | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-incoming-facer-roll-inspection-board-line.html",
+      "before_html_sha256": "4c6c609994d751eb102a0cc48630540b0485ec043d2fd3a21ca0afedff6db753",
+      "after_html_sha256": "6930f9f96f77c03c2f2c89cd16e1d5b03cd9fd297d29e754e9b9b4c619cf3b06",
+      "before_main_sha256": "bd4168a941d0b11be099c17c4a00ee7e77d8f762d87fb6e00f8dba0175c1e8b2",
+      "after_main_sha256": "b5ed0749833527ad10565d46395558b801865dc406b8ca5bfa57be507b9a16ac",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/insulation-facer-air-permeability-vs-water-vapour-transmission/",
+      "title": "Air Permeability vs Water Vapour Transmission in Insulation Facers | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-insulation-facer-air-permeability-vs-water-vapour-transmission.html",
+      "before_html_sha256": "65cf13df7efddd62c881f6279ecefd3ba2cf0e53d351ce4269960b43e6428ac9",
+      "after_html_sha256": "3dea5153e5e47369670aef14d0d0dbb284bd647f5590c0a653f2b4b60ef33614",
+      "before_main_sha256": "3f63bceefb995fe4f8817f2dbe6fab0793b35ad2fed959d47ef24104e7b195e2",
+      "after_main_sha256": "3dc74733dbd5be3c6483a4e2d2b5917918638a471529c9e5b03f8ce61af805c8",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/low-airflow-facer-pir-pur-trial-process-window/",
+      "title": "Why Can an Ultra-Low-Airflow Facer Still Fail a PIR/PUR Foam-Board Trial? | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-low-airflow-facer-pir-pur-trial-process-window.html",
+      "before_html_sha256": "4a954bcb9aeb4e1d3354ff7d3c90c2ea3964fc0eb3ca9323c5e002e2ccc96666",
+      "after_html_sha256": "27ed10896a9ec6f208ba136274352523a97282278c3cc0c7beb473981deb3f68",
+      "before_main_sha256": "55c45becdd05952e96e12fd1908f1ede9cd02565fd7a64e4cd817cea2e42973b",
+      "after_main_sha256": "19f718984c3b3e85be8755716c8f2f4cf7d1184d05b1270e3fbc73767d3bac19",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/mineral-wool-board-facing-service-temperature-limits/",
+      "title": "Mineral-Wool Board Facings: Insulation and Facing Temperature Limits | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-mineral-wool-board-facing-service-temperature-limits.html",
+      "before_html_sha256": "4ea2aaf7cb86f26f9cfaa4edd63efc5f64d56c53aab01300234652e07adceb64",
+      "after_html_sha256": "44ad6980a5ff722d13516e5a5220114287c3caf804d5daa2732b08e3c20c9c5b",
+      "before_main_sha256": "82e893f3b06675f5d22ed25d8b1d539ef0d57dc2645d4c7e008116d1b43d6101",
+      "after_main_sha256": "1cdc85e967556003f8c32bc74f5b6066b9caaadb0e9b8223823885cf278619d7",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/mineral-wool-facer-sample-qualification/",
+      "title": "What Should Be Fixed Before Qualifying a Facer Sample for a Mineral-Wool Board? | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-mineral-wool-facer-sample-qualification.html",
+      "before_html_sha256": "68a97a9fe003b2580361304e36a3c3af4efde40c3ea155980cae37f2fcd8da00",
+      "after_html_sha256": "e65fa9a18c1b10c2ae82ed9a7d7587b6abb269f10aca104ef28fd9748fffa7e7",
+      "before_main_sha256": "7cf511b682460dc867d60d4281dd9e494ea881c355ed950efbe5ad9f3d805066",
+      "after_main_sha256": "de7e0ef7e1a2d0e91a1908614c971f06f0ad8bb290d3029235855ba27b154a3e",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/moisture-resistant-fiberglass-facers-gypsum-board-checklist/",
+      "title": "Moisture-Related Review of Glass Facings for Plasterboard | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-moisture-resistant-fiberglass-facers-gypsum-board-checklist.html",
+      "before_html_sha256": "6f2c386fc79e5e1007e4e60cdc6059d062dc364777c4feaa130f869d0ae65678",
+      "after_html_sha256": "6c13e975026ed61240e1f2f66ae27bacb3318362a3d12f2138013761e19f809d",
+      "before_main_sha256": "f4d802d407db28853e6fd16b8782b3a8fc0c1de9e7c80aea2ee4e33e02dc6e8c",
+      "after_main_sha256": "661d4d9e1669c64be8babf092a2e14df4f6775330ee776ff583cc6e6d9242810",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/paper-to-glass-mat-gypsum-line-qualification/",
+      "title": "What Should Be Checked Before Replacing Paper Facer with Glass Mat on a Gypsum Line? | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-paper-to-glass-mat-gypsum-line-qualification.html",
+      "before_html_sha256": "49286c5d4e47dba4f02cbd9551ac48a5341e11ba0b1e21fdd75a181204dfa140",
+      "after_html_sha256": "1ada6b0447424557d5f6e3d003115e165e9451f6022b51dc77aa056562903533",
+      "before_main_sha256": "37757aeff6fba5994984ece5ed08a17a3531758581eb3be8d181c3aeef3864fb",
+      "after_main_sha256": "9ac5efeef3e8c1132530aafc6da4aa2440ebf89fab343c634d0b8dfc81490f9c",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/pir-board-facer-gas-diffusion-thermal-aging/",
+      "title": "PIR Board Facer Changes: Gas Diffusion, Barrier Continuity and Thermal Aging | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-pir-board-facer-gas-diffusion-thermal-aging.html",
+      "before_html_sha256": "56c82036c62d624c5971995fb4981697766f6cb7bcfcada1d23d333b497b6b00",
+      "after_html_sha256": "4fb8d7b2c4243f038efca9574000d3757bc94d2303aef16ac8ea1f4d606196e7",
+      "before_main_sha256": "8de2a35ebac917685536c2946efa11c9d102c03a4b2694a0e1bdd88f700a01cd",
+      "after_main_sha256": "fdf086ade3acd9f2393af19327a2a5a88bde341f676f623fe0f0ed667d6af787",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/products/bitumen-heavyweight-composite-facer-pir-pur-xps-polyiso/",
+      "title": "Bitumen & Heavyweight Composite Facer for PIR/PUR/XPS/Polyiso Boards | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__bitumen-heavyweight-composite-facer-pir-pur-xps-polyiso.html",
+      "before_html_sha256": "fd76c23678d181bc174465da8f9ddafb33f94d8602a991a5aaeaeff092baa6fd",
+      "after_html_sha256": "11554a92d9bb1915ccc67c8f1b087cad85bd396091bd27b0136b292e3fecaa3c",
+      "before_main_sha256": "f528ebf89803c2f83c467a783c58799c508b08ccdec52e7b65414707db4df106",
+      "after_main_sha256": "a7876dfde978adf0022289db5ed4e72984d466edbc5208543a60c0f517b5997e",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/black-matte-black-acoustic-facing/",
+      "title": "Black and Matte-Black Glass-Fibre Facing for Acoustic Panels | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__black-matte-black-acoustic-facing.html",
+      "before_html_sha256": "9ddf0e520816497ace525421cd479d0756e564935366631ac133e02e188cf004",
+      "after_html_sha256": "f3e63e67868f5c6413ccc03d359cedc63c4e976746a9ccb10d13adbcc9e34742",
+      "before_main_sha256": "897794dd856b02b7980c5894fd51a758ddf6c5518c71aeccac0edd222f4817d1",
+      "after_main_sha256": "a2f7717c56f6b1237950397e18035a7a6b954715ac2b8a9433edd5652b696f99",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/cleanable-white-dotted-acoustic-facing/",
+      "title": "White and Dotted Glass-Fibre Facings for Acoustic Panels | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__cleanable-white-dotted-acoustic-facing.html",
+      "before_html_sha256": "90d934de5a53d94ab22b7c6c968a32b94a4536ba9fa00e8fc3583eafe04d1c9e",
+      "after_html_sha256": "092ff1be742a80cca6c6c5d2ccecb003d75c01df6e2ca9b9d5732b8870518081",
+      "before_main_sha256": "5948425238c7ef8c948e33eb1773004bdd9be91663d52aff7cd113919265e6e2",
+      "after_main_sha256": "c941909e3ef11be65899d7da3a11839a4f4b5312164ab9aed3bbf773df6d3b43",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/color-acoustic-facing/",
+      "title": "Coloured Glass-Fibre Facing for Acoustic Panels | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__color-acoustic-facing.html",
+      "before_html_sha256": "6e588ead7f39084b24eddd158913d090d94d201dac1a83e9408b27c72906f408",
+      "after_html_sha256": "3c4761b0b916d74e57eacc195d41f0ceccbf6e5733402f2cb218d5de051744db",
+      "before_main_sha256": "8ce9e1418decd112cbb759c58128504bec40869acc49f1fc4bf5822676ac68c0",
+      "after_main_sha256": "69d5a603a70ace2a0d3ea305393c5ba756e30096d99a9aea5cc30d3856910375",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/dotted-acoustic-facing/",
+      "title": "Dotted Glass-Fibre Facing for Acoustic Panels | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__dotted-acoustic-facing.html",
+      "before_html_sha256": "c88a789eaf131f246176d7d4888cf3b80ab44953cba60699c8de5123bf68866a",
+      "after_html_sha256": "cdb0cd65dc13b3a62a6b3a96ec02896f08e39262440c9940a484f7cb3e9882b4",
+      "before_main_sha256": "13aef708fd72a096c054b3140db2a65e6a0ae8dd9dab1a911fa471b283770a11",
+      "after_main_sha256": "7f294c39f764e128095f33d929ab174d7bdaa358543c4174d1f14b0e4ebb22e0",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/fluorine-free-thermal-insulation-facing/",
+      "title": "Fluorine-Free Mineral Wool Insulation Facer Series | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__fluorine-free-thermal-insulation-facing.html",
+      "before_html_sha256": "0d972f3ede5d8bb71c5b67106e2decad5a180b4569f84f21d6c42a3838005d7a",
+      "after_html_sha256": "13b0342147d52e0a112b51e8ee63da2f2c6c243a4e15c53c67ee429a98120ac1",
+      "before_main_sha256": "1dead3068c0a2d506224d3626fb80b678370e42ebc9f280f3ee74667dba73677",
+      "after_main_sha256": "c71b0d1085512baffd3e49a9235c8a40f55942532d63ccdbd22948934d5379e7",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/foil-composite-insulation-facers/",
+      "title": "Foil and Foil-Composite Facings for Insulation Boards | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__foil-composite-insulation-facers.html",
+      "before_html_sha256": "99937cd0d2698040f8b7e165f6e72bf405c9ad8a20f911d0524e83cbf640c474",
+      "after_html_sha256": "f2375a1b4c07115b073b339732e24b087d3a3d91168229bbd43b631edd3d1c6f",
+      "before_main_sha256": "44147a9e3f05452f560bdf865bdef3174bb81e431782a94ae98fa40c1b368a28",
+      "after_main_sha256": "4be733fe1c76f67393fbe464eaf6202f6452b9538f59d90bd39a85dab7a325b4",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/glass-fabric-composite-acoustic-facing/",
+      "title": "Glass Fabric Composite Acoustic Facing | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__glass-fabric-composite-acoustic-facing.html",
+      "before_html_sha256": "b3e7e4246b4f0995eb25f7efff344766c6d95723247ec747c217081b5af9564e",
+      "after_html_sha256": "b0f665c94cd395002f9fb482282d42cc453c1593c8685c6e79daeb87fc00f428",
+      "before_main_sha256": "f7f4c9b8e20feadfefce8c74019977e08d11cbe96420faed3c51d07cbdf757a1",
+      "after_main_sha256": "4e4d1b07302f6ac8f2e3a36fa0b5744928b78ee9f91cb1932ed13680221b7448",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/glass-facing-route-for-gypsum-board-applications/",
+      "title": "Glass-Facing Routes for Plasterboard Applications | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__glass-facing-route-for-gypsum-board-applications.html",
+      "before_html_sha256": "035953a68f1d93714dead947dcdef2691950e11c8bd1ef48d34763eeb1d58090",
+      "after_html_sha256": "f2bc924f69cac3c9c101a88d9a4acde462eb910471263db6ae087eb63796e377",
+      "before_main_sha256": "02ba09c3b2b764bfdc8f49813090975fb3aa0f92056ad04975dd133f8e1c0ef8",
+      "after_main_sha256": "78c6ee82f8a6513aa1c6a935259105eb358b8e5cf7bca08db12ec369a5c5144d",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/high-definition-wood-look-decorative-glass-facing/",
+      "title": "Wood-Look Nonwoven Glass Facing for Acoustic Ceiling and Wall Panels | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__high-definition-wood-look-decorative-glass-facing.html",
+      "before_html_sha256": "d78d1eba12462c7918b111439448c3d9d50c717c1d28721dc3572cff39af59bd",
+      "after_html_sha256": "c65082bd2b8837ec8acdfa306020895783b5e682fd308658e611eb025be27ec7",
+      "before_main_sha256": "54f1b3f0476b48837537de7e6de629a958ea90e3236c60c16d8b2c195ae40b99",
+      "after_main_sha256": "000527f0ba6cdd94a52b988d8ac644394cf543fce1504a188f2f092aa20be4d6",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/reinforced-composite-facer-pir-pur-xps-polyiso/",
+      "title": "Reinforced Composite Facers for Rigid Foam Boards | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__reinforced-composite-facer-pir-pur-xps-polyiso.html",
+      "before_html_sha256": "aee41532f08b62261bf29be5128458c0fa0ff233a3150f7c8ee7f1b8b1ef4b66",
+      "after_html_sha256": "4e7aa17995c82627daf5499df7f1fd55bad4ca916fd545daf86ccde0e6eaec54",
+      "before_main_sha256": "ea2abdc8b55cdc0ee99dccc253bd977aa8c9ca856c8c3aa448f3c5de9761b8cd",
+      "after_main_sha256": "2a20e8e827740a5458ea7acd472ca29ec018324d88499286cae9b9a932eff80e",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/sanded-acoustic-facing/",
+      "title": "Sanded Acoustic Facing | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__sanded-acoustic-facing.html",
+      "before_html_sha256": "c1bf50ba593c3a80316e8590bea76f1344413d00049daede255ded9187eddf79",
+      "after_html_sha256": "01c6d1363e46ccf06280fcd82e9435b8c67b0336ecadc459b283dd3882e0ff89",
+      "before_main_sha256": "fcb27551f78eb535ad7f1feae5b0764678354f616dde2de1b74026bc71593f92",
+      "after_main_sha256": "6e3ce65cef47470bd1c406ca49a05cc0ff1124b3cc0444dac5307205ba4a99d1",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/silicone-coated-glass-fabric-acoustic-wall-panels/",
+      "title": "Silicone-Coated Glass Fabric for Acoustic Wall Panels | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__silicone-coated-glass-fabric-acoustic-wall-panels.html",
+      "before_html_sha256": "8ce5dbe9f81125e56dd6fe9a4234e039be8bb915079e342aefc5fc7d8419d4a2",
+      "after_html_sha256": "167e634fade7b6214c17dd66864ddc25d19544f66d24ca7671db67947180e42c",
+      "before_main_sha256": "f04d8a398de52a9bb158b02ee9827deed7488490765e8781170f1316a632ac73",
+      "after_main_sha256": "b3e2803e844784ba2d87b39da8272948b130c62eb8a1a893bc38dedf9e030642",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/ultra-low-airflow-glass-facer-for-pir-pur-foam-boards/",
+      "title": "Coated Glass and Aluminium Composite Facers for PIR/PUR Boards | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__ultra-low-airflow-glass-facer-for-pir-pur-foam-boards.html",
+      "before_html_sha256": "1df430556bfa6fbfbc5992f2f8f503ac8f9f8c6be867dd80e80a09f8cf6a6db3",
+      "after_html_sha256": "6fc407d530d964f37f196e82662579498d92fd1ba7ef6d29d45d1257c329376b",
+      "before_main_sha256": "3302d3f8370e6b76bef990d334f5a211936cdfeaa273a11079abe56e11045dbe",
+      "after_main_sha256": "0891a4dc9a40eee68a49a44ae86f8e180614b3ee5409a416de89586cf53eb84c",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/products/wood-look-fiberglass-fabric-acoustic-facing/",
+      "title": "Wood-Look Woven Glass Fabric Facing for Acoustic Panels | GRECHO Preview",
+      "type": "Product Route",
+      "template": "existing-products__wood-look-fiberglass-fabric-acoustic-facing.html",
+      "before_html_sha256": "6dfa85b2ad6c066d93f3be034b77bf168bbe5b9dc45efecf598835ce8b023940",
+      "after_html_sha256": "92001fa52e2c58cd92c7da4ba6d05977eef02896f2bc36f9a5d2a7a01c0db6c3",
+      "before_main_sha256": "3ffd8216e871c584abe534792d649c90f78c9bb7cca5acce0d1bdfeeadc9ea38",
+      "after_main_sha256": "06eb8d7e1e399a0ecf90d9370e1fb2753c4b377c47d6edd4809940d0ccdf5e0a",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 3,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {
+        "Complete product reference": 1
+      }
+    },
+    {
+      "route": "/request-tds-sds-test-reports-fiberglass-facers/",
+      "title": "How to Request TDS, SDS and Test Reports for Glass-Fibre Facers | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-request-tds-sds-test-reports-fiberglass-facers.html",
+      "before_html_sha256": "1b8666cad0afceeadffd8849616842dd158f1c1fbf654092c51ea99c1b983a9c",
+      "after_html_sha256": "28cfefd287d9025ee932fcbb2644d3cf9d0415a51f50545a53cff7c7e8fb9612",
+      "before_main_sha256": "f825ff564dcd8bbd56b30f9fbf3422ccb2b1e5c347b40f580b69d50018b5a421",
+      "after_main_sha256": "25ed3acd43cfd7bc6a04deda5a4bf724599c3a18491a8c0f0f243feec4020cdd",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/sample-approval-vs-supplier-qualification-fiberglass-facers/",
+      "title": "Sample Approval vs Supplier Qualification: What Still Needs to Be Verified Before a Fiberglass Facer Enters Production? | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-sample-approval-vs-supplier-qualification-fiberglass-facers.html",
+      "before_html_sha256": "f26f464b05ed1e8aa443ea7297fa2dad38b642352f493013509aa373d85b6958",
+      "after_html_sha256": "4e5f640cf9f1504fe5433cda54dc80d3c52ead860357f67dd31a8d97bdd552b9",
+      "before_main_sha256": "67d7bc3e7c850e9ccb2bc628981464ee93f1667444410730e378906fe868dc43",
+      "after_main_sha256": "7bd503fa8cbcceeb16cad1254590829ef8c6084a3cf8e73fb6b6c5649011bbd4",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/sample-review-checklist-board-manufacturers-fiberglass-facers/",
+      "title": "Sample Review Checklist for Board Manufacturers Evaluating Glass-Fibre Facers | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-sample-review-checklist-board-manufacturers-fiberglass-facers.html",
+      "before_html_sha256": "4a23378630bb6a87f24063872be33fcad81f571d2b7dcd11664885973583254f",
+      "after_html_sha256": "1b31000baf5ef3ee28e3aaa276577adfaca1901139654b44cf874dd1a7feb555",
+      "before_main_sha256": "7d5e50c37e44147f1f60a5e6777d6f5374d644d27902278a1a9d919066ee2d34",
+      "after_main_sha256": "57eaeb6b2b039d5798f28a3ca343a47998bddf3f09700632b63cd4abbb47d50f",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/solutions/gypsum-board-facers/",
+      "title": "Glass-Facing Directions for Plasterboard Applications | GRECHO Preview",
+      "type": "Solution Hub",
+      "template": "existing-solutions__gypsum-board-facers.html",
+      "before_html_sha256": "c4bdccb76625e44e5f7d1137e6f2afb7de015ecf95cc4f40fc5fe1baadd25569",
+      "after_html_sha256": "8e46a4bafd6fbb563ce055cec3ee1115a55bd77bcd5e2e97aca3f7037ba4b848",
+      "before_main_sha256": "bbfe116add244fe0a9f40231ee2d4bb0978466d44cdeb969599e4c33ddf1ffcb",
+      "after_main_sha256": "9a6d9fa34e3264806e354a2d75930de255e453484c644741caaa09d49f02c2ea",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 6,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/solutions/mineral-wool-insulation/",
+      "title": "Glass-Fibre Facing Directions for Mineral Wool Insulation | GRECHO Preview",
+      "type": "Solution Hub",
+      "template": "existing-solutions__mineral-wool-insulation.html",
+      "before_html_sha256": "c06dc796fa16035e10f0d170b136575c0d63dc90f38fc6b7c2da1705d0bc8b14",
+      "after_html_sha256": "a29fa957bb4df39da6ccd492214ac253d52fed84c759337de1236ed5e2c149ce",
+      "before_main_sha256": "26051f9e2aff2a06475a59d983396ff262ea54d727c52031d49452a9bf9ec675",
+      "after_main_sha256": "dfc532a06dc98dc8c8c0f8106b07b30670e749de8accec89a8dd6d23faa8041e",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 6,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/solutions/pir-pur-etics-insulation-facers/",
+      "title": "Facer Directions for PIR/PUR Rigid Foam Boards | GRECHO Preview",
+      "type": "Solution Hub",
+      "template": "existing-solutions__pir-pur-etics-insulation-facers.html",
+      "before_html_sha256": "308c91d35225283d1ae229bcabc048f7cec7af6def85b8c6ad0a62d7cf165531",
+      "after_html_sha256": "4b1bb54e8bcd6ae6530193fcdb0f2cab94f296cf708e776d3430c03c270ffc01",
+      "before_main_sha256": "872f8c5d22c06f2f8c61d2ba02e98bbca255e6aab9c161fe89e2546edf9c0c82",
+      "after_main_sha256": "8c54202af6b743b359aced39adbfbe0fd20c32fb9972d1c087eb84a70eaf46ad",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 6,
+      "table_count": 0,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/successful-facer-board-line-trial-evidence-scope/",
+      "title": "A Facer Passed One Board-Line Trial. What Does That Result Actually Prove? | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-successful-facer-board-line-trial-evidence-scope.html",
+      "before_html_sha256": "4675d6618b6904ae20dc828e05e8e5f8dbbd71b7a03ba9cd560eca7b7643ba1d",
+      "after_html_sha256": "e48b03493eb7b4f010bd77f1354d21f65b7113b2efb0f3fb7814ce7a0faee67f",
+      "before_main_sha256": "5238aa4142c03e975e5f7fb12978478e52a955697dfdff58606ac57ee6c17a2d",
+      "after_main_sha256": "9a033ba1230ce42b54ab7bfe2a52ef4e74c3c58d23f33a541d2b8f0021d76e5c",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/ultra-low-airflow-glass-facer-pir-pur-review-criteria/",
+      "title": "Air Permeability Review for Glass Facers on PIR/PUR Boards | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-ultra-low-airflow-glass-facer-pir-pur-review-criteria.html",
+      "before_html_sha256": "f5432e5f782e73fa6966a3bf10b412810b840956b5f67f2758c82cbb006ae0a2",
+      "after_html_sha256": "b49cfefe8139d35cca91bfea5bca3f8989fe8b093f87067a0c081152e6adfea6",
+      "before_main_sha256": "e30c9a76b95020d398f3e4ca24e91312e5188801cc79809cb2f5fa1fe09248bb",
+      "after_main_sha256": "a840bd87f6cd94e7d33f7b402229d741ecd3f78fcc758da8f52aa854a523e570",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/visual-surface-acceptance-coloured-acoustic-facer-trials/",
+      "title": "Defining Visual Surface Acceptance for Coloured Acoustic Facer Trials | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-visual-surface-acceptance-coloured-acoustic-facer-trials.html",
+      "before_html_sha256": "d33fe06ee8765c10852fa79ff39644b5bf2081cec0c448ab5ff0a26a21d9b21d",
+      "after_html_sha256": "22b90f9c1c982fce727e49a7db2e54dfbdf8f41ec7981579fa8556c42546a893",
+      "before_main_sha256": "9853d60fd151fb121168b2a87566247a778dd3431546dd2161e99df7fcf4a6cd",
+      "after_main_sha256": "7585483ba493b51aa8c114f6438ef918cfab66542a3f290e3ba9eadd236a8ab7",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/white-black-dotted-acoustic-facers-comparison/",
+      "title": "White, Black and Dotted Acoustic Facers: How Board Buyers Compare Surface Directions | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-white-black-dotted-acoustic-facers-comparison.html",
+      "before_html_sha256": "df2db08b2d3f1e7de20238c00c59adc5624f3a758dbf6ad1758c81bae025d3a9",
+      "after_html_sha256": "ca93635055d6dae880dc4993e48a4a240b88bd86337ed67ce46a210e6b9967cb",
+      "before_main_sha256": "1279adfe23d154835e8af9fbe67629ee6869058b0ecb3d9a8b96e66062a39e41",
+      "after_main_sha256": "e2b6999bc5af1b4de671b876d64a30e95c124c2eeaa31e2a02fe86e431b90de8",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 1,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/wide-facer-roll-usable-width-board-coverage/",
+      "title": "Wide Facer Rolls: Specify the Width That Reaches the Board | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-wide-facer-roll-usable-width-board-coverage.html",
+      "before_html_sha256": "801923ea515cd1b6794eef2f42967ed9ca1882fb4a7af5efb0f071c059f56b2d",
+      "after_html_sha256": "cd9b4efe1551c574f3e04adbd0ed614a2cee83ab7080ebd5154d91ead699a3c7",
+      "before_main_sha256": "a76430650c90ac6853c10dbae73ef26b2318e01e8f987ca62ffd26be350be705",
+      "after_main_sha256": "febd3903d7eb69a118082163adbe11f07388eb474af4557cbf1b7554379e0dc0",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 3,
+      "removed_text": {},
+      "added_text": {}
+    },
+    {
+      "route": "/wide-width-facer-trial-readiness-checklist/",
+      "title": "What to Check Before a Wide-Width Facer Trial on a Continuous Board Line | GRECHO Preview",
+      "type": "Other",
+      "template": "existing-wide-width-facer-trial-readiness-checklist.html",
+      "before_html_sha256": "ec16c7fb33df177ac1367a0cd5790d3e5f7718e75916055e5c41bee416adab74",
+      "after_html_sha256": "dcfab837a8772872f5190e4169cc4cb8f85197fbbc48069b87489eb678fa4e7d",
+      "before_main_sha256": "89e6e04e60814039d7e22de6fc3fed1a14e45e759774963ed1151d8de570fc2f",
+      "after_main_sha256": "a1955458bf8852314d08dc696d6265fac860531f8c5356516968a68ae4eae393",
+      "checks": {
+        "all_original_text_nodes_retained": true,
+        "only_approved_disclosure_label_added": true,
+        "heading_levels_and_text_equal": true,
+        "ids_equal": true,
+        "urls_equal": true,
+        "images_all_attributes_equal": true,
+        "tables_equal": true
+      },
+      "image_count": 0,
+      "table_count": 2,
+      "removed_text": {},
+      "added_text": {}
+    }
+  ],
+  "excluded_and_accepted_pages": [
+    {
+      "route": "/",
+      "html_byte_identical": true,
+      "before_html_sha256": "ebef66ccc78a85ac5db1dc59c9d2a88d5657ab74d68b8344cd513bf7eb7ea0b9",
+      "after_html_sha256": "ebef66ccc78a85ac5db1dc59c9d2a88d5657ab74d68b8344cd513bf7eb7ea0b9",
+      "before_main_sha256": "634b312e3e9f36e0fbc62415893a2ea8403911705ae88f13b8fde0ef6ee9919a",
+      "after_main_sha256": "634b312e3e9f36e0fbc62415893a2ea8403911705ae88f13b8fde0ef6ee9919a"
+    },
+    {
+      "route": "/about/",
+      "html_byte_identical": true,
+      "before_html_sha256": "3ecef91186de6fbbdf2d2585e5f1f09351adfb9f21c710b74207b2401127eabc",
+      "after_html_sha256": "3ecef91186de6fbbdf2d2585e5f1f09351adfb9f21c710b74207b2401127eabc",
+      "before_main_sha256": "c1edae1aedb2f75ee8d3e31f571a648f0a696158b1fe6fb9c4fac3e3466bb4b2",
+      "after_main_sha256": "c1edae1aedb2f75ee8d3e31f571a648f0a696158b1fe6fb9c4fac3e3466bb4b2"
+    },
+    {
+      "route": "/case-studies/",
+      "html_byte_identical": true,
+      "before_html_sha256": "19821dd5ea4d27709e85f1a1321da28830e4eef5a779d6e1614ef356c71919e8",
+      "after_html_sha256": "19821dd5ea4d27709e85f1a1321da28830e4eef5a779d6e1614ef356c71919e8",
+      "before_main_sha256": "67cbb0a3150e89cf9a8f78246c4765729af9b9af91d9d80428bbcc328ca3aa4c",
+      "after_main_sha256": "67cbb0a3150e89cf9a8f78246c4765729af9b9af91d9d80428bbcc328ca3aa4c"
+    },
+    {
+      "route": "/class-a-a2-s1-d0-noncombustible-facer-evidence/",
+      "html_byte_identical": true,
+      "before_html_sha256": "277bac26432e5d2fe2c644b0b92f45a2f32f385a5685e1959b7f9efdbdd4347b",
+      "after_html_sha256": "277bac26432e5d2fe2c644b0b92f45a2f32f385a5685e1959b7f9efdbdd4347b",
+      "before_main_sha256": "d95a8a6250d439e4d80a98dadded6f74a0718fea170cd74ae436cc5f293283af",
+      "after_main_sha256": "d95a8a6250d439e4d80a98dadded6f74a0718fea170cd74ae436cc5f293283af"
+    },
+    {
+      "route": "/contact/",
+      "html_byte_identical": true,
+      "before_html_sha256": "3b2303370f6fde940bf9d8db748aa9a6305a548fedc52f80a9e495e646e4f83a",
+      "after_html_sha256": "3b2303370f6fde940bf9d8db748aa9a6305a548fedc52f80a9e495e646e4f83a",
+      "before_main_sha256": "266e30a27b8a74d884051345eae9d3594f4230c39b4a9d1110186548c2cb9a1f",
+      "after_main_sha256": "266e30a27b8a74d884051345eae9d3594f4230c39b4a9d1110186548c2cb9a1f"
+    },
+    {
+      "route": "/europe-wide-width-facer-initiative/",
+      "html_byte_identical": true,
+      "before_html_sha256": "4ddc9a95ddc5a4c3c4518617ada254deb9410d314df9f9de4bcfe43eb4494587",
+      "after_html_sha256": "4ddc9a95ddc5a4c3c4518617ada254deb9410d314df9f9de4bcfe43eb4494587",
+      "before_main_sha256": "a2557e0d75e0bfd8483801e3c501e54a8d3f66f416952bdb8174a19047897f0e",
+      "after_main_sha256": "a2557e0d75e0bfd8483801e3c501e54a8d3f66f416952bdb8174a19047897f0e"
+    },
+    {
+      "route": "/facer-technical-data-typical-values-specification-limits/",
+      "html_byte_identical": true,
+      "before_html_sha256": "0ba0ec05fcd4cb5902c0b02cf532e9001e9058402324cacb4f0ba2f405da7455",
+      "after_html_sha256": "0ba0ec05fcd4cb5902c0b02cf532e9001e9058402324cacb4f0ba2f405da7455",
+      "before_main_sha256": "bb66aac209be898f0030f09e63791e88b0592efccc7a5a0420bd521640f8d04e",
+      "after_main_sha256": "bb66aac209be898f0030f09e63791e88b0592efccc7a5a0420bd521640f8d04e"
+    },
+    {
+      "route": "/faq/",
+      "html_byte_identical": true,
+      "before_html_sha256": "5421125264cd01e744d7d6d90c354ff88cd3fcbcbec2890b06411bef05104ed6",
+      "after_html_sha256": "5421125264cd01e744d7d6d90c354ff88cd3fcbcbec2890b06411bef05104ed6",
+      "before_main_sha256": "e9067ca6adaf6b605c8b79e553a408eebd6b42c0645eff0f9694b863664d51d3",
+      "after_main_sha256": "e9067ca6adaf6b605c8b79e553a408eebd6b42c0645eff0f9694b863664d51d3"
+    },
+    {
+      "route": "/insights/",
+      "html_byte_identical": true,
+      "before_html_sha256": "9ded324111a9ae9222301af8741ac6ccf19893489fd23990e595c908b03805a8",
+      "after_html_sha256": "9ded324111a9ae9222301af8741ac6ccf19893489fd23990e595c908b03805a8",
+      "before_main_sha256": "1f2b7d25e76797dd00be418270d5df642c37482644c09f224ad8025d988bdbd8",
+      "after_main_sha256": "1f2b7d25e76797dd00be418270d5df642c37482644c09f224ad8025d988bdbd8"
+    },
+    {
+      "route": "/privacy-policy/",
+      "html_byte_identical": true,
+      "before_html_sha256": "0d47b4cd5a5cf0a0ad155fd0bdee43b38cf2c9901a9a91a70e66134afee9bcd7",
+      "after_html_sha256": "0d47b4cd5a5cf0a0ad155fd0bdee43b38cf2c9901a9a91a70e66134afee9bcd7",
+      "before_main_sha256": "ea418564a493e06ad215c708a3171ec1a9519c664078d27512e396cef3b31990",
+      "after_main_sha256": "ea418564a493e06ad215c708a3171ec1a9519c664078d27512e396cef3b31990"
+    },
+    {
+      "route": "/products/",
+      "html_byte_identical": true,
+      "before_html_sha256": "5fc319564fef9fc221d1fcc7f844418244a2e8becbd827c780b66708d37c9aa0",
+      "after_html_sha256": "5fc319564fef9fc221d1fcc7f844418244a2e8becbd827c780b66708d37c9aa0",
+      "before_main_sha256": "0f6b886e58b7ba9cf5a99b8710bace6b69094202e5df986051566e35aa51920c",
+      "after_main_sha256": "0f6b886e58b7ba9cf5a99b8710bace6b69094202e5df986051566e35aa51920c"
+    },
+    {
+      "route": "/products/high-airflow-high-whiteness-acoustic-facing/",
+      "html_byte_identical": true,
+      "before_html_sha256": "87274893c3ce8e8b7140bba2ea7b62d5aa00dbea6e69470b932a609224d01bfd",
+      "after_html_sha256": "87274893c3ce8e8b7140bba2ea7b62d5aa00dbea6e69470b932a609224d01bfd",
+      "before_main_sha256": "242b06aefeb90222dc53ad82f26a22b83ff49b62d4f9be39b15b103d376f0e8f",
+      "after_main_sha256": "242b06aefeb90222dc53ad82f26a22b83ff49b62d4f9be39b15b103d376f0e8f"
+    },
+    {
+      "route": "/products/high-hiding-white-acoustic-facing/",
+      "html_byte_identical": true,
+      "before_html_sha256": "7ef22a392a441cc1e318ba78ec5ce9ff5ec17206f73bbec5afc20b239a3f0116",
+      "after_html_sha256": "7ef22a392a441cc1e318ba78ec5ce9ff5ec17206f73bbec5afc20b239a3f0116",
+      "before_main_sha256": "095152eceb7ee80f0d45899965f576548222ba4c2e81f3f72607af04306112eb",
+      "after_main_sha256": "095152eceb7ee80f0d45899965f576548222ba4c2e81f3f72607af04306112eb"
+    },
+    {
+      "route": "/resource-center/",
+      "html_byte_identical": true,
+      "before_html_sha256": "920f35d01686169f5a32e38cf53b4e9ea7ddc0c30c23509a81b1eacf4f443d09",
+      "after_html_sha256": "920f35d01686169f5a32e38cf53b4e9ea7ddc0c30c23509a81b1eacf4f443d09",
+      "before_main_sha256": "b3b0115f5582da7ec307ade4c45f910ca9c392343dd480bfcee41f031fd02853",
+      "after_main_sha256": "b3b0115f5582da7ec307ade4c45f910ca9c392343dd480bfcee41f031fd02853"
+    },
+    {
+      "route": "/solutions/",
+      "html_byte_identical": true,
+      "before_html_sha256": "abab7d0738262b52372e6599ea30df30675f901da3289ab058721be8a3754020",
+      "after_html_sha256": "abab7d0738262b52372e6599ea30df30675f901da3289ab058721be8a3754020",
+      "before_main_sha256": "d2951b5185c6fc63e13cc0a44009f1712808e5a84cf5d9ac131062b05649fdf4",
+      "after_main_sha256": "d2951b5185c6fc63e13cc0a44009f1712808e5a84cf5d9ac131062b05649fdf4"
+    },
+    {
+      "route": "/solutions/acoustic-ceiling-wall-facers/",
+      "html_byte_identical": true,
+      "before_html_sha256": "c14f2916528c1b00596ccf5ce537a5a201fcd5c89c56a8536fd9ccd6d881b8a8",
+      "after_html_sha256": "c14f2916528c1b00596ccf5ce537a5a201fcd5c89c56a8536fd9ccd6d881b8a8",
+      "before_main_sha256": "f59c5c94463f399ab480afec4c649d63ba4a3c91ba1f46c3c7e5774a66c7db97",
+      "after_main_sha256": "f59c5c94463f399ab480afec4c649d63ba4a3c91ba1f46c3c7e5774a66c7db97"
+    }
+  ],
+  "baseline_asset_differences": [],
+  "failures": [],
+  "status": "PASS_STATIC_ONLY",
+  "not_run": [
+    "320px actual hosted viewport",
+    "390px actual hosted viewport",
+    "true JavaScript-disabled reload",
+    "touch",
+    "200% zoom",
+    "this candidate hosted1180/500 browser checks pending"
+  ]
+}

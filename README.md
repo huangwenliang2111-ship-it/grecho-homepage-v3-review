@@ -1,38 +1,35 @@
-# GRECHO 英文静态预览 · 七个视觉样板待审核
+# GRECHO 英文静态预览 · 同类型视觉扩展候选版
 
-本轮只重排 6 类、7 个样板页面。预览仍保留 75 条英文路线、340 个运行文件；其余 68 页整份 HTML 与修改前逐字节相同。首页、Solutions 美工稿和 High-Hiding 美工稿产品页未改。
+本轮以最新已发布主版本 f0d0969a8a8becbaa240fe6f6f57d6b78ecf6fe6（运行版本 706fb6aff5b3dffef41ed5cd73641ccc7bdf8115）为基线。恢复后 340 个运行文件的 SHA-256 全部与远程现行清单一致。
 
-- 当前运行版本：[9a7604197bbd70b4621d4ae072c97dd3d84b9584](https://github.com/huangwenliang2111-ship-it/grecho-homepage-v3-review/commit/9a7604197bbd70b4621d4ae072c97dd3d84b9584)
-- [现行运行文件清单](CURRENT_PREVIEW_MANIFEST.json)
-- [本轮浏览器检查与限制](CURRENT_BROWSER_QA.json)
-- [全部 75 页路线清单](CURRENT_PAGE_LIST.csv)
+本次候选共 75 条英文路线、343 个运行文件。实际新增改版 59 页：15 个普通产品详情、3 个 Solution Hub、40 篇技术文章、1 个 Cookie Policy。16 个未纳入本轮的页面整份 HTML 逐字节不变，包含已确认的 7 个样板及首页、两份美工稿与其他明确排除页面。既有公共 CSS/JS/图片文件均不改动；新增样式仅作用于本轮页面。
 
-## 本轮七个样板
+- [本轮实际改动页面清单](reports/actual-modified-pages.csv)
+- [逐页原文、标题、图片、链接、ID、表格与排除页面哈希证明](reports/type-expansion-proof.json)
+- [全部 75 页路线](CURRENT_PAGE_LIST.csv)
+- [基线发布版本清单](historical/CURRENT_PREVIEW_MANIFEST-f0d0969.json)
+- [预览地址](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/)
 
-1. [Products 产品汇总](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/products/)：舒适双列、独立图片区、标题与行动优先；保留 23 张卡、8 系列、Featured 6 / All 23、筛选及原有详情展开
-2. [High-Airflow / High-Whiteness 通用产品](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/products/high-airflow-high-whiteness-acoustic-facing/)：Hero 聚焦名称、说明、原产品图和 CTA；身份、参数、资料状态完整移到下方
-3. [Acoustic Hub](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/solutions/acoustic-ceiling-wall-facers/)：用途与行动在前，场景图与正文方向、材料、资料分层
-4. [Resources](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/resource-center/)：资料任务和六类入口前移，15 张模糊预览作辅助，申请流程放回对应段落
-5. [Class A / A2-s1,d0 技术文章](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/class-a-a2-s1-d0-noncombustible-facer-evidence/)：编辑型单栏长标题、分隔 metadata、清楚的目录和三列表格
-6. [Typical Value 技术文章](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/facer-technical-data-typical-values-specification-limits/)：同类编辑布局，五列表格桌面完整显示、窄屏在容器内横滑
-7. [Privacy Policy](https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/privacy-policy/)：窄目录、宽正文、18 章连续阅读；窄屏目录可折叠
+## 同类型扩展
 
-样板内的 DESIGN REVIEW 增加美工稿产品快捷入口并使用清楚产品名称。其他 68 页的评审条也保持原样，本轮没有全站评审导航更新。
+普通产品 Hero 使用各自完整名称、说明、主图及主要 CTA；各自模型、参数、应用、资料状态保留在下方，以清楚的一份概览配合原生 Complete product reference 展开完整身份资料。未复制 S02 数据。
 
-## 已检查与未检查
+Mineral Wool、Gypsum、PIR/PUR Hub 使用各自原文、原图和卡片数量，按用途与行动、应用场景、问题、材料方向、技术资料、申请与 FAQ 阅读。40 篇文章采用宽标题、独立 metadata、清楚的目录与容器内表格滚动；Cookie Policy 延续政策页目录与宽正文。
 
-实际 GitHub Pages 已检查 1180×757 与 500×757 的桌面浏览器视口，覆盖七页首屏构图、正文节奏与代表性下方模块。Products 实际筛选数量正确；两篇文章及 Privacy 共 47 个目录链接点击后显示目标并收起窄屏目录；菜单关闭和 Escape 恢复焦点与滚动；表格真实容器内横滑不带动整页。
+## 导航与正文范围
 
-最终细调已复测：五列表格桌面不再截断末列、Resources 的 01/02/03 不换行、深蓝 Hero 的主 CTA 层级清楚、通用产品正文标签与间距清楚、窄屏产品结果数量更紧凑。
+DESIGN REVIEW 的美工稿产品快捷入口及完整产品名称在本轮开始之前已全站同步，本轮原样保留。此前 README 中“其他 68 页评审条未变”只属于更早的七样板历史版本，不能用于描述最新基线。评审导航变化与页面正文改版应分别核对。
 
-320px / 390px 仍为 NOT RUN。500px 是桌面窄窗，不能当作手机实测；真实禁用 JavaScript 重载、触屏、200% 缩放和跨浏览器检查也未运行。无脚本 23 张卡基础 HTML 已单独验证。
+保留 Products 的 23 张无脚本基础卡、Featured 6 / All 23 / 8 系列筛选、Latest 6、紧凑面包屑、目录避让固定 Header、手机菜单关闭及表格内部滚动。
 
-七页原文、标题、ID、链接、图片和表格数据均保留。其他 68 页和既有公共资源逐字节保持；原有目录避让、紧凑面包屑、Latest 6、菜单关闭、表格横滑和筛选功能继续保留。
+## 验证与边界
 
-这是样板交付，等待用户视觉审核后才可扩展；不代表全站视觉通过。
+59 页原有正文文字、标题级别、图片全部属性、链接、ID、表格单元格均通过静态保留检查。15 个普通产品仅增加原生展开标签文字。16 个排除/已确认页面整份 HTML 及正文哈希相同。
 
-## 静态预览边界与历史
+候选版实际托管 1180/500 视口检查及代表性截图待发布后补充，不能沿用历史通过结果。320px、390px 实际托管渲染、真实禁用 JavaScript 重载、触屏及 200% 缩放仍为 NOT RUN；500px 是桌面窄窗，不是手机实测。不会为把未运行项改成 PASS 而另改代码。
 
-未连接正式 WordPress、真实表单、邮件、受保护文档下载、Search、WPML 或统计。没有新增全站动画，也不猜填技术参数、FAQ 答案或资料权限。
+未连接正式 WordPress、真实表单、邮件、Search、WPML、资料权限或统计；没有新增全站动画。旧三个源码 ZIP 为历史基线，不是本轮最新源码，不能用于恢复本轮版本。历史发布和检查证据原样保留。
 
-CURRENT_BROWSER_QA.json 内保留 previous_functional_baseline 作为之前运行版本的历史功能证据。旧 PREVIEW_BUILD_INFO.md、GITHUB_PREVIEW_ASSET_MANIFEST.tsv 和 historical/README-homepage-before-v4.md 继续原样保留；它们不是本轮样板清单。
+## 本地构建
+
+Python 3.10+：运行 python scripts/build.py。逐页保留检查脚本 scripts/qa-expansion.py 使用 lxml，并依赖与项目并列的冻结基线 grecho_verified_latest_baseline_20261002/public。构建本身不需要第三方依赖或联网。

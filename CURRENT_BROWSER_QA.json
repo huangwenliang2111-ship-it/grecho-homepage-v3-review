@@ -1,324 +1,74 @@
 {
-  "status": "SEVEN_SAMPLES_READY_FOR_USER_REVIEW; NOT_FULL_SITE_VISUAL_APPROVAL",
-  "site": "https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/",
-  "runtimeCommit": "9a7604197bbd70b4621d4ae072c97dd3d84b9584",
-  "scope": "Seven visual samples only. Other 68 entire HTML files unchanged from baseline.",
-  "baselineCommit": "ad2b3a85ad89a8fc75e0e3b2ba9d3b8347dde705",
+  "status": "PASS within explicitly tested scope",
+  "runtime_commit": "706fb6aff5b3dffef41ed5cd73641ccc7bdf8115",
+  "pages_url": "https://github.com/huangwenliang2111-ship-it/grecho-homepage-v3-review/actions/runs/37043926781",
   "deployment": {
+    "id": 37043926781,
     "status": "completed",
-    "conclusion": "success",
-    "url": "https://github.com/huangwenliang2111-ship-it/grecho-homepage-v3-review/actions/runs/37034018439"
+    "conclusion": "success"
   },
-  "visual_review": {
-    "method": "Actual hosted GitHub Pages in the cloud desktop browser; viewport captures, desktop full-page flow and representative lower-page sections inspected against the supplied source-reconstruction audit.",
-    "widths": [
-      {
-        "width": 1180,
-        "height": 757,
-        "scale": 1,
-        "sample_pages": 7,
-        "whole_page_horizontal_overflow_failures": 0
-      },
-      {
-        "width": 500,
-        "height": 757,
-        "scale": 1,
-        "sample_pages": 7,
-        "whole_page_horizontal_overflow_failures": 0,
-        "label": "Native narrow desktop viewport; not phone emulation"
-      }
-    ],
-    "findings": [
-      {
-        "route": "/products/",
-        "visual_changes": "Roomy two-column product results, larger full-width card imagery, clearer title-summary-action order, secondary identities and documents in existing details. Narrow cards use one column."
-      },
-      {
-        "route": "/products/high-airflow-high-whiteness-acoustic-facing/",
-        "visual_changes": "Full product title, description, original product image and CTA form the hero. Identity, parameters and document status are below it; technical body labels and spacing clarified."
-      },
-      {
-        "route": "/solutions/acoustic-ceiling-wall-facers/",
-        "visual_changes": "Purpose-led split hero with clear primary CTA, preserved scene and supporting images, separated material/direction/document sections; narrow text and actions precede the scene."
-      },
-      {
-        "route": "/resource-center/",
-        "visual_changes": "Compact task-led hero, early six-category grid, all 15 blurred previews reduced to auxiliary thumbnails, process moved to request section."
-      },
-      {
-        "route": "/class-a-a2-s1-d0-noncombustible-facer-evidence/",
-        "visual_changes": "Single-column editorial hero with complete long title, separated metadata, collapsed narrow contents and readable three-column tables."
-      },
-      {
-        "route": "/facer-technical-data-typical-values-specification-limits/",
-        "visual_changes": "Single-column editorial hero, no duplicate TOC numbering, full five-column desktop table, local horizontal scrolling at narrow widths."
-      },
-      {
-        "route": "/privacy-policy/",
-        "visual_changes": "Narrow individually listed contents rail, wide continuous policy body and compact section rhythm; collapsed narrow contents preserve all 18 sections."
-      }
-    ],
-    "focused_polish_retests": {
-      "five_column_table_desktop": {
-        "viewport": 1180,
-        "table_width_px": 835,
-        "wrapper_client_width_px": 835,
-        "all_five_columns_visible": true
-      },
-      "narrow_table": {
-        "viewport": 500,
-        "min_width_px": 800,
-        "internal_scroll_observed": true,
-        "page_scroll_x": 0
-      },
-      "resources_step_numbers_unbroken": true,
-      "dark_hero_primary_ctas_clear": true,
-      "product_body_attribute_chips_normal": true,
-      "product_technical_section_padding_desktop_px": 68,
-      "narrow_products_count_padding_top_px": 0
-    }
-  },
-  "functional_checks": {
-    "products": {
-      "all": 23,
-      "featured": 6,
-      "family_counts": [
-        4,
-        8,
-        1,
-        2,
-        3,
-        1,
-        1,
-        3
-      ],
-      "existing_details_expand": true,
-      "removed_selector_intro_still_absent": true,
-      "static_nojs_23_cards_readable": true
-    },
-    "selected_contents": {
-      "actual_narrow_clicks": 47,
-      "article_39": 16,
-      "article_48": 13,
-      "privacy": 18,
-      "disclosure_closes_after_click": true,
-      "targets_visible_below_header": true,
-      "target_top_px_range": [
-        144.5,
-        145.5
-      ]
-    },
-    "menu": {
-      "normal_close": true,
-      "reopen_escape": true,
-      "focus_restored": true,
-      "body_scroll_restored": true
-    },
-    "resources": {
-      "all_15_original_blurred_thumbnails_loaded_after_scroll": true
-    }
-  },
-  "static_checks": {
-    "runtime_files": 340,
-    "runtime_pages": 75,
-    "runtime_in_main_fragment_links": 631,
-    "source_copy_ids_urls_images_table_cells_retained_for_all_7": true,
-    "other_68_entire_html_byte_identical": true,
-    "frozen_home_solutions_designer_product_entire_html_unchanged": true,
-    "existing_shared_assets_and_repository_history_preserved": true
-  },
-  "limitations": [
+  "scope": "Products, S02, and global review navigation; no new full75 body browser sweep",
+  "actual_viewports": [
     {
-      "test": "320px and 390px hosted rendering",
-      "status": "NOT RUN",
-      "reason": "Available native browser viewport minimum is 500 CSS px; viewport emulation unavailable. 500px and source-reconstruction screenshots are not substitutes."
+      "width": 1180,
+      "height": 757
     },
     {
-      "test": "Actual JavaScript-disabled browser reload",
-      "status": "NOT RUN",
-      "reason": "Static fallback markup was verified separately; no actual script-disabled reload was performed."
-    },
-    {
-      "test": "Touch device, 200% zoom and cross-browser compatibility",
-      "status": "NOT RUN",
-      "reason": "Outside tested browser coverage."
-    },
-    {
-      "test": "User visual approval and extension to other page types",
-      "status": "PENDING",
-      "reason": "User reviews these seven samples before any broader visual rollout."
+      "width": 500,
+      "height": 757
     }
   ],
-  "production_boundary": "Static preview only. No production WordPress, real forms, email, Search, WPML, protected-document access or analytics enabled.",
-  "previous_functional_baseline": {
-    "status": "passed within tested coverage; requested 320/390 px and actual JavaScript-disabled browser checks remain unrun",
-    "site": "https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/",
-    "runtimeCommit": "abf430688f8216f249809ccffd1d1dafbd59d36a",
-    "runtimeBundleSha256": "836d5f5c1798a83010df4f7d3cda5dd56a84fce9a7dd3589fe6e83b7c6615903",
-    "fullSweepCommit": "451017e69c06860b61002586eb7dcf4ee9053d3b",
-    "finalChange": "Only assets/css/review-shell.css changed after full sweep: open mobile navigation stacking.",
-    "deployment": {
-      "status": "completed",
-      "conclusion": "success",
-      "url": "https://github.com/huangwenliang2111-ship-it/grecho-homepage-v3-review/actions/runs/37004584798"
-    },
-    "viewportChecks": [
-      {
-        "width": 500,
-        "height": 758,
-        "clientWidth": 485,
-        "scale": 1,
-        "pages": 75,
-        "wholePageHorizontalOverflowFailures": 0,
-        "articlePages": 42,
-        "tocClicks": 553,
-        "h3Clicks": 168,
-        "minHeadingClearancePx": 73.5,
-        "maxHeadingClearancePx": 74.484375,
-        "maxHeadingBottomPx": 237.46875,
-        "outOfViewHeadings": 0
-      },
-      {
-        "width": 1180,
-        "height": 758,
-        "clientWidth": 1165,
-        "scale": 1,
-        "pages": 75,
-        "wholePageHorizontalOverflowFailures": 0,
-        "articlePages": 42,
-        "tocClicks": 553,
-        "h3Clicks": 168,
-        "minHeadingClearancePx": 65.5,
-        "maxHeadingClearancePx": 66.484375,
-        "maxHeadingBottomPx": 216.25,
-        "outOfViewHeadings": 0
-      }
+  "browser": "cloud Chromium",
+  "products": {
+    "featured": 6,
+    "all": 23,
+    "family_counts": [
+      4,
+      8,
+      1,
+      2,
+      3,
+      1,
+      1,
+      3
     ],
-    "breadcrumbs": {
-      "count": 16,
-      "fullOriginalNamesPreserved": true,
-      "fontSizePx": 13,
-      "wrap": "normal",
-      "narrowStripHeightRangePx": [
-        46.4375,
-        67.875
-      ],
-      "desktopStripHeightRangePx": [
-        54.4375,
-        54.4375
-      ]
-    },
-    "auxiliarySpacing": {
-      "narrowCapabilityPaddingPx": 20,
-      "desktopCapabilityPaddingPx": 28,
-      "narrowClosingCtaPaddingPx": 32,
-      "desktopClosingCtaPaddingPx": 52
-    },
-    "products": {
-      "totalStaticCards": 23,
-      "liveAllVisible": 23,
-      "liveSeriesCounts": {
-        "featured": 6,
-        "all": 23,
-        "gc-v": 4,
-        "gc-ac": 8,
-        "gc-gy": 1,
-        "gc-in": 2,
-        "gc-pir": 3,
-        "gc-fb": 1,
-        "gc-fb-sl": 1,
-        "gc-al": 3
-      },
-      "compoundEmptyResult": 0,
-      "resetCheckedInputs": 0,
-      "resetVisible": 6,
-      "resetSeries": "featured",
-      "removedSelectorIntroStillAbsent": true,
-      "familyNavigationPreserved": true
-    },
-    "insights": {
-      "featuredTotal": 13,
-      "latestTotal": 6,
-      "liveFilterCounts": {
-        "all": 13,
-        "acoustic": 3,
-        "mineral-wool": 1,
-        "gypsum": 3,
-        "pir-pur-etics": 3,
-        "documents": 3
-      },
-      "latestVisibleForEveryFilter": 6,
-      "latestLinksActuallyClicked": 6,
-      "fullLocalBodiesVerified": true,
-      "newArticleBodyCharacterRange": [
-        9445,
-        14303
-      ]
-    },
-    "tables": {
-      "articleTables": 65,
-      "articlePages": 42,
-      "narrowWidth": 500,
-      "allWideTablesInOverflowAutoWrappers": true,
-      "wholePageOverflowFailures": 0,
-      "representativeActualHorizontalScroll": {
-        "containerScrollLeftPx": 225,
-        "windowScrollX": 0,
-        "documentClientWidth": 485,
-        "documentScrollWidth": 485
-      }
-    },
-    "menus": {
-      "desktopGroups": 5,
-      "desktopOpenAndEscapePassed": true,
-      "directoryLinks": 75,
-      "directoryOpenClosePassed": true,
-      "narrowAccordionGroups": 5,
-      "narrowAccordionsPassed": true,
-      "originalNarrowDefect": "Review bar covered the drawer Close control; normal click did not close it.",
-      "fixedByCommit": "abf430688f8216f249809ccffd1d1dafbd59d36a",
-      "fixedCloseCenterHitsOwnButton": true,
-      "normalClosePassed": true,
-      "reopenEscapePassed": true,
-      "reopenBackdropPassed": true,
-      "focusReturnedToTriggerForAllThree": true,
-      "bodyOverflowRestoredForAllThree": true,
-      "actualPageScrollAfterDismissal": {
-        "before": 2138,
-        "after": 2896
-      },
-      "homeMenuRetestPassed": true
-    },
-    "staticVerification": {
-      "pages": 75,
-      "articlePages": 42,
-      "tocTargets": 553,
-      "h3Targets": 168,
-      "existingArticleBodyCopyAndIdsPreserved": true,
-      "newSixBodiesExactToCapturedPublicOriginals": true,
-      "homeMainUnchanged": true,
-      "internalLinksResolve": true,
-      "productCardsInitiallyUnhidden": 23,
-      "nonRuntimeFilesPreserved": true
-    },
-    "limitations": [
-      {
-        "test": "320px and 390px viewport rendering",
-        "status": "NOT RUN",
-        "reason": "The available native browser viewport had a measured minimum width of 500 CSS px; 320/390 px viewport emulation was unavailable. These widths were not tested."
-      },
-      {
-        "test": "Actual JavaScript-disabled browser reload",
-        "status": "NOT RUN",
-        "reason": "The browser session did not support completing a JavaScript-disabled reload. The original Allow (default) setting was unchanged. Static HTML fallback and deterministic script-state checks passed separately."
-      },
-      {
-        "test": "Touch-device and 200% zoom testing",
-        "status": "NOT RUN",
-        "reason": "Not covered by the available actual-browser pass."
-      }
-    ],
-    "method": "Actual hosted GitHub Pages in a desktop browser. 500 px is a native narrow desktop viewport, not a touch-device or 320/390 px emulation."
+    "desktop_paired_rows_cta_and_bottom_aligned": 11,
+    "featured_paired_rows_aligned": 3,
+    "expanded_details_content_bottom_matches_container_bottom": true,
+    "keyboard_collapse": true,
+    "whole_page_horizontal_overflow": false
   },
-  "previous_functional_baseline_notice": "Historical evidence for the earlier runtime. It is not current full-site visual approval."
+  "s02": {
+    "native_details_mouse_and_keyboard": true,
+    "expanded_height_desktop": 461.59375,
+    "expanded_height_narrow": 833.8125,
+    "hero_byte_identical": true,
+    "all_original_text_retained": true,
+    "whole_page_horizontal_overflow": false
+  },
+  "review_navigation": {
+    "all75_unique_routes_static": true,
+    "home_directory_links_live": 75,
+    "full17_product_names_static": true,
+    "designer_shortcut_global": true,
+    "other_page_bodies_unchanged": true
+  },
+  "remote_hash_verification": {
+    "runtime_files": 340,
+    "mismatches": 0
+  },
+  "static_checks": 348,
+  "not_run": [
+    "320px actual viewport",
+    "390px actual viewport",
+    "true JavaScript-disabled reload",
+    "touch",
+    "200% zoom"
+  ],
+  "notes": [
+    "500px narrow is not a phone-test substitute",
+    "All23 action alignment retested after CSS-only fix",
+    "All8 family filter counts tested on v4; v5 changes only desktop CSS action tracks",
+    "Before captures taken before publication; after captures retaken on final runtime"
+  ]
 }

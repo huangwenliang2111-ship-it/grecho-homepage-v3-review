@@ -198,3 +198,13 @@
 @media(max-width:400px){
  .grecho-existing.gc-sample-product .gptv1-snapshot-grid{grid-template-columns:1fr}
 }
+/* Desktop cards share intrinsic content tracks. Long route actions retain all
+   their text while CTA starts and collapsed bottom edges align within each row. */
+@supports (grid-template-rows:subgrid){
+ @media(min-width:761px){
+  .grecho-existing.gc-sample-products .gpl-product-card.gc-card{display:grid;grid-template-rows:subgrid;grid-row:span 5;row-gap:0}
+  .grecho-existing.gc-sample-products .gpl-product-card-body{display:grid;grid-template-rows:subgrid;grid-row:span 4;row-gap:0}
+  .grecho-existing.gc-sample-products .gpl-card-actions{margin-top:0;align-self:start}
+  .grecho-existing.gc-sample-products .gpl-card-details{align-self:start}
+ }
+}

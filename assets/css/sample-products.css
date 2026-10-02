@@ -171,3 +171,30 @@
  .grecho-existing.gc-sample-products .gpl-results-toolbar>div{flex:1;min-width:0}
  .grecho-existing.gc-sample-products .gpl-results-toolbar>p{flex:0 0 auto;max-width:76px;padding-top:0;margin:0;text-align:right;line-height:1.5}
 }
+
+/* Narrow review refinement: equal collapsed card rhythm, no text clipping. */
+.grecho-existing.gc-sample-products .gpl-product-grid{align-items:stretch}
+.grecho-existing.gc-sample-products .gpl-product-card.gc-card{display:flex;flex-direction:column}
+.grecho-existing.gc-sample-products .gpl-product-media{flex:none}
+.grecho-existing.gc-sample-products .gpl-product-card-body{flex:1}
+.grecho-existing.gc-sample-products .gpl-product-summary{min-height:0;margin-bottom:22px}
+.grecho-existing.gc-sample-products .gpl-card-actions{margin-top:auto}
+/* S02: one complete overview; intact duplicate source records in native details. */
+.grecho-existing.gc-sample-product .gptv1-snapshot-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 40px}
+.grecho-existing.gc-sample-product .gptv1-snapshot-grid>div:nth-child(3){grid-column:1/-1;grid-row:1;padding-bottom:22px;border-bottom:1px solid var(--grecho-v3-border)}
+.grecho-existing.gc-sample-product .gptv1-snapshot-grid>div:nth-child(3)>strong{font-size:24px;line-height:1.3;font-weight:700;max-width:750px}
+.grecho-existing.gc-sample-product .gptv1-snapshot-grid>div:last-child{grid-column:1/-1;max-width:850px}
+.grecho-existing.gc-sample-product .gptv1-snapshot-grid>div>strong{font-size:15px;line-height:1.65}
+.grecho-existing.gc-sample-product .sample-product-reference{margin-top:32px;border-block:1px solid var(--grecho-v3-border)}
+.grecho-existing.gc-sample-product .sample-product-reference>summary{cursor:pointer;padding:20px 0;font-size:14px;font-weight:700;color:var(--grecho-v3-brand)}
+.grecho-existing.gc-sample-product .sample-product-reference>summary:focus-visible{outline:2px solid var(--grecho-v3-brand);outline-offset:4px}
+.grecho-existing.gc-sample-product .sample-product-reference-body{padding:8px 0 28px}
+.grecho-existing.gc-sample-product .sample-product-reference .sample-product-identity-layout{margin-bottom:22px;padding-bottom:24px}
+.grecho-existing.gc-sample-product .sample-product-reference .gptv1-snapshot-tags>span{display:block;font-size:12px;color:var(--grecho-v3-muted);margin-bottom:10px}
+@media(max-width:760px){
+ .grecho-existing.gc-sample-product .gptv1-snapshot-grid{grid-template-columns:1fr 1fr;gap:24px}
+ .grecho-existing.gc-sample-product .gptv1-snapshot-grid>div:nth-child(3)>strong{font-size:22px}
+}
+@media(max-width:400px){
+ .grecho-existing.gc-sample-product .gptv1-snapshot-grid{grid-template-columns:1fr}
+}

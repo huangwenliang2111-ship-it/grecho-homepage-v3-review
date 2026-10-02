@@ -182,7 +182,11 @@
 .grecho-existing.sample-editorial-page .sample-editorial-table-3cols tr > :first-child { width: 24%; }
 .grecho-existing.sample-editorial-page .sample-editorial-table-3cols tr > :nth-child(2),
 .grecho-existing.sample-editorial-page .sample-editorial-table-3cols tr > :nth-child(3) { width: 38%; }
-.grecho-existing.sample-editorial-page .sample-editorial-table table.sample-editorial-table-5cols { min-width: 900px; }
+/* Fit the complete five-column comparison within the 840px desktop reading rail;
+   below 800px, keep the existing local horizontal-scroll boundary. */
+.grecho-existing.sample-editorial-page .sample-editorial-table table.sample-editorial-table-5cols { min-width: 800px; }
+.grecho-existing.sample-editorial-page .sample-editorial-table .sample-editorial-table-5cols th,
+.grecho-existing.sample-editorial-page .sample-editorial-table .sample-editorial-table-5cols td { padding: 14px; }
 .grecho-existing.sample-editorial-page .sample-editorial-table-5cols tr > :first-child { width: 16%; }
 .grecho-existing.sample-editorial-page .sample-editorial-table-5cols tr > :not(:first-child) { width: 21%; }
 .grecho-existing.sample-editorial-page .sample-editorial-table th,

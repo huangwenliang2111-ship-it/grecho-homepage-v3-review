@@ -142,3 +142,32 @@
  .grecho-existing.gc-sample-products .gpl-family-media,.grecho-existing.gc-sample-products .gpl-family-media img{width:28px;height:32px}
  .grecho-existing.gc-sample-product .gptv1-snapshot-grid{grid-template-columns:1fr}
 }
+/* Hosted-review refinement: technical content has a denser document rhythm. */
+.grecho-existing.gc-sample-product .gptv1-section.gc-section{padding-block:68px}
+.grecho-existing.gc-sample-product .gptv1-snapshot-tags>div{display:flex;flex-wrap:wrap;gap:6px}
+.grecho-existing.gc-sample-product .gptv1-snapshot-tags em{display:inline-block;font-style:normal;font-size:11px;font-weight:600;line-height:1.45;padding:4px 7px;border-radius:3px;background:#edf3f8;color:var(--grecho-v3-brand-deep)}
+.grecho-existing.gc-sample-product .gptv1-technical-brief-grid{align-items:start;gap:40px}
+.grecho-existing.gc-sample-product .gptv1-brief-panel.gc-card{padding:24px 0 0;border:0;border-top:2px solid var(--grecho-v3-border);border-radius:0;box-shadow:none;overflow:visible}
+.grecho-existing.gc-sample-product .gptv1-brief-panel h3{font-size:24px;margin-bottom:24px}
+.grecho-existing.gc-sample-product .gptv1-brief-list>div{margin-top:20px}
+.grecho-existing.gc-sample-product .gptv1-brief-list>div>span{display:block;margin-bottom:7px;font-size:12px;font-weight:700;color:var(--grecho-v3-brand)}
+.grecho-existing.gc-sample-product .gptv1-brief-list>div>strong{display:block;font-size:15px;font-weight:500;line-height:1.75;color:var(--grecho-v3-text)}
+.grecho-existing.gc-sample-product .gptv1-layer-stack>.gc-container{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 52px;align-items:center}
+.grecho-existing.gc-sample-product .gptv1-layer-stack .gc-section-head{grid-column:1/-1}
+.grecho-existing.gc-sample-product .gptv1-stack-list>article{display:grid;grid-template-columns:28px minmax(0,1fr);gap:16px;padding:18px 0;border-top:1px solid var(--grecho-v3-border)}
+.grecho-existing.gc-sample-product .gptv1-stack-list>article>span{font-size:12px;font-weight:800;color:var(--grecho-v3-brand);padding-top:3px}
+.grecho-existing.gc-sample-product .gptv1-stack-list h3{font-size:19px;margin-bottom:6px}
+.grecho-existing.gc-sample-product .gptv1-stack-list p{font-size:14px;line-height:1.65;margin:0}
+.grecho-existing.gc-sample-product .gptv1-layer-stack img{margin-top:0;height:auto;max-height:none}
+@media(max-width:760px){
+ .grecho-existing.gc-sample-product .gptv1-section.gc-section{padding-block:48px}
+ .grecho-existing.gc-sample-product .gptv1-technical-brief-grid{gap:24px}
+ .grecho-existing.gc-sample-product .gptv1-layer-stack>.gc-container{grid-template-columns:1fr;gap:24px}
+ .grecho-existing.gc-sample-product .gptv1-layer-stack .gc-section-head{margin-bottom:0}
+ .grecho-existing.gc-sample-product .gptv1-layer-stack img{margin-top:0}
+}
+@media(max-width:760px){
+ .grecho-existing.gc-sample-products .gpl-results-toolbar{display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+ .grecho-existing.gc-sample-products .gpl-results-toolbar>div{flex:1;min-width:0}
+ .grecho-existing.gc-sample-products .gpl-results-toolbar>p{flex:0 0 auto;max-width:76px;padding-top:0;margin:0;text-align:right;line-height:1.5}
+}

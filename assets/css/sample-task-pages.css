@@ -21,8 +21,8 @@
 .grecho-existing.sample-acoustic-hub .gac-v1-solution-hero p a:hover { color:#fff; }
 .grecho-existing.sample-acoustic-hub .gac-v1-solution-hero .gc-actions { margin-top:30px; gap:12px; }
 .grecho-existing.sample-acoustic-hub .gac-v1-solution-hero .gc-actions .gc-button { min-height:48px; box-shadow:none; }
-.grecho-existing.sample-acoustic-hub .gac-v1-solution-hero .gc-actions .gc-button:first-child { background:var(--grecho-v3-brand); border-color:#527bb7; }
-.grecho-existing.sample-acoustic-hub .gac-v1-solution-hero .gc-actions .gc-button:nth-child(2) { background:#fff; color:var(--grecho-v3-brand-deep); border-color:#fff; }
+.grecho-existing.sample-acoustic-hub .gac-v1-solution-hero .gc-actions .gc-button:first-child { background:#fff; border-color:#fff; color:var(--grecho-v3-brand-deep); }
+.grecho-existing.sample-acoustic-hub .gac-v1-solution-hero .gc-actions .gc-button:nth-child(2) { background:transparent; color:#fff; border-color:#94abc5; }
 .grecho-existing.sample-acoustic-hub .gac-v1-solution-hero .gc-actions .gac-v1-hero-tertiary-cta { flex-basis:100%; width:max-content; max-width:max-content; padding:7px 0; min-height:36px; border:0; border-radius:0; background:transparent; color:#fff; justify-content:flex-start; }
 .grecho-existing.sample-acoustic-hub .gac-v1-solution-hero .grecho-v1-hero-media { position:relative; width:calc(100% + max(24px,(100vw - 1120px)/2)); height:auto; margin:0; border-radius:0; overflow:hidden; }
 .grecho-existing.sample-acoustic-hub .gac-v1-solution-hero .grecho-v1-hero-image { display:block; width:100%; height:100%; min-height:600px; object-fit:cover; object-position:59% center; border-radius:0; }
@@ -117,7 +117,8 @@
 .grecho-existing.sample-resource-center .grc-v2-hero-global p { font-size:17px; line-height:1.65; color:#dfe8f2; margin-bottom:0; }
 .grecho-existing.sample-resource-center .grc-v2-hero-global .gc-actions { margin-top:28px; }
 .grecho-existing.sample-resource-center .grc-v2-hero-global .gc-button { box-shadow:none; }
-.grecho-existing.sample-resource-center .grc-v2-hero-global .gc-button:first-child { border-color:#527bb7; }
+.grecho-existing.sample-resource-center .grc-v2-hero-global .gc-button:first-child { background:#fff; border-color:#fff; color:var(--grecho-v3-brand-deep); }
+.grecho-existing.sample-resource-center .grc-v2-hero-global .gc-actions .gc-button:nth-child(2) { background:transparent; color:#fff; border-color:#94abc5; }
 .grecho-existing.sample-resource-center .grc-v2-hero-global .grecho-v1-hero-media { position:static; height:320px; width:100%; margin:0; border-radius:8px; overflow:hidden; }
 .grecho-existing.sample-resource-center .grc-v2-hero-global .grecho-v1-hero-image { display:block; width:100%; height:100%; object-fit:cover; object-position:60% center; }
 .grecho-existing.sample-resource-center .grc-v2-category-section { background:#fff; }
@@ -169,7 +170,8 @@
 .grecho-existing.sample-resource-center .grc-v2-review-section .gc-card p { color:#cbd9e8; font-size:14px; }
 .grecho-existing.sample-resource-center .sample-request-flow { display:grid; grid-template-columns:.9fr 1.1fr; gap:48px; align-items:start; }
 .grecho-existing.sample-resource-center .sample-request-flow .grecho-v1-hero-side-panel { margin:0; padding:28px; border:0; background:var(--grecho-v3-tint); border-radius:8px; box-shadow:none; }
-.grecho-existing.sample-resource-center .sample-request-flow .grecho-v1-hero-side-panel-item { display:grid; grid-template-columns:24px 1fr; gap:12px; padding:20px 0; }
+.grecho-existing.sample-resource-center .sample-request-flow .grecho-v1-hero-side-panel-item { display:grid; grid-template-columns:32px minmax(0,1fr); gap:12px; padding:20px 0; }
+.grecho-existing.sample-resource-center .sample-request-flow .grecho-v1-hero-side-panel-index { display:block; min-width:2ch; margin-right:0; white-space:nowrap; overflow-wrap:normal; word-break:normal; font-variant-numeric:tabular-nums; }
 .grecho-existing.sample-resource-center .sample-request-flow .grecho-v1-hero-side-panel-item:last-child { padding-bottom:0; }
 .grecho-existing.sample-resource-center .sample-request-flow .grecho-v1-hero-side-panel-item strong { display:block; font-size:16px; margin-bottom:8px; }
 .grecho-existing.sample-resource-center .sample-request-flow .grecho-v1-hero-side-panel-item p { font-size:14px; margin:0; }

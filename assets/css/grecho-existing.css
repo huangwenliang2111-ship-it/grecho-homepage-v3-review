@@ -281,3 +281,8 @@
 /* Preserve readable technical column labels; narrow screens scroll the table only. */
 .grecho-existing .gc-table-wrap th,.grecho-existing .gc-table-wrap td{word-break:normal;overflow-wrap:normal}
 .grecho-existing .gc-table-wrap:has(tr>:nth-child(4)) table{min-width:680px}
+/* Shared dark CTA: source markup uses h3; keep all its text legible on brand-deep. */
+.grecho-existing .grecho-v1-dark-cta h2,.grecho-existing .grecho-v1-dark-cta h3,.grecho-existing .grecho-v1-dark-cta h4,.grecho-existing .grecho-v1-dark-cta>div strong{color:var(--grecho-v3-white)}
+.grecho-existing .grecho-v1-dark-cta>a{display:inline-flex;align-items:center;justify-content:center;min-height:46px;padding:11px 18px;margin:12px 12px 0 0;border:1px solid rgba(255,255,255,.92);border-radius:var(--grecho-v3-radius-sm);background:rgba(255,255,255,.96);color:#17334b;font-size:13px;font-weight:800;line-height:1.2;text-align:center;box-shadow:0 6px 16px rgba(8,62,101,.15)}
+.grecho-existing .grecho-v1-dark-cta>a:hover{background:var(--grecho-v3-white);color:#0f2f49}
+@media(max-width:600px){.grecho-existing .grecho-v1-dark-cta>a{width:100%;margin-right:0}}

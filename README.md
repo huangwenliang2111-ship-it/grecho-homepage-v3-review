@@ -1,3 +1,17 @@
+# GRECHO Contact + FAQ 静态视觉样板候选版
+
+本轮以已验证的主版本 4952dd315b9e02dc9a0c943f8dabcf9ab7aa9015、运行版本 616a4b284b099da1dcbdd9818cd72ebaf747c01e 为基线，343 个运行文件逐一哈希一致后开始。候选版共 75 条英文路线、346 个运行文件。
+
+正文仅调整 Contact 与 FAQ 的信息层级与样式。Contact 保留全部表单字段及禁用状态，Hero 后依次为紧凑申请类型和主要表单，三步 Request Review Path 移到表单之后。FAQ 保留全部 26 问答与 6 类，搜索和类别入口前置到 Featured quick answers 之前，申请与资源入口放在查找答案之后。原有文字、链接、图片、表单 DOM 和 FAQ 问答 DOM 均通过保留核对，原有筛选、搜索、预填及静态安全 JS 未修改。
+
+42 篇技术文章只新增独立溢出提示 CSS/JS 引用，正文逐字节不变；表格仅在实际 scrollWidth > clientWidth 时显示“Scroll horizontally to view all columns”。其余 31 页整份 HTML 不变，全部既有非 HTML 运行文件不变。前轮 59 页与已确认 7 个样板的正文全部保留。
+
+Contact 与 FAQ 已完成独立静态保留核对；托管版本的检查结果将写入当前浏览器验收记录。
+
+以上为本候选版静态检查结果，实际托管浏览器验收须单独记录，不能沿用下方前轮通过结果。320px、390px、真实禁用 JavaScript 重载、触屏及 200% 缩放均仍为 NOT RUN。静态预览不连接生产 WordPress、真实表单或业务后台。
+
+## 前轮已发布范围与历史验证
+
 # GRECHO 英文静态预览 · 同类型视觉扩展已发布
 
 本轮以最新已发布主版本 f0d0969a8a8becbaa240fe6f6f57d6b78ecf6fe6（运行版本 706fb6aff5b3dffef41ed5cd73641ccc7bdf8115）为基线。恢复后 340 个运行文件的 SHA-256 全部与远程现行清单一致。
@@ -36,6 +50,10 @@ DESIGN REVIEW 的美工稿产品快捷入口及完整产品名称在本轮开始
 
 未连接正式 WordPress、真实表单、邮件、Search、WPML、资料权限或统计；没有新增全站动画。旧三个源码 ZIP 为历史基线，不是本轮最新源码，不能用于恢复本轮版本。历史发布和检查证据原样保留。
 
-## 本地构建
+## 公开仓库与源码交付（当前说明）
 
-Python 3.10+：运行 python scripts/build.py。逐页保留检查脚本 scripts/qa-expansion.py 使用 lxml，并依赖与项目并列的冻结基线 grecho_verified_latest_baseline_20261002/public。构建本身不需要第三方依赖或联网。
+本公开仓库是静态发布产物，供浏览和核对已发布页面。已核对主版本 4952dd315b9e02dc9a0c943f8dabcf9ab7aa9015：公开仓库不含 scripts/build.py 或 scripts/qa-expansion.py，因此下载本仓库并不提供可运行的源码构建或逐页保留检查环境。
+
+需要重新构建时，应另行提供与目标版本对应的可重建源码、构建及检查脚本、必要依赖说明和获准交付的输入资料。历史源码 ZIP 不能替代当前版本源码。不会为补正文档而向公开仓库上传私有冻结基线、数据库、凭据或受保护文件。
+
+[此前 README 原文](https://github.com/huangwenliang2111-ship-it/grecho-homepage-v3-review/blob/4952dd315b9e02dc9a0c943f8dabcf9ab7aa9015/README.md)保留为发布历史记录，其中的本地构建说明不适用于下载当前公开仓库。以上历史范围和已发布验证记录描述先前同类型扩展版本；下一候选版的变更与验收须由其独立清单和检查记录确认。

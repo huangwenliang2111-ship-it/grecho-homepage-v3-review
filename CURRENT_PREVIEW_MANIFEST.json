@@ -1,15 +1,24 @@
 {
-  "candidate": "contact-faq-candidate-v1",
-  "baseline_main_commit": "4952dd315b9e02dc9a0c943f8dabcf9ab7aa9015",
-  "baseline_runtime_commit": "616a4b284b099da1dcbdd9818cd72ebaf747c01e",
+  "version": "Final four visual pages 2026-10-03",
+  "runtime_commit": "424f5c056ad34d9dc60eab8251db8af4315baf4c",
+  "runtime_file_count": 350,
   "pages": 75,
-  "runtime_file_count": 346,
+  "preview_url": "https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/",
+  "deployment_run": 37093021808,
   "body_changed_pages": [
-    "/contact/",
-    "/faq/"
+    "/about/",
+    "/case-studies/",
+    "/insights/",
+    "/europe-wide-width-facer-initiative/"
   ],
-  "article_head_only_pages": 42,
-  "whole_html_unchanged": 31,
+  "whole_html_unchanged": 71,
+  "existing_assets_changed": 0,
+  "new_scoped_css": [
+    "assets/css/final-about.css",
+    "assets/css/final-cases.css",
+    "assets/css/final-insights.css",
+    "assets/css/final-europe.css"
+  ],
   "files": [
     {
       "path": ".nojekyll",
@@ -18,8 +27,8 @@
     },
     {
       "path": "about/index.html",
-      "bytes": 66241,
-      "sha256": "3ecef91186de6fbbdf2d2585e5f1f09351adfb9f21c710b74207b2401127eabc"
+      "bytes": 66339,
+      "sha256": "023f628b8f76128da8f8eb7014db3d41220a47c0ee6bb14d7489a75ad48dbb06"
     },
     {
       "path": "acoustic-facer-adhesive-layer-panel-sound-absorption-review/index.html",
@@ -75,6 +84,26 @@
       "path": "assets/css/expanded-products.css",
       "bytes": 24100,
       "sha256": "b232e1a1f064bfc4530e58a31b95530f4330c68138dca44e6c4dfe221303a590"
+    },
+    {
+      "path": "assets/css/final-about.css",
+      "bytes": 8627,
+      "sha256": "19ce2eab6513aeccf46d8e6ac6314647e722e690c057fd4aec78760018034089"
+    },
+    {
+      "path": "assets/css/final-cases.css",
+      "bytes": 5338,
+      "sha256": "7fd4e53598d78a86bfb834534151e85da2fcb24f054a27247c3b9b3c7723bded"
+    },
+    {
+      "path": "assets/css/final-europe.css",
+      "bytes": 12050,
+      "sha256": "d1b7d92b04caf924398d3c47459c68cb2fd3bc7235d2174e507e186b07d409e6"
+    },
+    {
+      "path": "assets/css/final-insights.css",
+      "bytes": 7074,
+      "sha256": "38aeb55a35be24cddce75b4b3d8247cd03fd7f15345b3fac81fafd49dd5c54d0"
     },
     {
       "path": "assets/css/grecho-existing-backgrounds.css",
@@ -1403,8 +1432,8 @@
     },
     {
       "path": "case-studies/index.html",
-      "bytes": 76316,
-      "sha256": "19821dd5ea4d27709e85f1a1321da28830e4eef5a779d6e1614ef356c71919e8"
+      "bytes": 76401,
+      "sha256": "639f65107abb5148ff1948b93728aa64a5ccb86db11bfff60c8955136f57860b"
     },
     {
       "path": "class-a-a2-s1-d0-noncombustible-facer-evidence/index.html",
@@ -1443,8 +1472,8 @@
     },
     {
       "path": "europe-wide-width-facer-initiative/index.html",
-      "bytes": 97789,
-      "sha256": "4ddc9a95ddc5a4c3c4518617ada254deb9410d314df9f9de4bcfe43eb4494587"
+      "bytes": 98057,
+      "sha256": "fa42484cc1dc790c5ad00e9e61bb30a61fa111daedb1b734d0e42e59ad7ac0ff"
     },
     {
       "path": "facer-basis-weight-gsm-vs-thickness/index.html",
@@ -1528,8 +1557,8 @@
     },
     {
       "path": "insights/index.html",
-      "bytes": 92407,
-      "sha256": "9ded324111a9ae9222301af8741ac6ccf19893489fd23990e595c908b03805a8"
+      "bytes": 92502,
+      "sha256": "85514b0be2763f5ddc228d5030c56be0decbbe2db3bf0fc8f81edb437b919474"
     },
     {
       "path": "insulation-facer-air-permeability-vs-water-vapour-transmission/index.html",
@@ -1741,11 +1770,5 @@
       "bytes": 73887,
       "sha256": "1974d3181897ff7e1a98cc1bfdc0cc7df6036ac3e1f02e765c46eda8b802c0b2"
     }
-  ],
-  "version": "Contact and FAQ visual samples 2026-10-03",
-  "runtime_commit": "de27cc38cdc71bb04bcda9a02028ad5841c1954d",
-  "preview_url": "https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/",
-  "deployment_run": 37089141330,
-  "deployment_status": "success",
-  "candidate_manifest_sha256": "b775aba69d2b9fc7c39a89b6df8700de1fc4f8b940e0d1debcd799b17f91d15b"
+  ]
 }

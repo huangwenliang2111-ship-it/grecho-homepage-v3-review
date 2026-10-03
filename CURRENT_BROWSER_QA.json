@@ -1,17 +1,23 @@
 {
-  "date": "2026-10-02",
-  "runtime_commit": "616a4b284b099da1dcbdd9818cd72ebaf747c01e",
-  "deployment_run": 37055835846,
+  "date": "2026-10-03",
+  "runtime_commit": "de27cc38cdc71bb04bcda9a02028ad5841c1954d",
+  "deployment_run": 37089141330,
   "deployment_status": "success",
-  "runtime_files_verified_against_remote_git_tree": 343,
-  "scope": {
-    "changed_pages": 59,
-    "unchanged_html": 16,
-    "approved_samples_unchanged": 7,
-    "new_scoped_stylesheets": 3,
-    "existing_assets_unchanged": true
+  "hosted_runtime_file_hashes": {
+    "verified": 346,
+    "mismatches": 0
   },
-  "actual_browser_viewports": [
+  "scope": {
+    "body_redesign_pages": [
+      "contact/",
+      "faq/"
+    ],
+    "article_hint_reference_only_pages": 42,
+    "unchanged_whole_html_pages": 31,
+    "prior_59_and_7_sample_body_changes": 0,
+    "existing_assets_changed": 0
+  },
+  "actual_viewports": [
     {
       "width": 1180,
       "height": 757,
@@ -20,154 +26,68 @@
     {
       "width": 500,
       "height": 757,
-      "description": "narrow desktop Chromium, not a mobile device"
+      "description": "narrow desktop Chromium, not touch or mobile device"
     }
   ],
-  "route_geometry_checks": {
-    "total": 118,
-    "unique_pages": 59,
-    "whole_page_horizontal_overflow": 0,
-    "main_h1_issues": 0,
-    "observed_broken_images": 0,
-    "note": "Geometry checks cover all 59 modified pages at both widths; screenshot pixel review covers representative pages, not every page."
+  "contact": {
+    "preserved_controls": 49,
+    "disabled_visible_controls": 22,
+    "hosted_control_dom_matches_baseline": true,
+    "real_form_elements": 0,
+    "submit_button_disabled": true,
+    "submit_button_type": "button",
+    "forced_pointer_click_no_url_change": true,
+    "four_request_paths_reach_form": true,
+    "technical_data_sample_quote_selection_prefill": "PASS",
+    "application_review_selection_prefill": "EXISTING BEHAVIOR: request=application-review is retained in URL/context; existing Request Type select mapping is absent, so selection stays blank. No logic was changed.",
+    "desktop_form_document_y_before": 1453.109375,
+    "desktop_form_document_y_after": 899.3125,
+    "narrow_form_document_y": 1313.515625
   },
-  "focused_interactions": {
-    "product_native_reference_disclosures": {
-      "tested": 15,
-      "keyboard": "Enter open / Space close",
-      "all_open_close_and_no_overflow": true
-    },
-    "narrow_toc_links": {
-      "tested": 38,
-      "h3_targets": 10,
-      "all_collapsed_after_click": true,
-      "target_top_range_px": [
-        144.5,
-        145.47
-      ],
-      "fixed_header_bottom_px": 71
-    },
-    "desktop_h3_target": {
-      "target_top_px": 145.03,
-      "header_bottom_px": 79
-    },
-    "inner_table_scroll": {
-      "normal_article": {
-        "width": 578,
-        "container": 451,
-        "observed_scroll_left": 80,
-        "page_scroll_x": 0
-      },
-      "five_column_article": {
-        "width": 942,
-        "container": 451,
-        "observed_scroll_left": 491,
-        "page_scroll_x": 0
-      },
-      "cookie": {
-        "width": 675,
-        "container": 451,
-        "observed_scroll_left": 80,
-        "page_scroll_x": 0
-      },
-      "desktop_note": "The widest five-column table is 942px inside an 835px container and intentionally uses local scrolling; columns are not forced to uniform widths."
-    },
-    "narrow_menu": {
-      "close_and_focus_restore_verified": [
-        "product",
-        "solution hub",
-        "normal article",
-        "complex article",
-        "Cookie Policy"
-      ],
-      "native_scrolled_article_restore": {
-        "before": 6489,
-        "after": 6489
-      },
-      "note": "Locator auto-scrolling can change pre-click position; scroll restoration was additionally checked with native visible clicks."
-    },
-    "product_listing": [
-      {
-        "label": "Featured Routes\nStarter set\n6",
-        "state": {
-          "total": 23,
-          "visible": 6
-        }
-      },
-      {
-        "label": "All Products\nFull overview\n23",
-        "state": {
-          "total": 23,
-          "visible": 23
-        }
-      },
-      {
-        "label": "Glass Veil & Tissue\nGC-V\n4",
-        "state": {
-          "total": 23,
-          "visible": 4
-        }
-      },
-      {
-        "label": "Acoustic Ceiling Facers\nGC-AC\n8",
-        "state": {
-          "total": 23,
-          "visible": 8
-        }
-      },
-      {
-        "label": "Gypsum Board Facers\nGC-GY\n1",
-        "state": {
-          "total": 23,
-          "visible": 1
-        }
-      },
-      {
-        "label": "Mineral Wool Insulation Facers\nGC-IN\n2",
-        "state": {
-          "total": 23,
-          "visible": 2
-        }
-      },
-      {
-        "label": "PIR/PUR Foam Board Facers\nGC-PIR\n3",
-        "state": {
-          "total": 23,
-          "visible": 3
-        }
-      },
-      {
-        "label": "Fiberglass Fabric\nGC-FB\n1",
-        "state": {
-          "total": 23,
-          "visible": 1
-        }
-      },
-      {
-        "label": "Silicone Coated Glass Fabric\nGC-FB-SL\n1",
-        "state": {
-          "total": 23,
-          "visible": 1
-        }
-      },
-      {
-        "label": "Foil-Composite Facers\nGC-AL\n3",
-        "state": {
-          "total": 23,
-          "visible": 3
-        }
-      }
+  "faq": {
+    "original_answers": 26,
+    "featured_answers": 4,
+    "category_counts": [
+      4,
+      4,
+      7,
+      4,
+      4,
+      3
     ],
-    "global_review_navigation_entries": 75
+    "search_categories_empty_state_and_clear_plus_all_reset": "PASS at both actual widths",
+    "desktop_accordion_click_and_Enter_toggle_count": 26,
+    "narrow_sample_accordion": "PASS",
+    "secondary_category_navigation": "native collapsed disclosure after answers"
   },
-  "static_no_js_fallback": "23 base cards preserved byte-for-byte in Products HTML; no actual JavaScript-disabled browser reload claimed",
+  "article_tables": {
+    "routes_per_width": 42,
+    "tables_per_width": 65,
+    "desktop_visible_hints": 2,
+    "desktop_fitting_without_hints": 63,
+    "narrow_visible_hints": 62,
+    "narrow_fitting_without_hints": 3,
+    "hint_visibility_mismatches": 0,
+    "resize_desktop_to_narrow_and_back": "PASS",
+    "inner_scroll_observed_px": 120,
+    "page_scroll_x": 0,
+    "page_horizontal_overflow_count": 0
+  },
+  "narrow_navigation": {
+    "native_open_close": "PASS",
+    "scroll_y_before": 1043,
+    "scroll_y_after": 1043,
+    "focus_returned_to": "Open navigation menu",
+    "note": "Native pointer result is authoritative; locator auto-scrolling changed page position in an earlier synthetic click sequence."
+  },
+  "pixel_review": "Contact/FAQ hero, form, search/categories, answer accordion; overflowing and fitting article tables. Route sweeps are geometry/DOM checks, not pixel review of every article.",
   "not_run": [
     "320px hosted rendering",
     "390px hosted rendering",
-    "real JavaScript-disabled reload",
-    "touch input",
+    "real JavaScript-disabled hosted reload",
+    "touch device",
     "200% zoom",
     "cross-browser testing"
   ],
-  "production_boundaries": "Static review only. No WordPress production integration, real forms, email, search, download permissions, WPML or analytics enabled."
+  "production_services": "Not connected: WordPress, live form submission, email, document permissions, WPML, analytics."
 }

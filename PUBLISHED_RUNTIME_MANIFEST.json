@@ -1,11 +1,15 @@
 {
-  "candidate": "type-expansion-candidate-v1",
-  "baseline_main_commit": "f0d0969a8a8becbaa240fe6f6f57d6b78ecf6fe6",
-  "baseline_runtime_commit": "706fb6aff5b3dffef41ed5cd73641ccc7bdf8115",
+  "candidate": "contact-faq-candidate-v1",
+  "baseline_main_commit": "4952dd315b9e02dc9a0c943f8dabcf9ab7aa9015",
+  "baseline_runtime_commit": "616a4b284b099da1dcbdd9818cd72ebaf747c01e",
   "pages": 75,
-  "runtime_file_count": 343,
-  "changed_body_pages": 59,
-  "unchanged_html_pages": 16,
+  "runtime_file_count": 346,
+  "body_changed_pages": [
+    "/contact/",
+    "/faq/"
+  ],
+  "article_head_only_pages": 42,
+  "whole_html_unchanged": 31,
   "files": [
     {
       "path": ".nojekyll",
@@ -19,38 +23,43 @@
     },
     {
       "path": "acoustic-facer-adhesive-layer-panel-sound-absorption-review/index.html",
-      "bytes": 67165,
-      "sha256": "d9b80c46c11f3e26e3dc2f80c7747ff0da7e4cb5bcad52de1f139d5a54787da6"
+      "bytes": 67354,
+      "sha256": "eba3d21326e714880dbcc22f07a4fd533a7c3743bbc4c55b56c7653676db79cf"
     },
     {
       "path": "acoustic-facer-airflow-panel-absorption-evidence/index.html",
-      "bytes": 67568,
-      "sha256": "8d2ae54b80ffab7ddf145c90b5f3d4908a275732c35a2bbe5517e5a33585d3c0"
+      "bytes": 67757,
+      "sha256": "dc29a1c31421493c7dcd4a32d31b162ece2adee91684c0fdc5fac759814f6167"
     },
     {
       "path": "acoustic-facer-cleaning-trial-protocol-record/index.html",
-      "bytes": 68482,
-      "sha256": "d355504f122661f13a5dfd7fd76eda4a613fab34daefcfd205020ed3d6bb3453"
+      "bytes": 68671,
+      "sha256": "3b9decb91c52580109e8d56247fbf238a5bf9f7adedd63a8d5f3ae3220a90d23"
     },
     {
       "path": "acoustic-facer-cleaning-trial-surface-bond-review/index.html",
-      "bytes": 66885,
-      "sha256": "9eba2bc06230f640fbc658e1e71877c14da662748c5251910a36b34a87824a77"
+      "bytes": 67074,
+      "sha256": "ffa680b1a168ca223730e10a01273f2527e5fb52f9d5cd89b018f9428c8c9cbf"
     },
     {
       "path": "acoustic-facer-dark-spots-bleed-through-review/index.html",
-      "bytes": 69056,
-      "sha256": "a9887a22209160e2f7dea4ed053d9f46f35f6b07a9e464ba729e22ab5215bc32"
+      "bytes": 69245,
+      "sha256": "76e5b1df8a6e9a9afea502e36a386e84c298cd724fbdecd7e94c4c55efe217b6"
     },
     {
       "path": "acoustic-facer-lamination-cooling-cure-evaluation/index.html",
-      "bytes": 68364,
-      "sha256": "2c7ad52f5b256bc0bf658330166555f97d72222befa04c064cffc885dc6377d3"
+      "bytes": 68553,
+      "sha256": "5dd3a51f1007669144be592f087e3c758cd12b05d1ce6a8da74f5e87d954541f"
     },
     {
       "path": "airflow-surface-hiding-fire-documents-acoustic-facer/index.html",
-      "bytes": 66150,
-      "sha256": "60050767310251fabe342d693d900f2f0c8d8ce4307985eddfabc19a815a9473"
+      "bytes": 66339,
+      "sha256": "e51e5b3159ea5f32942e6292e94bcbb11c51216e60063a8d129f4cf5a6fd59d5"
+    },
+    {
+      "path": "assets/css/article-table-overflow.css",
+      "bytes": 397,
+      "sha256": "a10281295801ab29ce6069a0b52c51f996f3cd394f6bd9acbdbe00f40e858715"
     },
     {
       "path": "assets/css/expanded-editorial.css",
@@ -106,6 +115,11 @@
       "path": "assets/css/review-shell.css",
       "bytes": 3675,
       "sha256": "513aac8881e0235935147de2079b0e9e4b21988bd61c4c9d87c82d7cd8ee9467"
+    },
+    {
+      "path": "assets/css/sample-contact-faq.css",
+      "bytes": 15326,
+      "sha256": "b8a62e9f96b5f98d08f9094c954d75064008c1d17416f11401c42567ebea3159"
     },
     {
       "path": "assets/css/sample-editorial.css",
@@ -1348,6 +1362,11 @@
       "sha256": "5894665eabe5e7a906dc992bffed8a0192410ed0784866e0cbff7978521c100d"
     },
     {
+      "path": "assets/js/article-table-overflow.js",
+      "bytes": 2091,
+      "sha256": "575f00fb3ccc66579689dec76bdaf590787a6d6364dfa68295a99cb9f3468a3a"
+    },
+    {
       "path": "assets/js/grecho-existing.js",
       "bytes": 11299,
       "sha256": "920fd33b516693a0b07310df959fd91a56ce9cbd61ccdfd5204aada56ad0bb5b"
@@ -1389,28 +1408,28 @@
     },
     {
       "path": "class-a-a2-s1-d0-noncombustible-facer-evidence/index.html",
-      "bytes": 79295,
-      "sha256": "277bac26432e5d2fe2c644b0b92f45a2f32f385a5685e1959b7f9efdbdd4347b"
+      "bytes": 79484,
+      "sha256": "bf42bb971acefd1dc3821c668b53557f1b245b8ac6bd8929c36a448b4060c131"
     },
     {
       "path": "compare-board-trials-facer-process-variables/index.html",
-      "bytes": 67974,
-      "sha256": "13528dc1c22b247a13657dab9ed8567f3162a84d1f5a916480f796141d56e0ad"
+      "bytes": 68163,
+      "sha256": "e328a8bca693c5710036cfd2e66f7a7752e43a2f7c680a0fc65aa126c6ebf1fc"
     },
     {
       "path": "compare-glass-veil-air-permeability-methods-pressure-units/index.html",
-      "bytes": 63802,
-      "sha256": "068b581bb2440b234df86d730249993eaac32ff9aeb1c19bdea1260ef5d157b1"
+      "bytes": 63991,
+      "sha256": "15e01395ee457d1a5ae185fdfd2ce578f3959fd5e1df5c5ed1f959b108c5ab25"
     },
     {
       "path": "compare-iso-fire-epd-reach-pfas-documents-fiberglass-facers/index.html",
-      "bytes": 69429,
-      "sha256": "09cb510d02f5c2aefbe71d904414da3896452973f6125d1bcf8cd9901adca8c2"
+      "bytes": 69618,
+      "sha256": "ddeb8f00bf9749c35ea0cd384d98fb2248a9590350ab42273a16102d39a7aad0"
     },
     {
       "path": "contact/index.html",
-      "bytes": 88113,
-      "sha256": "3b2303370f6fde940bf9d8db748aa9a6305a548fedc52f80a9e495e646e4f83a"
+      "bytes": 88262,
+      "sha256": "505d97dbb80595fa2f5740f843dc35d36ec2fb4623fb3906f9d364d4f02320ba"
     },
     {
       "path": "cookie-policy/index.html",
@@ -1419,8 +1438,8 @@
     },
     {
       "path": "diagnose-facer-foam-bonding-failures-pir-pur-board-trials/index.html",
-      "bytes": 63449,
-      "sha256": "2f1a4644ef56c8739e344c1dc98d63cb3cb96c90c57e3e4346bb7527946cc8e3"
+      "bytes": 63638,
+      "sha256": "9b8467f4b3bfc33352afa888cbb2de4cb3a17f501ab24c3e159789ada831d33b"
     },
     {
       "path": "europe-wide-width-facer-initiative/index.html",
@@ -1429,78 +1448,78 @@
     },
     {
       "path": "facer-basis-weight-gsm-vs-thickness/index.html",
-      "bytes": 64010,
-      "sha256": "a527bac4785940de296a69d8cbb9638e9c8a2c598b5e92521456a6efe53019d3"
+      "bytes": 64199,
+      "sha256": "fd1c8bffc91e70c6369d08114bed4d0e00a7b1aecf858e69deaa8766443bbc3f"
     },
     {
       "path": "facer-lot-roll-traceability-board-trials/index.html",
-      "bytes": 62648,
-      "sha256": "4df5d71fe20ca766b2b9270dcf2b3f9ee2d6f09e1f0f8a2e110ab6fe4e9b51d0"
+      "bytes": 62837,
+      "sha256": "370c84724f4ae3d74999374db266ce9856c7198207b27753ba9203181e082f30"
     },
     {
       "path": "facer-roll-wrinkles-edge-damage-converting-review/index.html",
-      "bytes": 69853,
-      "sha256": "086c0b6b7a9a748e704835a1ea535bc3c2f5fc728d4e5775584173bab8606afc"
+      "bytes": 70042,
+      "sha256": "d91f54daca1446a85abcdd34d8f1368013c06c4f3dcb80edb44741498196d24b"
     },
     {
       "path": "facer-technical-data-typical-values-specification-limits/index.html",
-      "bytes": 72361,
-      "sha256": "0ba0ec05fcd4cb5902c0b02cf532e9001e9058402324cacb4f0ba2f405da7455"
+      "bytes": 72550,
+      "sha256": "f83e62da035a52b83f28ff7ee997e143d5587f0a97c3df81a7f674020eaa9c4e"
     },
     {
       "path": "facer-test-report-finished-board-performance/index.html",
-      "bytes": 72364,
-      "sha256": "487cb94a5d9d5c86e6b28d7b8d9f7e8f681baf1c746774a4a5900032590b20d4"
+      "bytes": 72553,
+      "sha256": "809ef725c3e073cc290782b389d2de3cf3dc9295c4a60cf0863a73b73433fbc4"
     },
     {
       "path": "faq/index.html",
-      "bytes": 88325,
-      "sha256": "5421125264cd01e744d7d6d90c354ff88cd3fcbcbec2890b06411bef05104ed6"
+      "bytes": 88836,
+      "sha256": "4623c2f42c9458c5191d9c217aa39c6e193fe5cee1c666e43d7892d9a6bd6ace"
     },
     {
       "path": "fiberglass-facer-material-identity-before-qualification/index.html",
-      "bytes": 76500,
-      "sha256": "cf72fdcf494142dff6dbebbfe051f91cf520d5c32ad36dd2fd9323c0a31c4320"
+      "bytes": 76689,
+      "sha256": "207aac1a8a77ac0ac245d1a68f01148ed58abfb9a4c841a939133663664830d7"
     },
     {
       "path": "fiberglass-facer-review-for-acoustic-ceiling-panels/index.html",
-      "bytes": 67200,
-      "sha256": "547f627de25a22b119c254da743601e24dae32c4f10093f780613e1cef2ca821"
+      "bytes": 67389,
+      "sha256": "5697b8b27a1b793d1bc8167baaa24d5319c5b5039c6472292925965cbf7fd813"
     },
     {
       "path": "fluorine-free-thermal-insulation-facers-pfas-evidence-boundaries/index.html",
-      "bytes": 70108,
-      "sha256": "a578515a83418d42d2e2917e5376b2e15ef2fc9432f86e7387fce61469863019"
+      "bytes": 70297,
+      "sha256": "c82f13bc533f46cb30073dbf80181cd9a977510bc4e8a6ff21653efecb53a7c5"
     },
     {
       "path": "foil-composite-insulation-facers-reflective-surface-directions/index.html",
-      "bytes": 70442,
-      "sha256": "919f73dc2c0527c0e2f9352e6cddae52101d93e5ceeacf5f11303a042cf1d71d"
+      "bytes": 70631,
+      "sha256": "89f992c842380213e843c762fd76f1625e0583bc7c14c10dc7f91d78ce6773e7"
     },
     {
       "path": "glass-facing-route-gypsum-board-applications-sample-review/index.html",
-      "bytes": 65913,
-      "sha256": "8ad32ca4ec6b1b298ce930c003b31ec3639a04e8babba342dd461da4deefc567"
+      "bytes": 66102,
+      "sha256": "2891c6b27774528b5517c9db9be81e44ba53de3d7708cebe5d0f5c5c277de17b"
     },
     {
       "path": "glass-fibre-facer-tensile-data-md-cd-test-conditions/index.html",
-      "bytes": 63368,
-      "sha256": "d29ea2150fe6a9d0bd86758d34cb1a6aedb0cd81e917b6fb169d3111fb257968"
+      "bytes": 63557,
+      "sha256": "2f71fab4d5aad61944d534ff4218cd922686f476a3fa04acc0e585717c5d2dca"
     },
     {
       "path": "gypsum-board-facer-surface-finish-documentation-questions/index.html",
-      "bytes": 65248,
-      "sha256": "b6ac775ea6862309b032ac9950977ae8b416d150c427634ffb6555bd8603a16b"
+      "bytes": 65437,
+      "sha256": "8ba61e39730a8e5846fa94359169c9ef2ece1141095e7470a7210bac1a00e6d8"
     },
     {
       "path": "gypsum-board-facer-surface-total-water-absorption/index.html",
-      "bytes": 69353,
-      "sha256": "9c4ad117a41ec8924ed4387176faa0d831b7723470c348a8f86fdfa3ff99bba0"
+      "bytes": 69542,
+      "sha256": "f34bf8a6edce9e42292a305e8d80eed20dd5c77695b63d12ab41d485a387b5c8"
     },
     {
       "path": "incoming-facer-roll-inspection-board-line/index.html",
-      "bytes": 62904,
-      "sha256": "6930f9f96f77c03c2f2c89cd16e1d5b03cd9fd297d29e754e9b9b4c619cf3b06"
+      "bytes": 63093,
+      "sha256": "d06592867a4762aaa9d0765dc1cb840ff913e9f6c433a7e5432df4d577ff5d3a"
     },
     {
       "path": "index.html",
@@ -1514,38 +1533,38 @@
     },
     {
       "path": "insulation-facer-air-permeability-vs-water-vapour-transmission/index.html",
-      "bytes": 65316,
-      "sha256": "3dea5153e5e47369670aef14d0d0dbb284bd647f5590c0a653f2b4b60ef33614"
+      "bytes": 65505,
+      "sha256": "871412cbfe6bbc336cb27aa7dfdf6747b24c1bc3056353e6676c7e11481fcc65"
     },
     {
       "path": "low-airflow-facer-pir-pur-trial-process-window/index.html",
-      "bytes": 67048,
-      "sha256": "27ed10896a9ec6f208ba136274352523a97282278c3cc0c7beb473981deb3f68"
+      "bytes": 67237,
+      "sha256": "09bb59015b01871d1454defb357dce8ff1e825e1fdd1dd4a8b2ec250e54ac29d"
     },
     {
       "path": "mineral-wool-board-facing-service-temperature-limits/index.html",
-      "bytes": 69466,
-      "sha256": "44ad6980a5ff722d13516e5a5220114287c3caf804d5daa2732b08e3c20c9c5b"
+      "bytes": 69655,
+      "sha256": "c15f74020231159a804af559f49c3cf9be8b717930b4cb9a0ba2f4d767602d6e"
     },
     {
       "path": "mineral-wool-facer-sample-qualification/index.html",
-      "bytes": 70400,
-      "sha256": "e65fa9a18c1b10c2ae82ed9a7d7587b6abb269f10aca104ef28fd9748fffa7e7"
+      "bytes": 70589,
+      "sha256": "c082b9a77a48a4da8edd310a69df40d8a8d0022b77188673671c67063ae6c8ed"
     },
     {
       "path": "moisture-resistant-fiberglass-facers-gypsum-board-checklist/index.html",
-      "bytes": 65840,
-      "sha256": "6c13e975026ed61240e1f2f66ae27bacb3318362a3d12f2138013761e19f809d"
+      "bytes": 66029,
+      "sha256": "be8c2d308ae81ecbc339fb2baf344457353708064729786657e869160e62a507"
     },
     {
       "path": "paper-to-glass-mat-gypsum-line-qualification/index.html",
-      "bytes": 78139,
-      "sha256": "1ada6b0447424557d5f6e3d003115e165e9451f6022b51dc77aa056562903533"
+      "bytes": 78328,
+      "sha256": "9c9bab9b04736ab8898f194eb7cfb6619e860e1610308842223f5e9346dcc75e"
     },
     {
       "path": "pir-board-facer-gas-diffusion-thermal-aging/index.html",
-      "bytes": 72158,
-      "sha256": "4fb8d7b2c4243f038efca9574000d3757bc94d2303aef16ac8ea1f4d606196e7"
+      "bytes": 72347,
+      "sha256": "28b4ed53ce0632fad937c378887565de7cb06739a972036c46c6dacaa1bf4ecd"
     },
     {
       "path": "privacy-policy/index.html",
@@ -1644,8 +1663,8 @@
     },
     {
       "path": "request-tds-sds-test-reports-fiberglass-facers/index.html",
-      "bytes": 72732,
-      "sha256": "28cfefd287d9025ee932fcbb2644d3cf9d0415a51f50545a53cff7c7e8fb9612"
+      "bytes": 72921,
+      "sha256": "39ed211200c9394c709a04a442480fb58c9ad1e395a0ddac38719cfeedecb8bc"
     },
     {
       "path": "resource-center/index.html",
@@ -1659,13 +1678,13 @@
     },
     {
       "path": "sample-approval-vs-supplier-qualification-fiberglass-facers/index.html",
-      "bytes": 75710,
-      "sha256": "4e5f640cf9f1504fe5433cda54dc80d3c52ead860357f67dd31a8d97bdd552b9"
+      "bytes": 75899,
+      "sha256": "0b141c3971db6494e0cc736bd8b971ca4bd8a539fd661325007d1594aab41c25"
     },
     {
       "path": "sample-review-checklist-board-manufacturers-fiberglass-facers/index.html",
-      "bytes": 65878,
-      "sha256": "1b31000baf5ef3ee28e3aaa276577adfaca1901139654b44cf874dd1a7feb555"
+      "bytes": 66067,
+      "sha256": "20e441402c58d04fa7197da0259ea2f1eccc9902f2228dc13d01bf692ae94b91"
     },
     {
       "path": "solutions/acoustic-ceiling-wall-facers/index.html",
@@ -1694,38 +1713,39 @@
     },
     {
       "path": "successful-facer-board-line-trial-evidence-scope/index.html",
-      "bytes": 80338,
-      "sha256": "e48b03493eb7b4f010bd77f1354d21f65b7113b2efb0f3fb7814ce7a0faee67f"
+      "bytes": 80527,
+      "sha256": "acbd37be58174a88726fafd43dc9d13eaa98d931b862fdf2c5c9327cc79da806"
     },
     {
       "path": "ultra-low-airflow-glass-facer-pir-pur-review-criteria/index.html",
-      "bytes": 66477,
-      "sha256": "b49cfefe8139d35cca91bfea5bca3f8989fe8b093f87067a0c081152e6adfea6"
+      "bytes": 66666,
+      "sha256": "c9f5884a99d5fc80f762a092f872bf6299e47dc3d594347d3b1f4d1db2962b9c"
     },
     {
       "path": "visual-surface-acceptance-coloured-acoustic-facer-trials/index.html",
-      "bytes": 64096,
-      "sha256": "22b90f9c1c982fce727e49a7db2e54dfbdf8f41ec7981579fa8556c42546a893"
+      "bytes": 64285,
+      "sha256": "9bbc09852370a1b564d54c45932904f0fedbec30f87746609aba0719d18c3b47"
     },
     {
       "path": "white-black-dotted-acoustic-facers-comparison/index.html",
-      "bytes": 66498,
-      "sha256": "ca93635055d6dae880dc4993e48a4a240b88bd86337ed67ce46a210e6b9967cb"
+      "bytes": 66687,
+      "sha256": "0de6b7cd56dee2b3fa0514f0475d6569cd5c448839dbf6f6d0171f543b992a71"
     },
     {
       "path": "wide-facer-roll-usable-width-board-coverage/index.html",
-      "bytes": 68353,
-      "sha256": "cd9b4efe1551c574f3e04adbd0ed614a2cee83ab7080ebd5154d91ead699a3c7"
+      "bytes": 68542,
+      "sha256": "7af27c3fe5952034be688d961b1f52a6c38ec6906a8236bf7a7da3a084c7a92a"
     },
     {
       "path": "wide-width-facer-trial-readiness-checklist/index.html",
-      "bytes": 73698,
-      "sha256": "dcfab837a8772872f5190e4169cc4cb8f85197fbbc48069b87489eb678fa4e7d"
+      "bytes": 73887,
+      "sha256": "1974d3181897ff7e1a98cc1bfdc0cc7df6036ac3e1f02e765c46eda8b802c0b2"
     }
   ],
-  "version": "Same-type visual expansion 2026-10-02",
-  "runtime_commit": "616a4b284b099da1dcbdd9818cd72ebaf747c01e",
+  "version": "Contact and FAQ visual samples 2026-10-03",
+  "runtime_commit": "de27cc38cdc71bb04bcda9a02028ad5841c1954d",
   "preview_url": "https://huangwenliang2111-ship-it.github.io/grecho-homepage-v3-review/",
-  "base": "/grecho-homepage-v3-review/",
-  "candidate_manifest_sha256": "88cc3b746184214b464ef7795486a95ca324350e1dfccd483275d5b396228002"
+  "deployment_run": 37089141330,
+  "deployment_status": "success",
+  "candidate_manifest_sha256": "b775aba69d2b9fc7c39a89b6df8700de1fc4f8b940e0d1debcd799b17f91d15b"
 }

@@ -2,7 +2,7 @@
 .grecho-existing.final-europe{--eu-ink:#12394e;--eu-line:#d0dfe7}
 .final-europe .gc-section{padding-block:76px}
 .final-europe h2{font-size:clamp(29px,3.35vw,43px);line-height:1.14}
-.final-europe h2 em{font-style:normal;color:var(--grecho-v3-brand)}
+.final-europe h2 em{display:block;font-style:normal;color:var(--grecho-v3-brand)}
 .final-europe .gc-section-head{max-width:760px;margin-bottom:34px}
 .final-europe .campaign-hero{background:#edf4f7;padding-block:62px;isolation:isolate}
 .final-europe .campaign-hero__inner{display:block}

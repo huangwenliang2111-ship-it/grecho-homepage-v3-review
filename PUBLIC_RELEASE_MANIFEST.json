@@ -1,8 +1,8 @@
 {
   "schema": "grecho-public-static-release/1",
-  "generation_id": "1a1d446d-6cdf-4266-8bfe-e2cdc2bdf819",
+  "generation_id": "d77e3d51-b235-4915-afea-2710056578e2",
   "source_generation_id": "9b0c2b79-6bc7-4a37-92cf-d73b629ae52d",
-  "created": "2026-10-07T01:03:36.432872+00:00",
+  "created": "2026-10-07T08:34:33.089365+00:00",
   "routes": 75,
   "pages": 33,
   "posts": 42,
@@ -21,8 +21,8 @@
     },
     {
       "file": "about/index.html",
-      "bytes": 59905,
-      "sha256": "6e2f1a0b1efa9f4a7780f33fbafdca28bd5266cdef31769f22da50f1cb93088e"
+      "bytes": 59323,
+      "sha256": "6f761749ca109564cdd37c61d15706138ddf6f83457055c856caf9cb3668cbea"
     },
     {
       "file": "acoustic-facer-adhesive-layer-panel-sound-absorption-review/index.html",
@@ -163,6 +163,11 @@
       "file": "assets/css/sample-task-pages.css",
       "bytes": 32178,
       "sha256": "f87ce02f0917632e2072c0f2fa182b10321ea5bf008c2b196f99f963e0c458fa"
+    },
+    {
+      "file": "assets/css/secondary-full-bleed-hero-v1.css",
+      "bytes": 9006,
+      "sha256": "e368629f098a6106bf285a9d10cce1c1f87bf31e59a407c5000d3a5d86813c98"
     },
     {
       "file": "assets/css/sitewide-remediation.css",
@@ -910,6 +915,11 @@
       "sha256": "c64bee7e6e0f24e15201fdefbdb55ebd2d60155e0b50abbffd6e42141605cbd0"
     },
     {
+      "file": "assets/images/existing/grecho-contact-hero-desktop-attachment-1708.webp",
+      "bytes": 63434,
+      "sha256": "f893d19d21a02a38ed50086bbd5f48a547cca83e712cb838f5306619d85c68a7"
+    },
+    {
       "file": "assets/images/navigation/featured-acoustic-solution.png",
       "bytes": 618749,
       "sha256": "f82ac3ba0941d62af9f0eb48d1bc1045abe4bbd112aec01442ef0fb75e3bb4ba"
@@ -1301,8 +1311,8 @@
     },
     {
       "file": "case-studies/index.html",
-      "bytes": 63862,
-      "sha256": "22131fe42d56470d271bcb6887603cbc58514152d653f345c7ae40aa51f11499"
+      "bytes": 63522,
+      "sha256": "9a4a929217af62695dca5c3e1ff6d6d951f8af1d5ac0f85df418fe246e73d6fb"
     },
     {
       "file": "class-a-a2-s1-d0-noncombustible-facer-evidence/index.html",
@@ -1326,8 +1336,8 @@
     },
     {
       "file": "contact/index.html",
-      "bytes": 82002,
-      "sha256": "5067187725d7ec9f9dce395d22159391823a770e67bdc8cb005e0bcd16a3c62b"
+      "bytes": 81781,
+      "sha256": "898870449b2b7b0bf7bd7f5fc38d7fdc25d1833618df631f21709497016e9922"
     },
     {
       "file": "cookie-policy/index.html",
@@ -1371,8 +1381,8 @@
     },
     {
       "file": "faq/index.html",
-      "bytes": 77224,
-      "sha256": "7a4b969207f383d34bb7bfacb79c1f479a9c16839e78b2233c1e39c17f2d8153"
+      "bytes": 76884,
+      "sha256": "f42080a2803e72f21b32da5096853ab82aa2f25a759100bcbc2eef7c7ebd46e0"
     },
     {
       "file": "fiberglass-facer-material-identity-before-qualification/index.html",
@@ -1426,8 +1436,8 @@
     },
     {
       "file": "insights/index.html",
-      "bytes": 78931,
-      "sha256": "c1363e7b8312918315c80f710cb2d99ab996d5d5ee917aa37df59c032d2fc206"
+      "bytes": 78428,
+      "sha256": "a618b4493698df3071036707f0da4b872563dc35647e496de718e2f245c121a7"
     },
     {
       "file": "insulation-facer-air-permeability-vs-water-vapour-transmission/index.html",
@@ -1531,8 +1541,8 @@
     },
     {
       "file": "products/index.html",
-      "bytes": 155172,
-      "sha256": "14afaa0d2bd9b9ca64c391f93dcb40db7cb9d7ece9a0d39f7570309d9a81888e"
+      "bytes": 152952,
+      "sha256": "b9fe631a35b6c59174d74830c1ea76d4f2b3bb96b6c7dc935ed5aba938581aaa"
     },
     {
       "file": "products/reinforced-composite-facer-pir-pur-xps-polyiso/index.html",
@@ -1571,8 +1581,8 @@
     },
     {
       "file": "resource-center/index.html",
-      "bytes": 79373,
-      "sha256": "0b3be9a3ecdcb1478a72b764473cf68c167af0ee7e2dccbc6ff767e7192955e1"
+      "bytes": 78621,
+      "sha256": "b29163e2902941e3dcfd47cf71136b7fbc4b7d3da7dbeb72c0a2e9d19ef71563"
     },
     {
       "file": "robots.txt",
@@ -1665,7 +1675,7 @@
       "route": "/products/",
       "type": "page",
       "file": "products/index.html",
-      "sha256": "14afaa0d2bd9b9ca64c391f93dcb40db7cb9d7ece9a0d39f7570309d9a81888e"
+      "sha256": "b9fe631a35b6c59174d74830c1ea76d4f2b3bb96b6c7dc935ed5aba938581aaa"
     },
     {
       "id": 1323,
@@ -1693,21 +1703,21 @@
       "route": "/resource-center/",
       "type": "page",
       "file": "resource-center/index.html",
-      "sha256": "0b3be9a3ecdcb1478a72b764473cf68c167af0ee7e2dccbc6ff767e7192955e1"
+      "sha256": "b29163e2902941e3dcfd47cf71136b7fbc4b7d3da7dbeb72c0a2e9d19ef71563"
     },
     {
       "id": 28,
       "route": "/faq/",
       "type": "page",
       "file": "faq/index.html",
-      "sha256": "7a4b969207f383d34bb7bfacb79c1f479a9c16839e78b2233c1e39c17f2d8153"
+      "sha256": "f42080a2803e72f21b32da5096853ab82aa2f25a759100bcbc2eef7c7ebd46e0"
     },
     {
       "id": 30,
       "route": "/contact/",
       "type": "page",
       "file": "contact/index.html",
-      "sha256": "5067187725d7ec9f9dce395d22159391823a770e67bdc8cb005e0bcd16a3c62b"
+      "sha256": "898870449b2b7b0bf7bd7f5fc38d7fdc25d1833618df631f21709497016e9922"
     },
     {
       "id": 1442,
@@ -1735,21 +1745,21 @@
       "route": "/case-studies/",
       "type": "page",
       "file": "case-studies/index.html",
-      "sha256": "22131fe42d56470d271bcb6887603cbc58514152d653f345c7ae40aa51f11499"
+      "sha256": "9a4a929217af62695dca5c3e1ff6d6d951f8af1d5ac0f85df418fe246e73d6fb"
     },
     {
       "id": 22,
       "route": "/insights/",
       "type": "page",
       "file": "insights/index.html",
-      "sha256": "c1363e7b8312918315c80f710cb2d99ab996d5d5ee917aa37df59c032d2fc206"
+      "sha256": "a618b4493698df3071036707f0da4b872563dc35647e496de718e2f245c121a7"
     },
     {
       "id": 26,
       "route": "/about/",
       "type": "page",
       "file": "about/index.html",
-      "sha256": "6e2f1a0b1efa9f4a7780f33fbafdca28bd5266cdef31769f22da50f1cb93088e"
+      "sha256": "6f761749ca109564cdd37c61d15706138ddf6f83457055c856caf9cb3668cbea"
     },
     {
       "id": 1960,
@@ -2173,10 +2183,22 @@
     }
   ],
   "static_review": {
-    "id": "1bc54950-b161-4541-85c2-357879c31180",
-    "source_commit": "c26ae0889b0ea1640a7eb5f7a6de08671bd8e667",
-    "scope": "CONTACT_STATIC_FIELDSET_LEGEND_ONLY",
-    "created_utc": "2026-10-07T03:32:05.843Z",
-    "content_generation_unchanged": true
+    "id": "1572a086-b71f-4f38-8c61-84d20f670bbe",
+    "source_commit": "a3adc22d8615530208d2e60e65b48bdf3e9f2ba1",
+    "scope": "SEVEN_PAGE_ORIGINAL_FULL_BLEED_HERO_ONLY",
+    "created_utc": "2026-10-07T08:34:33.089365+00:00",
+    "content_generation_unchanged": true,
+    "authority_label": "INTERIM_DESIGN_AND_CONTENT_REVIEW_CANDIDATE",
+    "hero_component": "SECONDARY_FULL_BLEED_HERO_V1",
+    "hero_authority_ids": [
+      20,
+      24,
+      22,
+      26,
+      30,
+      28,
+      18
+    ],
+    "business_content_changes": 0
   }
 }

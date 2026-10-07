@@ -1326,8 +1326,8 @@
     },
     {
       "file": "contact/index.html",
-      "bytes": 81904,
-      "sha256": "f5a1a7dafd40fed1ef9d587b2494ff995ded948f0cde26107f6f3163ce79e340"
+      "bytes": 82002,
+      "sha256": "5067187725d7ec9f9dce395d22159391823a770e67bdc8cb005e0bcd16a3c62b"
     },
     {
       "file": "cookie-policy/index.html",
@@ -1707,7 +1707,7 @@
       "route": "/contact/",
       "type": "page",
       "file": "contact/index.html",
-      "sha256": "f5a1a7dafd40fed1ef9d587b2494ff995ded948f0cde26107f6f3163ce79e340"
+      "sha256": "5067187725d7ec9f9dce395d22159391823a770e67bdc8cb005e0bcd16a3c62b"
     },
     {
       "id": 1442,
@@ -2171,5 +2171,12 @@
       "file": "cookie-policy/index.html",
       "sha256": "7993c04d6edf61258f69db87c40b0e64ec28f5db96f9843ec5ff00efeb3c765a"
     }
-  ]
+  ],
+  "static_review": {
+    "id": "1bc54950-b161-4541-85c2-357879c31180",
+    "source_commit": "c26ae0889b0ea1640a7eb5f7a6de08671bd8e667",
+    "scope": "CONTACT_STATIC_FIELDSET_LEGEND_ONLY",
+    "created_utc": "2026-10-07T03:32:05.843Z",
+    "content_generation_unchanged": true
+  }
 }

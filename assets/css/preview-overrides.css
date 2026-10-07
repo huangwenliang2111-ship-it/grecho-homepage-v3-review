@@ -1,3 +1,0 @@
-.grecho-v3{padding-top:0}.grecho-v3-authority-bar{min-height:30px}.grecho-v3-authority-bar .grecho-v3-container{padding-block:5px}.grecho-v3-authority-bar strong{white-space:nowrap}.preview-action-notice{position:fixed;z-index:2147483646;left:50%;bottom:24px;transform:translateX(-50%);max-width:calc(100vw - 32px);padding:11px 16px;border-radius:8px;background:#17223b;color:#fff;font:650 13px/1.4 Inter,Arial,sans-serif;box-shadow:0 5px 20px rgba(0,0,0,.3);text-align:center}.preview-action-notice[hidden]{display:none}
-[data-preview-disabled="true"]{cursor:not-allowed}
-@media(max-width:600px){.grecho-v3-authority-bar .grecho-v3-container{display:flex;align-items:center;gap:3px 8px;padding-block:5px;font-size:9px}.grecho-v3-authority-bar span{font-size:9px}}

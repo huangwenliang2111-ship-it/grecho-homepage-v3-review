@@ -21,8 +21,8 @@
     },
     {
       "file": "about/index.html",
-      "bytes": 59323,
-      "sha256": "6f761749ca109564cdd37c61d15706138ddf6f83457055c856caf9cb3668cbea"
+      "bytes": 59772,
+      "sha256": "175418929cdb3025cb8d07d210636a8784b6e4722289517765d07f5c44d5b1a6"
     },
     {
       "file": "acoustic-facer-adhesive-layer-panel-sound-absorption-review/index.html",
@@ -1311,8 +1311,8 @@
     },
     {
       "file": "case-studies/index.html",
-      "bytes": 63522,
-      "sha256": "9a4a929217af62695dca5c3e1ff6d6d951f8af1d5ac0f85df418fe246e73d6fb"
+      "bytes": 64016,
+      "sha256": "262682e669fc185931b3ba8d3acfcf8d34fcd6979e31b44be2f0b97db33aa820"
     },
     {
       "file": "class-a-a2-s1-d0-noncombustible-facer-evidence/index.html",
@@ -1336,8 +1336,8 @@
     },
     {
       "file": "contact/index.html",
-      "bytes": 81781,
-      "sha256": "898870449b2b7b0bf7bd7f5fc38d7fdc25d1833618df631f21709497016e9922"
+      "bytes": 82156,
+      "sha256": "be0abe10abce968e6a412d0c4275f99fd02ea4155b4b403275be1e3946a25340"
     },
     {
       "file": "cookie-policy/index.html",
@@ -1381,8 +1381,8 @@
     },
     {
       "file": "faq/index.html",
-      "bytes": 76884,
-      "sha256": "f42080a2803e72f21b32da5096853ab82aa2f25a759100bcbc2eef7c7ebd46e0"
+      "bytes": 77378,
+      "sha256": "cd72c377502ddc5e36128506bdaadbbb84357db87dde4ba76e2b9e9e8eb1c44c"
     },
     {
       "file": "fiberglass-facer-material-identity-before-qualification/index.html",
@@ -1436,8 +1436,8 @@
     },
     {
       "file": "insights/index.html",
-      "bytes": 78428,
-      "sha256": "a618b4493698df3071036707f0da4b872563dc35647e496de718e2f245c121a7"
+      "bytes": 79085,
+      "sha256": "556d30477864f27c13d984ab04830eaad9467b3948de30ffadaebed41fb2da41"
     },
     {
       "file": "insulation-facer-air-permeability-vs-water-vapour-transmission/index.html",
@@ -1541,8 +1541,8 @@
     },
     {
       "file": "products/index.html",
-      "bytes": 152952,
-      "sha256": "b9fe631a35b6c59174d74830c1ea76d4f2b3bb96b6c7dc935ed5aba938581aaa"
+      "bytes": 155044,
+      "sha256": "1b85674a6ba1f68b1bc079e1cbd6c607a602699ee8a1528b21ccd1abbbf28794"
     },
     {
       "file": "products/reinforced-composite-facer-pir-pur-xps-polyiso/index.html",
@@ -1581,8 +1581,8 @@
     },
     {
       "file": "resource-center/index.html",
-      "bytes": 78621,
-      "sha256": "b29163e2902941e3dcfd47cf71136b7fbc4b7d3da7dbeb72c0a2e9d19ef71563"
+      "bytes": 79251,
+      "sha256": "5f14ae4d9b39888c50b0c7f00362ed6e3a613be0f3514e26b460a115b9f48e7f"
     },
     {
       "file": "robots.txt",
@@ -1675,7 +1675,7 @@
       "route": "/products/",
       "type": "page",
       "file": "products/index.html",
-      "sha256": "b9fe631a35b6c59174d74830c1ea76d4f2b3bb96b6c7dc935ed5aba938581aaa"
+      "sha256": "1b85674a6ba1f68b1bc079e1cbd6c607a602699ee8a1528b21ccd1abbbf28794"
     },
     {
       "id": 1323,
@@ -1703,21 +1703,21 @@
       "route": "/resource-center/",
       "type": "page",
       "file": "resource-center/index.html",
-      "sha256": "b29163e2902941e3dcfd47cf71136b7fbc4b7d3da7dbeb72c0a2e9d19ef71563"
+      "sha256": "5f14ae4d9b39888c50b0c7f00362ed6e3a613be0f3514e26b460a115b9f48e7f"
     },
     {
       "id": 28,
       "route": "/faq/",
       "type": "page",
       "file": "faq/index.html",
-      "sha256": "f42080a2803e72f21b32da5096853ab82aa2f25a759100bcbc2eef7c7ebd46e0"
+      "sha256": "cd72c377502ddc5e36128506bdaadbbb84357db87dde4ba76e2b9e9e8eb1c44c"
     },
     {
       "id": 30,
       "route": "/contact/",
       "type": "page",
       "file": "contact/index.html",
-      "sha256": "898870449b2b7b0bf7bd7f5fc38d7fdc25d1833618df631f21709497016e9922"
+      "sha256": "be0abe10abce968e6a412d0c4275f99fd02ea4155b4b403275be1e3946a25340"
     },
     {
       "id": 1442,
@@ -1745,21 +1745,21 @@
       "route": "/case-studies/",
       "type": "page",
       "file": "case-studies/index.html",
-      "sha256": "9a4a929217af62695dca5c3e1ff6d6d951f8af1d5ac0f85df418fe246e73d6fb"
+      "sha256": "262682e669fc185931b3ba8d3acfcf8d34fcd6979e31b44be2f0b97db33aa820"
     },
     {
       "id": 22,
       "route": "/insights/",
       "type": "page",
       "file": "insights/index.html",
-      "sha256": "a618b4493698df3071036707f0da4b872563dc35647e496de718e2f245c121a7"
+      "sha256": "556d30477864f27c13d984ab04830eaad9467b3948de30ffadaebed41fb2da41"
     },
     {
       "id": 26,
       "route": "/about/",
       "type": "page",
       "file": "about/index.html",
-      "sha256": "6f761749ca109564cdd37c61d15706138ddf6f83457055c856caf9cb3668cbea"
+      "sha256": "175418929cdb3025cb8d07d210636a8784b6e4722289517765d07f5c44d5b1a6"
     },
     {
       "id": 1960,
@@ -2199,6 +2199,7 @@
       28,
       18
     ],
-    "business_content_changes": 0
+    "business_content_changes": 0,
+    "html_line_endings": "PRESERVED_FROM_ACCEPTED_BASELINE"
   }
 }

@@ -194,3 +194,141 @@ main.home-ui.sample-faq #faq-explorer .gfaq-search input {border:0;box-shadow:no
 /* Show identical access policy once; preserved hidden entry text keeps search semantics exact. */
 main.home-ui .ux-document .ux-shared-access-detail {display:none}
 main.home-ui .ux-resource-access-note {margin:16px 0 20px;color:var(--grecho-v3-muted);font-size:14px;line-height:1.56}
+
+/* R3: Production-informed composition. All rules are scoped to this review candidate. */
+main.home-ui[data-home-ui-revision=R3] .ux-section {padding-block:80px}
+main.home-ui[data-home-ui-revision=R3] .home-ui-head {max-width:850px;margin-bottom:32px}
+main.home-ui .r3-series-panel {border:0;border-radius:0;background:transparent;padding:0;margin:24px 0 34px;box-shadow:none}
+main.home-ui .r3-series-panel>summary {font-size:15px;font-weight:700;color:#123b7a;min-height:44px;cursor:pointer}
+main.home-ui .r3-series-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:14px}
+main.home-ui .r3-series-grid button {position:relative;display:grid;grid-template-columns:78px 1fr;grid-template-rows:1fr auto;column-gap:13px;align-items:center;text-align:left;padding:12px;background:#f6f9fd;border:1px solid #dce5ef;border-radius:10px;color:#22303d;cursor:pointer;min-height:98px;box-shadow:0 3px 10px #173b5908}
+main.home-ui .r3-series-grid img {grid-row:1/3;width:78px;height:74px;object-fit:contain;background:#f0f2f5;border-radius:6px}
+main.home-ui .r3-series-grid span {font-size:13px;font-weight:700;line-height:1.35}
+main.home-ui .r3-series-grid small {font-size:11px;color:#627486;margin-top:5px}
+main.home-ui .r3-series-grid button:is(:hover,[aria-pressed=true]) {border-color:#1b4aa1;background:#edf3ff}
+main.home-ui[data-enhanced=true] .r3-family-adapter {display:none}
+main.home-ui .r3-catalogue-scope {display:flex;gap:6px;padding:6px;border:1px solid #dce5ef;background:#f3f7fc;border-radius:8px;margin-bottom:24px;width:fit-content;max-width:100%}
+main.home-ui .r3-catalogue-scope button {border:0;background:transparent;color:#536577;padding:12px 18px;border-radius:5px;font-size:14px;font-weight:700;min-height:46px;cursor:pointer}
+main.home-ui .r3-catalogue-scope button[aria-pressed=true] {background:#1b4aa1;color:white;box-shadow:0 4px 10px #1b4aa120}
+main.home-ui .r3-catalogue-scope span {font-size:11px;margin-left:5px;opacity:.85}
+main.home-ui .r3-scope-recovery {padding:18px 20px;background:#eef4ff;border-left:3px solid #1b4aa1;margin-bottom:24px;border-radius:0 8px 8px 0}
+main.home-ui .r3-scope-recovery p {font-size:14px}
+main.home-ui .ux-product-workspace {grid-template-columns:230px minmax(0,1fr);gap:28px}
+main.home-ui .ux-product-filters {background:#f8fafd;border-radius:10px;padding:22px}
+main.home-ui .ux-product-grid {gap:24px}
+main.home-ui .ux-product-card {border:1px solid #dce4ed;border-radius:12px;overflow:hidden;background:#fff;box-shadow:0 10px 30px #173b590c}
+main.home-ui .ux-product-card .ux-product-image {aspect-ratio:4/3;width:100%;height:auto;object-fit:contain;background:#f1f3f6;border-bottom:1px solid #e2e8f0}
+main.home-ui .ux-product-card .ux-product-copy {padding:24px}
+main.home-ui .ux-product-copy h3 {font-size:23px;line-height:1.16;letter-spacing:-.03em;margin-bottom:10px}
+main.home-ui .ux-product-copy .grecho-v3-kicker {font-size:10px;letter-spacing:.08em;margin-bottom:12px}
+main.home-ui .ux-product-copy .gpl-product-summary {font-size:14px;line-height:1.6;color:#536577}
+main.home-ui .ux-tags {gap:6px;margin:16px 0 20px}
+main.home-ui .ux-tags span {background:#f2f6fc;border-radius:4px;line-height:1.5}
+main.home-ui #route-help .ux-steps {gap:26px;border-top:1px solid #c9d8ec;padding-top:26px}
+main.home-ui #route-help .ux-steps li {background:transparent;border:0;border-radius:0;padding:0 22px 0 0}
+main.home-ui .ux-document-list {gap:24px}
+main.home-ui .ux-document {grid-template-columns:140px minmax(0,1fr);gap:0;padding:0;overflow:hidden;border:1px solid #dce5ef;border-radius:12px;background:#fff;box-shadow:0 8px 25px #173b590c;align-items:stretch}
+main.home-ui .r3-doc-cover {padding:24px 14px;background:linear-gradient(145deg,#f2f6fc,#e8eef7);display:flex;align-items:center;justify-content:center;border-right:1px solid #dce5ef}
+main.home-ui .ux-document .ux-document-image {width:110px;height:auto;aspect-ratio:768/1085;object-fit:contain;border-radius:3px;box-shadow:0 8px 18px #173b5920}
+main.home-ui .ux-document-copy {padding:24px;min-width:0}
+main.home-ui .ux-document-copy h3 {font-size:20px;line-height:1.25;letter-spacing:-.025em}
+main.home-ui .ux-document-copy .ux-doc-id {font-size:11px;letter-spacing:.08em;margin-bottom:10px}
+main.home-ui .ux-document-copy .r3-document-type {font-size:12px;margin:0 0 14px;color:#61758c}
+main.home-ui .ux-status {display:inline-block;border:1px solid #d9e5f6;border-radius:4px;background:#edf3ff;padding:4px 7px;font-size:11px!important;margin-bottom:18px!important}
+main.home-ui .ux-document-copy .ux-primary-action {display:flex;width:fit-content}
+main.home-ui .ux-resource-tools {background:linear-gradient(125deg,#edf3fc,#e4eefb);padding:28px;border:1px solid #dce5ef;border-radius:10px;box-shadow:none}
+main.home-ui .ux-resource-access-note {font-size:13px;max-width:760px;border-left:3px solid #1b4aa1;padding:4px 0 4px 16px}
+main.home-ui .r3-resource-intent {padding:24px;background:#eef4ff;border-radius:10px;margin-bottom:28px}
+main.home-ui .ux-request-types {grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+main.home-ui .ux-doc-type {padding:26px;background:#fff;border:1px solid #d9e4f3;border-top:3px solid #1b4aa1;border-radius:8px;box-shadow:0 8px 24px #173b5908}
+main.home-ui .r3-document-number {display:inline-block;font-size:12px;font-weight:800;letter-spacing:.08em;color:#1b4aa1;background:#edf3ff;border-radius:4px;padding:6px 9px;margin-bottom:18px}
+main.home-ui .ux-doc-type h3 {font-size:21px}
+main.home-ui .ux-doc-type a {margin-top:10px}
+main.home-ui #document-guide .ux-final-cta {display:flex;align-items:center;justify-content:space-between;gap:24px;padding:32px;background:#123b7a;color:#fff;border:0;border-radius:10px}
+main.home-ui #document-guide .ux-final-cta .grecho-v3-button {background:#fff;color:#1b4aa1;border-color:white}
+main.home-ui .ux-contact-layout {grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:32px;align-items:start}
+main.home-ui .ux-preview-form {padding:34px;border:1px solid #d8e4f3;border-radius:12px;box-shadow:0 18px 45px #173b5910;background:#fff}
+main.home-ui .r3-request-selector {margin:0 0 22px!important;padding:0!important;border:0!important}
+main.home-ui .r3-request-selector legend {font-size:18px;font-weight:700;margin-bottom:14px;color:#22303d}
+main.home-ui .r3-request-options {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+main.home-ui .r3-request-option {display:flex!important;gap:9px;align-items:center;margin:0!important;min-height:52px;padding:10px 12px;border:1px solid #dce5ef;border-radius:6px;background:#f8fafd;color:#394f66;font-size:12px!important;cursor:pointer}
+main.home-ui .r3-request-option:has(input:checked) {background:#edf3ff;border-color:#1b4aa1;color:#1b4aa1}
+main.home-ui .r3-request-option input {flex:0 0 16px;width:16px!important;height:16px!important;min-height:16px!important;margin:0;accent-color:#1b4aa1}
+main.home-ui[data-enhanced=true] .ux-authority-field {display:none}
+main.home-ui:not([data-enhanced=true]) .r3-request-selector {display:none!important}
+main.home-ui .ux-essential-fields>.ff-el-group:nth-child(2),main.home-ui .ux-essential-fields>.ff-el-group:nth-child(3) {grid-column:auto}
+main.home-ui .ux-contact-help {padding:0;border:0;border-radius:0;background:transparent;box-shadow:none}
+main.home-ui .r3-review-image {margin:0 0 30px;border-radius:12px;overflow:hidden;background:#123b7a}
+main.home-ui .r3-review-image img {display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:cover}
+main.home-ui .r3-review-image figcaption {padding:15px 20px;font-size:12px;font-weight:700;color:#fff;letter-spacing:.02em}
+main.home-ui .ux-contact-help>h3 {font-size:23px;margin-bottom:14px}
+main.home-ui .ux-contact-help .ux-help-copy {padding:22px 0;border-top:1px solid #cad8eb}
+main.home-ui .r3-contact-details {font-size:14px!important;font-weight:600;line-height:1.9!important;color:#123b7a!important;overflow-wrap:anywhere}
+main.home-ui #request-next .ux-steps li {border:0;border-left:2px solid #cad8eb;border-radius:0;padding:0 0 0 20px;background:transparent}
+main.home-ui #faq-explorer {background:#f6f9fd}
+main.home-ui #faq-explorer .ux-faq-heading {position:relative;padding-right:210px;max-width:none}
+main.home-ui .r3-popular-questions {position:absolute;right:0;top:5px;width:190px;background:#fff;border:1px solid #dce5ef;border-radius:7px;padding:12px 16px;z-index:2;box-shadow:0 5px 20px #173b5910}
+main.home-ui .r3-popular-questions>summary {font-size:13px;font-weight:700;color:#123b7a;cursor:pointer;min-height:24px}
+main.home-ui .r3-popular-questions .ux-shortcuts {display:grid;gap:8px;margin:14px 0 0}
+main.home-ui #faq-explorer .gfaq-filter-wrap {background:#fff;border:1px solid #dce5ef;border-radius:10px;padding:24px;box-shadow:0 9px 24px #173b5908}
+main.home-ui #faq-explorer .gfaq-topic-tabs {gap:8px}
+main.home-ui #faq-explorer .gfaq-tab {border-color:#d8e4f3;padding:10px 14px;font-size:12px}
+main.home-ui #faq-explorer .gfaq-main {margin-top:24px}
+main.home-ui #faq-explorer .gfaq-group {padding:28px;background:#fff;border:1px solid #dce5ef;border-radius:12px;margin-bottom:24px;box-shadow:0 10px 28px #173b5908}
+main.home-ui #faq-explorer .gfaq-group-head {position:relative;padding:0 0 24px 60px;border-bottom:1px solid #dce5ef;margin-bottom:12px;min-height:56px}
+main.home-ui .r3-faq-number {position:absolute;left:0;top:0;display:grid;place-items:center;width:40px;height:40px;border-radius:7px;background:#1b4aa1;color:white;font-size:12px;font-weight:800}
+main.home-ui #faq-explorer .gfaq-group-head h3 {font-size:25px;line-height:1.2;letter-spacing:-.03em}
+main.home-ui #faq-explorer .gfaq-group-head p {margin:0;font-size:14px}
+main.home-ui #faq-explorer .gfaq-item {box-shadow:none;border:0;border-bottom:1px solid #e5ebf3;border-radius:0;margin:0}
+main.home-ui #faq-explorer .gfaq-item:last-child {border-bottom:0}
+main.home-ui #faq-explorer .gfaq-question {padding:18px 0;font-size:15px;line-height:1.4;min-height:66px}
+main.home-ui #faq-explorer .gfaq-answer {padding:0 36px 20px 0;font-size:14px;line-height:1.7}
+main.home-ui #faq-explorer .gfaq-plus {width:24px;height:24px;background:#edf3ff;color:#1b4aa1}
+@media(max-width:850px){
+ main.home-ui[data-home-ui-revision=R3] .ux-section {padding-block:64px}
+ main.home-ui .r3-series-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+ main.home-ui .ux-product-workspace,main.home-ui .ux-contact-layout {grid-template-columns:1fr}
+ main.home-ui .ux-request-types {grid-template-columns:repeat(2,minmax(0,1fr))}
+ main.home-ui .ux-document-list {grid-template-columns:1fr}
+ main.home-ui .ux-contact-help {display:block}
+ main.home-ui .r3-review-image {max-width:720px}
+}
+@media(max-width:600px){
+ main.home-ui[data-home-ui-revision=R3] .ux-section {padding-block:54px}
+ main.home-ui .r3-series-grid {gap:8px}
+ main.home-ui .r3-series-grid button {grid-template-columns:52px 1fr;gap:8px;padding:9px;min-height:92px}
+ main.home-ui .r3-series-grid img {width:52px;height:60px}
+ main.home-ui .r3-series-grid span {font-size:11px}
+ main.home-ui .r3-series-grid small {font-size:10px}
+ main.home-ui .ux-product-grid,main.home-ui .ux-request-types {grid-template-columns:1fr}
+ main.home-ui .r3-catalogue-scope button {padding:11px 13px;font-size:13px}
+ main.home-ui .ux-product-card .ux-product-copy {padding:22px}
+ main.home-ui .ux-product-copy h3 {font-size:23px}
+ main.home-ui .ux-document {grid-template-columns:100px minmax(0,1fr)}
+ main.home-ui .r3-doc-cover {padding:20px 10px}
+ main.home-ui .ux-document .ux-document-image {width:80px}
+ main.home-ui .ux-document-copy {padding:20px 16px}
+ main.home-ui .ux-document-copy h3 {font-size:18px;line-height:1.3}
+ main.home-ui .ux-document-copy .ux-primary-action {font-size:11px;padding:11px 12px}
+ main.home-ui .ux-preview-form {padding:22px}
+ main.home-ui .r3-request-options {grid-template-columns:1fr}
+ main.home-ui .r3-request-option {font-size:13px!important;min-height:48px}
+ main.home-ui #faq-explorer .ux-faq-heading {padding-right:0}
+ main.home-ui .r3-popular-questions {position:static;width:auto;margin-top:20px;padding:10px 14px;box-shadow:none}
+ main.home-ui #faq-explorer .gfaq-filter-wrap {padding:18px}
+ main.home-ui #faq-explorer .gfaq-topic-tabs {gap:6px}
+ main.home-ui #faq-explorer .gfaq-tab {font-size:11px;padding:9px 10px;min-height:40px}
+ main.home-ui #faq-explorer .gfaq-group {padding:20px 16px}
+ main.home-ui #faq-explorer .gfaq-group-head {padding-left:0;padding-top:52px}
+ main.home-ui #faq-explorer .gfaq-group-head h3 {font-size:22px}
+ main.home-ui #faq-explorer .gfaq-answer {padding-right:0}
+ main.home-ui #faq-explorer .gfaq-question {font-size:14px;gap:12px}
+ main.home-ui #document-guide .ux-final-cta {align-items:flex-start;flex-direction:column;padding:24px}
+}
+@media(prefers-reduced-motion:reduce){main.home-ui * {scroll-behavior:auto!important;transition:none!important}}
+
+main.home-ui .r3-request-selector legend {display:block!important;visibility:visible!important}
+@media(max-width:360px){main.home-ui .ux-document {grid-template-columns:78px minmax(0,1fr)}main.home-ui .r3-doc-cover {padding:18px 8px}main.home-ui .ux-document .ux-document-image {width:60px}main.home-ui .ux-document-copy {padding:18px 14px}main.home-ui .ux-document-copy h3 {font-size:17px}}
+
+main.home-ui #route-help .r3-solutions-grid {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:26px}main.home-ui #route-help .r3-solutions-grid a {display:block;width:auto;min-width:0;margin:0;padding:22px;background:#fff;box-shadow:none;border:1px solid #dbe5f0;border-radius:8px}main.home-ui #route-help .r3-solutions-grid .grecho-v1-card-base-title {font-size:20px}main.home-ui #route-help .r3-solutions-grid .grecho-v1-card-base-description {font-size:14px;font-weight:400;line-height:1.6;margin-block:10px}main.home-ui #route-help .r3-product-final {align-items:center;margin:32px 0 0;gap:14px 24px}main.home-ui #route-help .r3-product-final .grecho-v3-button {color:white}main.home-ui #route-help .r3-product-final .grecho-v3-text-link span {color:inherit}@media(max-width:600px){main.home-ui #route-help .r3-solutions-grid {grid-template-columns:1fr}}
+main.home-ui .r3-request-selector legend {position:static!important;width:auto!important;height:auto!important;clip:auto!important;clip-path:none!important;overflow:visible!important;margin:0 0 14px!important;padding:0!important}

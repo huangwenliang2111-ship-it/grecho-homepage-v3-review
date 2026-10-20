@@ -4,22 +4,44 @@ const keys=Object.keys(BOARDS);
 const selected=Object.fromEntries(keys.map(k=>[k,new Set()]));
 const applications=Object.fromEntries(keys.map(k=>[k,new Set()]));
 const productByBoard={};
+// Requirements drafts stay in page memory, separately for each board.
+let otherBoardDescription='';
+const otherApplicationSelectedByBoard=Object.fromEntries(keys.map(k=>[k,false]));
+const otherApplicationDescriptionByBoard=Object.fromEntries(keys.map(k=>[k,'']));
 const $=id=>document.getElementById(id);
 const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const getProblems=(b=current)=>{const out=[];DATA[b].cats.forEach((c,i)=>c.issues.forEach((issue,j)=>{if(selected[b].has(i+'-'+j))out.push({id:i+'-'+j,category:c.name,issue})}));return out};
-const selectedApps=()=>DATA[current].apps.filter(a=>applications[current].has(a));
+const selectedApps=()=>[...DATA[current].apps.filter(a=>applications[current].has(a)),...(otherApplicationSelectedByBoard[current]?['Other Application']:[])];
 const catCount=i=>{let n=0;selected[current].forEach(id=>{if(id.split('-')[0]===String(i))n++});return n};
+const boundedText=(value,max)=>typeof value==='string'?value.slice(0,max):'';
+function validateBoardState(board){
+  if(!keys.includes(board))return;
+  const validIssues=new Set(DATA[board].cats.flatMap((c,i)=>c.issues.map((_,j)=>i+'-'+j)));
+  selected[board]=new Set([...(selected[board] instanceof Set?selected[board]:[])].filter(id=>validIssues.has(id)));
+  applications[board]=new Set([...(applications[board] instanceof Set?applications[board]:[])].filter(value=>DATA[board].apps.includes(value)));
+  if(!BOARDS[board].products.includes(productByBoard[board]))delete productByBoard[board];
+  otherApplicationSelectedByBoard[board]=otherApplicationSelectedByBoard[board]===true;
+  otherApplicationDescriptionByBoard[board]=boundedText(otherApplicationDescriptionByBoard[board],200);
+  otherBoardDescription=boundedText(otherBoardDescription,160);
+}
 
 /* ---------- Step 1 ---------- */
 function drawBoards(){
-  $('boardGrid').innerHTML=keys.map(k=>{const b=BOARDS[k],on=k===current,n=selected[k].size;
-    return `<button type="button" class="gsf-board ${on?'is-on':''}" data-id="${k}" role="radio" tabindex="${on?0:-1}" aria-checked="${on}">
+  $('boardGrid').innerHTML=keys.filter(k=>k!=='other').map(k=>{const b=BOARDS[k],on=k===current,n=selected[k].size;
+    return `<button type="button" class="gsf-board ${on?'is-on':''}" data-id="${k}" role="radio" tabindex="${on?0:-1}" aria-checked="${on}" aria-labelledby="board-title-${k}" aria-describedby="board-description-${k}">
       <span class="gsf-board__media"><img alt="${esc(b.name)}" loading="lazy" src="${IMG_BASE}${b.img}-1000.webp" srcset="${IMG_BASE}${b.img}-640.webp 640w, ${IMG_BASE}${b.img}-1000.webp 1000w" sizes="(max-width:680px) 120px, (max-width:1080px) 50vw, 25vw"></span>
       <span class="gsf-board__tick" aria-hidden="true">✓</span>
       ${n&&!on?`<span class="gsf-board__badge">${n} selected</span>`:''}
-      <span class="gsf-board__body"><span class="gsf-board__title">${esc(b.short)}</span><span class="gsf-board__desc">${esc(b.desc)}</span></span>
+      <span class="gsf-board__body"><span class="gsf-board__title" id="board-title-${k}">${esc(b.short)}</span><span class="gsf-board__desc" id="board-description-${k}">${esc(b.desc)}</span></span>
     </button>`}).join('');
-  $('boardGrid').querySelectorAll('.gsf-board').forEach(el=>el.onclick=()=>{if(el.dataset.id===current)return;current=el.dataset.id;activeCat=0;render();document.querySelector(`.gsf-board[data-id="${current}"]`).focus();});
+  $('boardGrid').querySelectorAll('.gsf-board').forEach(el=>el.onclick=()=>selectBoard(el.dataset.id));
+  const otherOn=current==='other';
+  $('otherBoard').classList.toggle('is-on',otherOn);
+  $('otherBoard').setAttribute('aria-checked',String(otherOn));
+  $('otherBoard').tabIndex=otherOn?0:-1;
+  $('otherBoard').querySelector('.gsf-other__action').textContent=otherOn?'✓ Selected':'Select →';
+  $('otherBoardDetails').hidden=!otherOn;
+  $('otherBoardDescription').value=otherBoardDescription;
 }
 function drawProduct(){
   const b=BOARDS[current];
@@ -71,6 +93,7 @@ $('clearBtn').onclick=()=>{selected[current].clear();drawCategories();drawProble
 
 /* ---------- Step 3 ---------- */
 function drawApps(){
+  $('appGrid').hidden=DATA[current].apps.length===0;
   $('appGrid').innerHTML=DATA[current].apps.map((s,i)=>{const on=applications[current].has(s),v=APP_VISUALS[current][i];
     return `<label class="gsf-app ${on?'is-on':''}">
       <input type="checkbox" data-index="${i}" ${on?'checked':''}>
@@ -85,6 +108,15 @@ function drawApps(){
     card.querySelector('.gsf-app__pick').textContent=inp.checked?'✓ Selected':'Select application +';
     drawRecap();
   });
+  drawOtherApplication();
+}
+function drawOtherApplication(){
+  const on=otherApplicationSelectedByBoard[current];
+  $('otherApplicationCheckbox').checked=on;
+  $('otherApplicationOption').classList.toggle('is-on',on);
+  $('otherApplicationOption').querySelector('.gsf-other__action').textContent=on?'✓ Selected':'Select →';
+  $('otherApplicationDetails').hidden=!on;
+  $('otherApplicationDescription').value=otherApplicationDescriptionByBoard[current];
 }
 
 /* ---------- Step 4 ---------- */
@@ -96,5 +128,5 @@ function drawRecap(){
   $('rApps').textContent=a.length?a.join(', '):'Not specified (optional)';
   if(p&&n)$('ctaMsg').textContent='';
 }
-function render(){drawBoards();drawProduct();drawCategories();drawProblems();drawSummary();drawApps();}
+function render(){validateBoardState(current);drawBoards();drawProduct();drawCategories();drawProblems();drawSummary();drawApps();}
 

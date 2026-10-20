@@ -196,7 +196,7 @@ body{margin:0}
 }
 @media(prefers-reduced-motion:reduce){.gsf *{transition:none!important}}
 </style>
-<link rel="stylesheet" href="assets/css/finder-local.css"><link rel="stylesheet" href="/grecho-homepage-v3-review/review/solution-finder-v1/assets/css/finder-nav-review.css">
+<link rel="stylesheet" href="assets/css/finder-local.css?v=20261020-other-1"><link rel="stylesheet" href="/grecho-homepage-v3-review/review/solution-finder-v1/assets/css/finder-nav-review.css">
 <link rel="stylesheet" href="/grecho-homepage-v3-review/assets/css/solutions-finder-promotion.css">
 </head>
 <body class="grecho-isolated-v3">
@@ -373,7 +373,20 @@ body{margin:0}
         <h2 id="finder-board-title"><span class="gsf-num">1.</span>What are you <span class="grecho-v3-heading-accent">manufacturing?</span></h2>
         <p>Choose your board system, then specify the product type. The challenges in the next step update to match your board.</p>
       </div>
-      <p class="draft-note" id="copyStatus" role="status"></p><div class="gsf-boards" id="boardGrid" role="radiogroup" aria-label="Board system"></div>
+      <p class="draft-note" id="copyStatus" role="status"></p>
+      <div id="boardSelector" role="radiogroup" aria-label="Board system">
+        <div class="gsf-boards" id="boardGrid"></div>
+        <button type="button" id="otherBoard" class="gsf-other gsf-other--board" role="radio" aria-checked="false" tabindex="-1" data-id="other" aria-labelledby="otherBoardTitle" aria-describedby="otherBoardHelp">
+          <span class="gsf-other__icon" aria-hidden="true">+</span>
+          <span class="gsf-other__body"><strong id="otherBoardTitle">Other Board / Product</strong><small id="otherBoardHelp">Don't see your product above? Tell us what you manufacture.</small></span>
+          <span class="gsf-other__action" aria-hidden="true">Select →</span>
+        </button>
+      </div>
+      <div id="otherBoardDetails" class="gsf-other-details" hidden>
+        <label for="otherBoardDescription">What product or board do you manufacture?</label>
+        <input id="otherBoardDescription" type="text" maxlength="160" aria-describedby="otherBoardDescriptionHelp" autocomplete="off">
+        <small id="otherBoardDescriptionHelp">Optional. Up to 160 characters. For this preview, use synthetic details only.</small>
+      </div>
       <div class="grecho-v3-inline-cta gsf-product">
         <div>
           <strong id="boardTitle"></strong>
@@ -430,6 +443,19 @@ body{margin:0}
         <p>Choose one or more end-use scenarios — or skip this step and discuss it with the GRECHO team later.</p>
       </div>
       <div class="gsf-apps" id="appGrid"></div>
+      <div class="gsf-other-application">
+        <label id="otherApplicationOption" class="gsf-other gsf-other--application">
+          <input type="checkbox" id="otherApplicationCheckbox" aria-labelledby="otherApplicationTitle" aria-describedby="otherApplicationHelp">
+          <span class="gsf-other__icon" aria-hidden="true">+</span>
+          <span class="gsf-other__body"><strong id="otherApplicationTitle">Other Application</strong><small id="otherApplicationHelp">Not listed above? Specify another environment or end use. You can select other applications above as well.</small></span>
+          <span class="gsf-other__action" aria-hidden="true">Select →</span>
+        </label>
+        <div id="otherApplicationDetails" class="gsf-other-details" hidden>
+          <label for="otherApplicationDescription">Please describe your application (optional)</label>
+          <input id="otherApplicationDescription" type="text" maxlength="200" aria-describedby="otherApplicationDescriptionHelp" autocomplete="off">
+          <small id="otherApplicationDescriptionHelp">Optional. Up to 200 characters. For this preview, use synthetic details only.</small>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -491,5 +517,5 @@ body{margin:0}
 <!-- GRECHO V3 site scripts: mega menu, mobile nav, language switcher. -->
 
 
-<script src="assets/js/finder-data.js"></script><script src="assets/js/finder-retained.js"></script><script src="assets/js/finder-local.js"></script></body>
+<script src="assets/js/finder-data.js?v=20261020-other-1"></script><script src="assets/js/finder-retained.js?v=20261020-other-1"></script><script src="assets/js/finder-local.js?v=20261020-other-1"></script></body>
 </html>

@@ -1,0 +1,59 @@
+/* Review-scoped integration of the existing V3 templates. Base family CSS stays
+   unchanged. The font uses the already-published root asset; no font is deployed.
+   Sources: grecho-homepage-v3-pilot.css, isolated-base.css, sitewide-remediation.css. */
+@font-face{font-family:"GRECHO Local Inter";src:url("../../../assets/fonts/Inter-VariableFont_slnt,wght.woff2") format("woff2");font-style:normal;font-weight:100 900;font-display:swap}
+html,body{margin:0;padding:0}
+.grecho-isolated-v3 .grecho-v3{padding-top:0}
+.grecho-v3 img{max-width:100%}
+.grecho-v3 button.grecho-v3-button{font-family:inherit}
+.screen-reader-text{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip-path:inset(50%);border:0}
+/* Same 28px review strip as the original reference. It remains outside main. */
+.grecho-public-preview-note{margin:0;padding:5px 14px;background:#edf3fa;color:#17334b;font:600 12px/18px Arial,sans-serif;text-align:center}
+.review-toolbar a{color:inherit;margin-left:12px;text-decoration:underline}
+.grecho-v3 [aria-disabled="true"]{cursor:not-allowed}
+.grecho-v3 a[aria-disabled="true"]{pointer-events:none}
+/* Disabled operational state is retained without dimming source text. */
+.grecho-v3 button:disabled{cursor:not-allowed;opacity:1}
+/* Added source fields use the existing component typography, not new copy. */
+.semantic-tagline{font-weight:400}
+.grecho-product p,.grecho-product h1,.grecho-product h2,.grecho-product h3,.grecho-existing h1,.grecho-existing h2{overflow-wrap:anywhere}
+.grecho-product-panel__copy h3:not(:first-child){margin-top:24px}
+.grecho-product-next__panel h3{color:#fff}
+/* Preserve full source illustration subjects. Ratios remain the template ratios. */
+.grecho-product-proof-card>img{object-fit:contain}
+.grecho-product-comparison figure img{object-fit:contain}
+.grecho-product-panel__figure img{display:block}
+.grecho-product-specs__table{overflow-x:auto}
+.grecho-product-specs__table table{min-width:600px}
+.grecho-product-applications figcaption{background:rgba(9,42,96,.94);padding:6px 10px;border-radius:4px;right:auto;max-width:calc(100% - 40px)}
+.grecho-product-applications figcaption h3{color:inherit;font-size:inherit;line-height:inherit;letter-spacing:inherit;margin:0}
+.grecho-product-applications article>p{margin:12px 0 0;font-size:14px;line-height:1.6}
+/* Qualifications are business content. Keep them legible and source-traceable. */
+.review-qualification{margin-top:24px;border-top:1px solid currentColor;padding-top:16px}
+.review-qualification p{font-size:14px;line-height:1.55;max-width:1000px}
+/* Hub fields retain H3/P semantics while reusing the reference span tokens. */
+.grecho-existing.sample-task-page .grecho-v1-hero-content>.gc-eyebrow{max-width:none}
+.grecho-existing.sample-task-page button.grecho-v3-button{font-size:13px;font-weight:800;line-height:1.2}
+.grecho-existing.sample-task-page .grecho-v1-actions button.grecho-v3-button{padding:11px 18px;border-radius:4px}
+.grecho-existing.sample-task-page h3.grecho-v1-card-base-title{font-family:inherit;letter-spacing:normal}
+.grecho-existing.sample-task-page .review-hub-highlights{padding-left:18px;color:#dce7f3;font-size:14px;line-height:1.65;margin:24px 0 0}
+.grecho-existing.sample-task-page .gac-v1-info-card h3,.grecho-existing.sample-task-page .gac-v1-material-card h3{margin-top:0}
+.grecho-existing.sample-task-page .gac-v1-section-dark p{color:#dce7f3}
+.grecho-existing.sample-task-page .gac-v1-challenge-item>div{min-width:0}
+.grecho-existing.sample-task-page .gac-v1-doc-card [data-field-role="DOCUMENT_SCOPE"]{overflow-wrap:anywhere}
+.grecho-existing.sample-task-page .gac-v1-doc-card:not(:has([data-field-role="DOCUMENT_SCOPE"])) .gac-v1-doc-link{margin-top:auto}
+.grecho-existing.sample-task-page .gac-v1-material-layout img,.grecho-existing.sample-task-page .sample-hub-doc-intro img{object-fit:contain}
+/* Accepted Low-Air background remains identical. The template's navy overlay is
+   strengthened only for its left text area; the verified foreground image stays. */
+[data-page-id="low-air-permeability-fiberglass-coated-veil"] .grecho-product-hero{background-blend-mode:normal;position:relative}
+[data-page-id="low-air-permeability-fiberglass-coated-veil"] .grecho-product-hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(14,47,105,.86),rgba(14,47,105,.74) 52%,rgba(14,47,105,.12))}
+[data-page-id="low-air-permeability-fiberglass-coated-veil"] .grecho-product-hero__grid{position:relative}
+@media(max-width:600px){
+ .grecho-product-specs tr>th:not(:first-child){width:auto}
+ .review-toolbar{padding-inline:5px;font-size:11px}
+ .review-toolbar a{margin-left:8px}
+ .grecho-product-specs__table th,.grecho-product-specs__table td{overflow-wrap:anywhere}
+ .grecho-existing.sample-task-page .grecho-v1-hero-content .grecho-v1-actions{max-width:100%}
+ .grecho-existing.sample-task-page .grecho-v1-hero-content .grecho-v1-actions button{white-space:normal;max-width:100%}
+ [data-page-id="low-air-permeability-fiberglass-coated-veil"] .grecho-product-hero::before{background:rgba(14,47,105,.8)}
+}

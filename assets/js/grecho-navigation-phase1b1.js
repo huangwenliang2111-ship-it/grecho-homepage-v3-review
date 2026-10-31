@@ -6,6 +6,41 @@
     return;
   }
 
+
+  // GitHub public preview only: additive Challenge navigation; existing routes stay intact.
+  var challengePreviewItems = [{"code": "C01", "label": "Surface Appearance", "href": "/grecho-homepage-v3-review/challenge-review-20261031/C01.html"}, {"code": "C02", "label": "Bonding & Lamination", "href": "/grecho-homepage-v3-review/challenge-review-20261031/C02.html"}, {"code": "C03", "label": "Cleanability & Water Resistance", "href": "/grecho-homepage-v3-review/challenge-review-20261031/C03.html"}, {"code": "C04", "label": "Fire Performance", "href": "/grecho-homepage-v3-review/challenge-review-20261031/C04.html"}, {"code": "C05", "label": "Production Consistency", "href": "/grecho-homepage-v3-review/challenge-review-20261031/C05.html"}, {"code": "C06", "label": "Acoustic Performance", "href": "/grecho-homepage-v3-review/challenge-review-20261031/C06.html"}];
+  function addChallengePreviewGroup(container, suffix) {
+    if (!container || container.querySelector('[data-challenge-preview-group]')) return;
+    var group = document.createElement('section');
+    group.className = 'grecho-v3-challenge-preview';
+    group.setAttribute('data-challenge-preview-group', '');
+    group.setAttribute('aria-labelledby', 'grecho-challenge-preview-' + suffix);
+    var title = document.createElement('p');
+    title.className = 'grecho-v3-mega__eyebrow';
+    title.id = 'grecho-challenge-preview-' + suffix;
+    title.textContent = 'Challenges';
+    var badge = document.createElement('small');
+    badge.textContent = 'Preview only';
+    title.appendChild(badge);
+    var links = document.createElement('div');
+    links.className = 'grecho-v3-mega__links';
+    challengePreviewItems.forEach(function (item) {
+      var link = document.createElement('a');
+      link.href = item.href;
+      link.textContent = item.label;
+      link.setAttribute('data-challenge-preview-link', item.code);
+      if (window.location.pathname === item.href) link.setAttribute('aria-current', 'page');
+      links.appendChild(link);
+    });
+    group.appendChild(title);
+    group.appendChild(links);
+    container.insertBefore(group, container.firstChild);
+    container.classList.add('has-challenge-preview');
+  }
+  addChallengePreviewGroup(header.querySelector('[data-nav-panel="solutions"]'), 'desktop');
+  var challengeMobileTrigger = header.querySelector('[data-mobile-accordion-trigger][aria-controls="grecho-mobile-solutions"]');
+  addChallengePreviewGroup(challengeMobileTrigger && document.getElementById(challengeMobileTrigger.getAttribute('aria-controls')), 'mobile');
+
   var desktopTriggers = Array.prototype.slice.call(header.querySelectorAll('[data-nav-trigger]'));
   var desktopPanels = Array.prototype.slice.call(header.querySelectorAll('[data-nav-panel]'));
   var languageTrigger = header.querySelector('[data-language-trigger]');
@@ -416,3 +451,4 @@
   updateSafetyOffset();
   updateStickyState();
 }());
+

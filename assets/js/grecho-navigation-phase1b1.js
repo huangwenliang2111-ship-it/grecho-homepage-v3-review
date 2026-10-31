@@ -6,40 +6,57 @@
     return;
   }
 
+  // GitHub review only: activate the EXISTING challenge slots in their original groups.
+  // Do not create a second menu section, rename labels or modify WordPress menus.
+  var challengeReviewBase = '/grecho-homepage-v3-review/challenge-review-20261031/';
+  var challengeReviewRoutes = {
+    'Surface Appearance': 'C01.html',
+    'Acoustic Performance': 'C06.html',
+    'Cleanability / Durability': 'C03.html',
+    'Bonding / Lamination': 'C02.html',
+    'Fire Performance': 'C04.html',
+    'Production Consistency': 'C05.html'
+  };
 
-  // GitHub public preview only: additive Challenge navigation; existing routes stay intact.
-  var challengePreviewItems = [{"code": "C01", "label": "Surface Appearance", "href": "/grecho-homepage-v3-review/challenge-review-20261031/C01.html"}, {"code": "C02", "label": "Bonding & Lamination", "href": "/grecho-homepage-v3-review/challenge-review-20261031/C02.html"}, {"code": "C03", "label": "Cleanability & Water Resistance", "href": "/grecho-homepage-v3-review/challenge-review-20261031/C03.html"}, {"code": "C04", "label": "Fire Performance", "href": "/grecho-homepage-v3-review/challenge-review-20261031/C04.html"}, {"code": "C05", "label": "Production Consistency", "href": "/grecho-homepage-v3-review/challenge-review-20261031/C05.html"}, {"code": "C06", "label": "Acoustic Performance", "href": "/grecho-homepage-v3-review/challenge-review-20261031/C06.html"}];
-  function addChallengePreviewGroup(container, suffix) {
-    if (!container || container.querySelector('[data-challenge-preview-group]')) return;
-    var group = document.createElement('section');
-    group.className = 'grecho-v3-challenge-preview';
-    group.setAttribute('data-challenge-preview-group', '');
-    group.setAttribute('aria-labelledby', 'grecho-challenge-preview-' + suffix);
-    var title = document.createElement('p');
-    title.className = 'grecho-v3-mega__eyebrow';
-    title.id = 'grecho-challenge-preview-' + suffix;
-    title.textContent = 'Challenges';
-    var badge = document.createElement('small');
-    badge.textContent = 'Preview only';
-    title.appendChild(badge);
-    var links = document.createElement('div');
-    links.className = 'grecho-v3-mega__links';
-    challengePreviewItems.forEach(function (item) {
-      var link = document.createElement('a');
-      link.href = item.href;
-      link.textContent = item.label;
-      link.setAttribute('data-challenge-preview-link', item.code);
-      if (window.location.pathname === item.href) link.setAttribute('aria-current', 'page');
-      links.appendChild(link);
+  function challengeExistingLabel(element) {
+    var clone = element.cloneNode(true);
+    Array.prototype.forEach.call(clone.querySelectorAll('small'), function (badge) {
+      badge.parentNode.removeChild(badge);
     });
-    group.appendChild(title);
-    group.appendChild(links);
-    container.insertBefore(group, container.firstChild);
-    container.classList.add('has-challenge-preview');
+    return clone.textContent.replace(/\s+/g, ' ').trim();
   }
-  addChallengePreviewGroup(header.querySelector('[data-nav-panel="solutions"]'), 'desktop');
-  var challengeMobileTrigger = header.querySelector('[data-mobile-accordion-trigger][aria-controls="grecho-mobile-solutions"]');
-  addChallengePreviewGroup(challengeMobileTrigger && document.getElementById(challengeMobileTrigger.getAttribute('aria-controls')), 'mobile');
+
+  function linkExistingChallengeSlots(container) {
+    if (!container) return false;
+    var items = Array.prototype.slice.call(container.children);
+    var found = [];
+    items.forEach(function (item) {
+      var label = challengeExistingLabel(item);
+      if (Object.prototype.hasOwnProperty.call(challengeReviewRoutes, label)) {
+        found.push({ node: item, label: label });
+      }
+    });
+    // All six identities must be present exactly once; never do a partial rewrite.
+    if (found.length !== 6 || (new Set(found.map(function (item) { return item.label; }))).size !== 6) {
+      return false;
+    }
+    found.forEach(function (item) {
+      var target = challengeReviewBase + challengeReviewRoutes[item.label];
+      var link = document.createElement('a');
+      link.href = target;
+      link.textContent = item.label;
+      link.setAttribute('data-challenge-review-existing', challengeReviewRoutes[item.label].slice(0, 3));
+      if (window.location.pathname === target) link.setAttribute('aria-current', 'page');
+      item.node.parentNode.replaceChild(link, item.node);
+    });
+    return true;
+  }
+
+  var solutionPanel = header.querySelector('[data-nav-panel="solutions"]');
+  var challengeHeading = solutionPanel && solutionPanel.querySelector('#grecho-nav-challenge-title');
+  var challengeSection = challengeHeading && challengeHeading.closest('section');
+  linkExistingChallengeSlots(challengeSection && challengeSection.querySelector('.grecho-v3-mega__links'));
+  linkExistingChallengeSlots(header.querySelector('#grecho-mobile-solutions'));
 
   var desktopTriggers = Array.prototype.slice.call(header.querySelectorAll('[data-nav-trigger]'));
   var desktopPanels = Array.prototype.slice.call(header.querySelectorAll('[data-nav-panel]'));

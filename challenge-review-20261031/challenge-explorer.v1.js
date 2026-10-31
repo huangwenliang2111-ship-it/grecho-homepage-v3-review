@@ -2,6 +2,25 @@
 (() => {
  'use strict';
  const root=document.querySelector('.gc-reconstructed');if(!root)return;
+
+ // Optional page-local navigation; the frozen site header is only measured.
+ const subnav=root.querySelector('.gc-subnav');
+ if(subnav){
+  const links=[...subnav.querySelectorAll('a[href^="#"]')];
+  const sections=links.map(a=>document.getElementById(a.hash.slice(1)));
+  const header=document.querySelector('header.grecho-v3-nav');let queued=false,lastActive=-1;
+  const update=()=>{
+   queued=false;const h=header?header.getBoundingClientRect().height:0,n=subnav.getBoundingClientRect().height;
+   root.style.setProperty('--gc-header-height',h+'px');root.style.setProperty('--gc-subnav-height',n+'px');
+   let active=0;sections.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<=h+n+80)active=i;});
+   links.forEach((a,i)=>{if(i===active)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current');});
+   if(active!==lastActive){const rail=subnav.querySelector('.gc-subnav-links'),a=links[active];if(rail&&a){const r=rail.getBoundingClientRect(),v=a.getBoundingClientRect();if(v.left<r.left||v.right>r.right)rail.scrollLeft+=v.left-r.left;}lastActive=active;}
+  };
+  const schedule=()=>{if(!queued){queued=true;requestAnimationFrame(update);}};
+  addEventListener('scroll',schedule,{passive:true});addEventListener('resize',schedule);
+  if(typeof ResizeObserver!=='undefined'){const observer=new ResizeObserver(schedule);if(header)observer.observe(header);observer.observe(subnav);}
+  update();
+ }
  const explorer=root.querySelector('.gc-explorer');if(!explorer)return;
  const tabs=[...explorer.querySelectorAll('.gc-select')];
  const panels=[...explorer.querySelectorAll('.gc-pair')];

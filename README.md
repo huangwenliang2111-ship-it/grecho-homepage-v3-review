@@ -1,3 +1,15 @@
+# Current preview review entry
+
+Use [the current 18-page design review](content-review-20261023/index.html): 14 Product candidates and 4 Solution Hub candidates. Approved content and design approval are separate.
+
+Legacy S Product Route files remain unchanged in identity and are retained for historical reference; clickable navigation to them is removed throughout this preview. No one-to-one successor mapping is implied.
+
+`PUBLIC_RELEASE_MANIFEST.json` remains the historical 2026-10-07 release record, not the authority for the current 18-page review. No new release authority is introduced. Production WordPress and business holds are outside this preview-only navigation cleanup.
+
+---
+
+## Historical README
+
 # GRECHO design review preview
 
 Current corrected 75-page preview: 33 pages and 42 posts. This is a management review demo with non-final business copy.

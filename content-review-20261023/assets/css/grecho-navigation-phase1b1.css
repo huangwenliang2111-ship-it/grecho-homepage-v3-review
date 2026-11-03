@@ -594,3 +594,16 @@
     display: none !important;
   }
 }
+
+/* Products navigation R3: approved category headings and native no-script access. */
+#grecho-mobile-products .grecho-v3-mega__eyebrow { margin: 18px 10px 6px; }
+#grecho-mobile-products .grecho-v3-products-links { display: grid; gap: 2px; }
+.grecho-v3-products-nojs { max-width: 1180px; margin: 12px auto; padding: 0 18px; }
+.grecho-v3-products-nojs > details { padding: 12px; border: 1px solid #d8dde5; border-radius: 6px; background: #fff; }
+.grecho-v3-products-nojs summary { min-height: 44px; display: list-item; cursor: pointer; font-weight: 700; }
+.grecho-v3-products-nojs .grecho-v3-products-category { margin-top: 16px; }
+.grecho-v3-products-nojs .grecho-v3-products-links { display: grid; }
+.grecho-v3-products-nojs a { display: flex; align-items: center; min-height: 44px; padding: 8px 10px; color: #20364a; line-height: 1.4; }
+.grecho-v3-nojs-nav details[data-products-nojs] .grecho-v3-mega__eyebrow { margin: 16px 0 6px; }
+.grecho-v3-nojs-nav details[data-products-nojs] .grecho-v3-products-links { display: grid; }
+.grecho-v3-nojs-nav details[data-products-nojs] a { display: flex; align-items: center; min-height: 44px; }

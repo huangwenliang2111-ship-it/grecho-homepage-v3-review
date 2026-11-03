@@ -1,21 +1,7 @@
-/* Preview version identification only. No page-template or business-action rules. */
-#grecho-preview-version{box-sizing:border-box;position:relative;background:#edf4ff;color:#14345b;border-block:2px solid #244f9f;padding:14px 24px;font-family:Arial,sans-serif;font-size:14px;line-height:1.5;text-align:left}
-#grecho-preview-version *{box-sizing:border-box}
-#grecho-preview-version .gvi-inner{max-width:1240px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:14px 24px}
-#grecho-preview-version .gvi-copy{max-width:800px;min-width:0}
-#grecho-preview-version .gvi-title{display:block;font-size:15px;font-weight:800;letter-spacing:.025em}
-#grecho-preview-version p{margin:4px 0 0;color:#243d5e;font-size:14px;line-height:1.5}
-#grecho-preview-version .gvi-links{display:flex;flex-direction:column;align-items:flex-start;gap:8px;flex:none}
-#grecho-preview-version a,.gvi-index-links a{font-weight:700;color:#16479b;text-decoration:underline;text-underline-offset:3px}
-#grecho-preview-version .gvi-current{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 14px;border:2px solid #214d9e;background:#214d9e;color:#fff;border-radius:5px;text-decoration:none}
-#grecho-preview-version a:focus-visible,.gvi-index-links a:focus-visible,.gvi-menu-entry a:focus-visible{outline:3px solid #8a4300;outline-offset:3px}
-#grecho-preview-version[data-preview-generation="legacy"]{background:#fff6e8;border-color:#94601f}
-.gvi-menu-entry{padding:12px 16px;border-bottom:1px solid #cbd8e9;display:block;color:#193d70;font-size:14px;line-height:1.5}
-.gvi-menu-entry a{display:block;color:#16479b;font-weight:800;text-decoration:underline;text-underline-offset:3px;min-height:44px;padding:10px 0}
-.gvi-menu-entry span{display:block;font-size:12px;font-weight:700;color:#5b4b34}
+.gvi-index-links a{font-weight:700;color:#16479b;text-decoration:underline;text-underline-offset:3px}
+.gvi-index-links a:focus-visible{outline:3px solid #8a4300;outline-offset:3px}
 .gvi-index-links{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:16px}
 .gvi-index-links a{min-height:44px;display:inline-flex;align-items:center}
-@media(max-width:700px){#grecho-preview-version{padding:12px 14px}#grecho-preview-version .gvi-inner{display:block}#grecho-preview-version .gvi-links{margin-top:12px;gap:10px}#grecho-preview-version .gvi-current{width:100%}#grecho-preview-version .gvi-title{font-size:14px}.gvi-menu-entry{padding:10px 12px}}
 
 /* Historical context has no pointer, focus target, action styling or hover motion. */
 .grecho-legacy-reference{cursor:default!important;text-decoration:none!important;color:inherit}

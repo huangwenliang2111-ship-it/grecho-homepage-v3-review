@@ -208,3 +208,9 @@
  .grecho-product-next__panel{padding-inline:20px}
  .grecho-product-next h2{font-size:29px}
 }
+
+/* Approved numbering reduction: parallel cards only; retain all field bindings. */
+.grecho-product[data-page-family="product"] #section-02 [data-field-role="CARD_ORDINAL"].grecho-product-number,
+.grecho-product[data-page-family="product"] #section-04 [data-field-role="CARD_ORDINAL"].grecho-product-number,
+.grecho-product[data-page-family="product"] #section-07 [data-field-role="CARD_ORDINAL"].grecho-product-number{display:none}
+.grecho-product[data-page-family="product"] #section-10 [data-field-role="CARD_ORDINAL"].grecho-product-number{font-size:14px;line-height:1.5;margin-bottom:12px}

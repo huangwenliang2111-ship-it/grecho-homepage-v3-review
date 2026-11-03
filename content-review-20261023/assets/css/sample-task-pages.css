@@ -272,3 +272,7 @@
 @media(prefers-reduced-motion:reduce) {
  .grecho-existing.sample-task-page * { transition:none!important; animation:none!important; scroll-behavior:auto!important; }
 }
+
+/* Parallel Hub problems retain card bindings and titles. */
+.gc-solution-hub[data-page-family="hub"] .gac-v1-challenge-item > [data-field-role="CARD_ORDINAL"]{display:none}
+.gc-solution-hub[data-page-family="hub"] .gac-v1-challenge-item{grid-template-columns:minmax(0,1fr)}

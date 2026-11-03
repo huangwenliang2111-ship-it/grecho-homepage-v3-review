@@ -232,3 +232,12 @@ body{font-family:"GRECHO Local Inter",Inter,Arial,sans-serif;line-height:1.56;co
 #grecho-challenge-C02{ --hero-focal:50% 50%;--hero-mobile-focal:55% 50%;}
 #grecho-challenge-C03{ --hero-focal:50% 58%;--hero-mobile-focal:63% 55%;}
 #grecho-challenge-C06{ --hero-focal:50% 54%;--hero-mobile-focal:64% 53%;}
+
+/* Display-only ordinals. C06 problem identities remain for its scope references. */
+.grecho-challenge .gc-section-no,
+.grecho-challenge .gc-select-no,
+.grecho-challenge .gc-material-label,
+.grecho-challenge .gc-application-label,
+.grecho-challenge #solutions .gc-number,
+.grecho-challenge:not([data-challenge="C06"]) #problems .gc-number{display:none}
+.grecho-challenge .gc-solves a{display:inline-flex;align-items:center;justify-content:flex-start;width:auto;height:auto;min-height:44px;max-width:100%;padding:8px 10px;border-radius:6px;text-align:left;overflow-wrap:anywhere}

@@ -51,3 +51,17 @@ body .grecho-v3-nav .grecho-v3-nav__brand img{width:176px;height:auto;max-width:
 #main #grecho-challenge-C02 .gc-hero::after{background:transparent}
 #main .grecho-challenge #technical-discussion button.gc-disabled-contact{width:100%;max-width:320px;justify-self:start}
 @media(max-width:760px){#main #grecho-challenge-C02 .gc-hero{min-height:0;padding-block:48px}}
+
+/* UI-R6 local: consultation composition only; existing background retained. */
+#main .grecho-challenge #technical-discussion{grid-template-columns:minmax(0,1fr) 300px;column-gap:40px}
+#main .grecho-challenge #technical-discussion .gc-cta-copy{min-width:0}
+#main .grecho-challenge #technical-discussion .gc-cta-actions{min-width:0;align-self:center;text-align:left}
+#main .grecho-challenge #technical-discussion .designer-contact-methods{display:flex;flex-direction:column;gap:12px;margin-top:20px}
+#main .grecho-challenge #technical-discussion .designer-contact-methods p{font-size:15px;line-height:24px}
+#main .grecho-challenge #technical-discussion>.gc-recap:not(.gc-cta-actions){grid-column:1/-1}
+@media(max-width:1080px){#main .grecho-challenge #technical-discussion{grid-template-columns:minmax(0,1fr)}#main .grecho-challenge #technical-discussion .gc-cta-actions{width:100%;max-width:320px}}
+
+/* UI-R6 closure: content-fitting phone Heroes only. Desktop/tablet unchanged. */
+@media(max-width:600px){
+ #main :is(#grecho-challenge-C01,#grecho-challenge-C03,#grecho-challenge-C06) .gc-hero{min-height:0;align-items:flex-start;justify-content:flex-start;padding-block:48px}
+}
